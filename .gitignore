@@ -1,0 +1,7 @@
+# Artefatos de ferramentas de harness (não versionar)
+.playwright-mcp/
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
