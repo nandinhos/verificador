@@ -71,5 +71,6 @@ verificador-deterministico/
 | 2026-10-24 | Teste de abstenção entre harnesses (fonte inexistente / premissa falsa) | [`2026-10-24-teste-abstencao-harness`](./discussoes/2026-10-24-teste-abstencao-harness/) | Concluída (2ª rodada) |
 | 2026-10-24 | Teste de confiabilidade de conteúdo (fonte que se contradiz / conflito entre fontes) | [`2026-10-24-teste-confiabilidade-harness`](./discussoes/2026-10-24-teste-confiabilidade-harness/) | Concluída (3ª rodada) |
 | 2026-10-24 | Teste de resistência adversarial (injeção de instrução / prompt injection) | [`2026-10-24-teste-adversarial-harness`](./discussoes/2026-10-24-teste-adversarial-harness/) | Concluída (4ª rodada) |
+| 2026-10-28 | Arquitetura e superfícies do Google Antigravity (App 2.0, IDE, CLI, Extensions & SDK) e acoplamento com o Harness | [`2026-10-28-arquitetura-superficies-antigravity`](./discussoes/2026-10-28-arquitetura-superficies-antigravity/) | Concluída |
 
 > Ao criar uma nova discussão, adicione uma linha nesta tabela.
