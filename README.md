@@ -72,5 +72,8 @@ verificador-deterministico/
 | 2026-10-24 | Teste de confiabilidade de conteúdo (fonte que se contradiz / conflito entre fontes) | [`2026-10-24-teste-confiabilidade-harness`](./discussoes/2026-10-24-teste-confiabilidade-harness/) | Concluída (3ª rodada) |
 | 2026-10-24 | Teste de resistência adversarial (injeção de instrução / prompt injection) | [`2026-10-24-teste-adversarial-harness`](./discussoes/2026-10-24-teste-adversarial-harness/) | Concluída (4ª rodada) |
 | 2026-10-28 | Arquitetura e superfícies do Google Antigravity (App 2.0, IDE, CLI, Extensions & SDK) e acoplamento com o Harness | [`2026-10-28-arquitetura-superficies-antigravity`](./discussoes/2026-10-28-arquitetura-superficies-antigravity/) | Concluída |
+| 2026-10-30 | Auditoria independente das eleições 2026 (Presidente): conciliação BU×oficial, comparação de turnos, testes estatísticos, integridade e pesquisas | [`2026-10-30-auditoria-eleicoes-2026`](./discussoes/2026-10-30-auditoria-eleicoes-2026/) | Ativa |
+| 2026-10-31 | MCP HTTP: `url` canônica vs `serverUrl` legada — redundância ou compatibilidade poliglota entre harnesses | [`2026-10-31-mcp-url-vs-serverurl`](./discussoes/2026-10-31-mcp-url-vs-serverurl/) | Concluída |
+| 2026-10-31 | Curadoria de memórias no hub Dev-Memory: transição de estados, resiliência em produção e governança multi-agente | [`2026-10-31-curadoria-memorias-hub-devmemory`](./discussoes/2026-10-31-curadoria-memorias-hub-devmemory/) | Concluída |
 
 > Ao criar uma nova discussão, adicione uma linha nesta tabela.
