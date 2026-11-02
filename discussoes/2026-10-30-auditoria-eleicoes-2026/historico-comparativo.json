@@ -1,0 +1,149 @@
+{
+ "geradoDe": "Comparativo das 4 ultimas eleicoes presidenciais (TSE)",
+ "ciclos": {
+  "2014": {
+   "lider1T": {
+    "num": "13",
+    "nome": "DILMA",
+    "pct": 41.59
+   },
+   "vencedor2T": {
+    "num": "13",
+    "nome": "DILMA",
+    "pct": 51.64
+   },
+   "houveVirada": false,
+   "crescimento": {
+    "13": {
+     "nome": "DILMA",
+     "v1": 43267668,
+     "v2": 54501118,
+     "crescPct": 25.96,
+     "pct1": 41.59,
+     "pct2": 51.64
+    },
+    "45": {
+     "nome": "AÉCIO NEVES",
+     "v1": 34897211,
+     "v2": 51041155,
+     "crescPct": 46.26,
+     "pct1": 33.55,
+     "pct2": 48.36
+    }
+   },
+   "boloEliminados": 25858923,
+   "ganho2T": {
+    "13": 11233450,
+    "45": 16143944
+   }
+  },
+  "2018": {
+   "lider1T": {
+    "num": "17",
+    "nome": "JAIR BOLSONARO",
+    "pct": 46.03
+   },
+   "vencedor2T": {
+    "num": "17",
+    "nome": "JAIR BOLSONARO",
+    "pct": 55.13
+   },
+   "houveVirada": false,
+   "crescimento": {
+    "17": {
+     "nome": "JAIR BOLSONARO",
+     "v1": 49277010,
+     "v2": 57797847,
+     "crescPct": 17.29,
+     "pct1": 46.03,
+     "pct2": 55.13
+    },
+    "13": {
+     "nome": "FERNANDO HADDAD",
+     "v1": 31342051,
+     "v2": 47040906,
+     "crescPct": 50.09,
+     "pct1": 29.28,
+     "pct2": 44.87
+    }
+   },
+   "boloEliminados": 26431688,
+   "ganho2T": {
+    "17": 8520837,
+    "13": 15698855
+   }
+  },
+  "2022": {
+   "lider1T": {
+    "num": "13",
+    "nome": "LULA",
+    "pct": 48.43
+   },
+   "vencedor2T": {
+    "num": "13",
+    "nome": "LULA",
+    "pct": 50.9
+   },
+   "houveVirada": false,
+   "crescimento": {
+    "13": {
+     "nome": "LULA",
+     "v1": 57259504,
+     "v2": 60345999,
+     "crescPct": 5.39,
+     "pct1": 48.43,
+     "pct2": 50.9
+    },
+    "22": {
+     "nome": "JAIR BOLSONARO",
+     "v1": 51072345,
+     "v2": 58206354,
+     "crescPct": 13.97,
+     "pct1": 43.2,
+     "pct2": 49.1
+    }
+   },
+   "boloEliminados": 9897870,
+   "ganho2T": {
+    "13": 3086495,
+    "22": 7134009
+   }
+  },
+  "2026": {
+   "lider1T": {
+    "num": "22",
+    "nome": "FLAVIO BOLSONARO",
+    "pct": 47.03
+   },
+   "vencedor2T": {
+    "num": "13",
+    "nome": "LULA",
+    "pct": 51.79
+   },
+   "houveVirada": true,
+   "crescimento": {
+    "13": {
+     "nome": "LULA",
+     "v1": 53879538,
+     "v2": 64256232,
+     "crescPct": 19.26,
+     "pct1": 45.16,
+     "pct2": 51.79
+    },
+    "22": {
+     "nome": "FLAVIO BOLSONARO",
+     "v1": 56104503,
+     "v2": 59826041,
+     "crescPct": 6.63,
+     "pct1": 47.03,
+     "pct2": 48.21
+    }
+   },
+   "boloEliminados": 9316747,
+   "ganho2T": {
+    "13": 10376694,
+    "22": 3721538
+   }
+  }
+ }
+}

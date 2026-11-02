@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini-Aula Técnica: Engenharia Reversa do replica-skill</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: #111827;
+      --card-border: #1f2937;
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.2);
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+      --code-bg: #030712;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    header.hero {
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .badge-bar {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.25rem 0.65rem;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .badge-blue { background: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
+    .badge-green { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .badge-purple { background: rgba(139, 92, 246, 0.15); color: #a78bfa; border: 1px solid rgba(139, 92, 246, 0.3); }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.75rem;
+      background: linear-gradient(to right, #60a5fa, #a78bfa, #f472b6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .lead {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 800px;
+    }
+
+    section {
+      margin-bottom: 3.5rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 1.25rem 0 0.5rem 0;
+      color: #93c5fd;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #d1d5db;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(59, 130, 246, 0.4);
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .code-box {
+      background: var(--code-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 0.5rem;
+      padding: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      color: #e5e7eb;
+    }
+
+    .code-box code {
+      color: #67e8f9;
+    }
+
+    .highlight-row {
+      display: flex;
+      gap: 1rem;
+      background: rgba(59, 130, 246, 0.08);
+      border-left: 4px solid var(--accent);
+      padding: 1rem;
+      border-radius: 0 0.5rem 0.5rem 0;
+      margin: 1.25rem 0;
+    }
+
+    /* SVG Diagram Styling */
+    .diagram-container {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 0.75rem;
+      padding: 2rem;
+      margin: 1.5rem 0;
+      overflow-x: auto;
+      text-align: center;
+    }
+
+    svg.flow-diagram {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Interactive Table */
+    table.custom-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.25rem 0;
+      font-size: 0.95rem;
+    }
+
+    table.custom-table th,
+    table.custom-table td {
+      border: 1px solid var(--card-border);
+      padding: 0.75rem 1rem;
+      text-align: left;
+    }
+
+    table.custom-table th {
+      background: rgba(255, 255, 255, 0.04);
+      color: #60a5fa;
+      font-weight: 600;
+    }
+
+    table.custom-table tr:nth-child(even) {
+      background: rgba(255, 255, 255, 0.015);
+    }
+
+    /* Accordion / Tab system */
+    .tab-nav {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 0.5rem;
+    }
+
+    .tab-btn {
+      background: none;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+
+    .tab-btn.active, .tab-btn:hover {
+      background: rgba(59, 130, 246, 0.15);
+      color: #60a5fa;
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+
+    .tab-pane {
+      display: none;
+    }
+
+    .tab-pane.active {
+      display: block;
+    }
+
+    footer {
+      border-top: 1px solid var(--card-border);
+      padding-top: 2rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- HERO HEADER -->
+    <header class="hero">
+      <div class="badge-bar">
+        <span class="badge badge-blue">Repo Reverse Engineering v2.0</span>
+        <span class="badge badge-green">Suíte de Testes: 57/57 OK (0.45s)</span>
+        <span class="badge badge-purple">Zero Dependências Externas (Python Stdlib)</span>
+      </div>
+      <h1>Engenharia Reversa: replica-skill</h1>
+      <p class="lead">
+        Dissecação completa do kit de 11 Claude Skills e 6 ferramentas determinísticas criadas por Jake Schincariol para replicação clean-room de aplicações SaaS, desde a engenharia reversa e design até o lançamento autônomo.
+      </p>
+    </header>
+
+    <!-- O PROBLEMA DE NEGÓCIO -->
+    <section id="problema">
+      <h2>🎯 1. O Problema do Mundo Real</h2>
+      <p>
+        Construir um concorrente para um software existente é uma das formas mais comprovadas de validar modelos de negócio (indie hackers, bootstrapping e expansão de mercado). No entanto, o processo comum sofre de 3 grandes patologias:
+      </p>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-title">⚠️ Risco Jurídico de Cópia</div>
+          <p>
+            Desenvolvedores desavisados clonam CSS, nomes de variáveis, marcas registradas ou endpoints privados de APIs, incorrendo em infração de copyright e risco de banimento.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-title">📉 Síndrome do "Clone Piorado"</div>
+          <p>
+            Clonar exatamente o que o concorrente tem sem entender o que os usuários reais detestam gera um produto indiferenciado e difícil de vender.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-title">🌪️ Alucinação de IA</div>
+          <p>
+            Prompts genéricos de LLM inventam designs inacessíveis, bibliotecas desnecessárias, métricas de paridade irreais e avaliações falsas de clientes.
+          </p>
+        </div>
+      </div>
+      <div class="highlight-row">
+        <strong>A Resposta do replica-skill:</strong> Uma esteira de 11 habilidades com fronteiras rígidas ("reconstrói o que o app faz, nunca o que ele possui"), acoplada a 6 utilitários determinísticos em Python puro que impõem medição matemática de contraste, diff estrutural de imagens, conformidade de marca e ranqueamento factual de reviews.
+      </div>
+    </section>
+
+    <!-- TOPOLOGIA ARQUITETURAL -->
+    <section id="topologia">
+      <h2>🗺️ 2. Topologia do Pipeline (11 Skills em Cadeia)</h2>
+      <p>
+        O sistema opera em um modelo estritamente incremental onde cada skill grava seus artefatos no diretório <code>replica/</code> da raiz do projeto clonado, permitindo que as próximas etapas leiam a memória persistida:
+      </p>
+
+      <div class="diagram-container">
+        <svg class="flow-diagram" viewBox="0 0 950 320" xmlns="http://www.w3.org/2000/svg">
+          <!-- Defs for arrows and gradients -->
+          <defs>
+            <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#3b82f6" />
+            </marker>
+          </defs>
+
+          <!-- Stage 1: Recon & Spec -->
+          <rect x="20" y="30" width="130" height="70" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+          <text x="85" y="60" fill="#93c5fd" font-size="12" font-weight="bold" text-anchor="middle">/replica-recon</text>
+          <text x="85" y="80" fill="#94a3b8" font-size="10" text-anchor="middle">features.csv + map</text>
+
+          <path d="M 150 65 L 180 65" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <!-- Stage 2: Architect -->
+          <rect x="180" y="30" width="130" height="70" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+          <text x="245" y="60" fill="#93c5fd" font-size="12" font-weight="bold" text-anchor="middle">/replica-architect</text>
+          <text x="245" y="80" fill="#94a3b8" font-size="10" text-anchor="middle">Stack & Schema</text>
+
+          <path d="M 310 65 L 340 65" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <!-- Stage 3: Design -->
+          <rect x="340" y="30" width="130" height="70" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+          <text x="405" y="60" fill="#93c5fd" font-size="12" font-weight="bold" text-anchor="middle">/replica-design</text>
+          <text x="405" y="80" fill="#94a3b8" font-size="10" text-anchor="middle">Tokens & contrast.py</text>
+
+          <path d="M 470 65 L 500 65" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <!-- Stage 4: Build -->
+          <rect x="500" y="30" width="130" height="70" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+          <text x="565" y="60" fill="#93c5fd" font-size="12" font-weight="bold" text-anchor="middle">/replica-build</text>
+          <text x="565" y="80" fill="#94a3b8" font-size="10" text-anchor="middle">Frontend Screens</text>
+
+          <path d="M 630 65 L 660 65" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <!-- Stage 5: Backend -->
+          <rect x="660" y="30" width="130" height="70" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+          <text x="725" y="60" fill="#93c5fd" font-size="12" font-weight="bold" text-anchor="middle">/replica-backend</text>
+          <text x="725" y="80" fill="#94a3b8" font-size="10" text-anchor="middle">Auth, DB, Stripe</text>
+
+          <path d="M 790 65 L 820 65" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <!-- Stage 6: Test -->
+          <rect x="820" y="30" width="110" height="70" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+          <text x="875" y="60" fill="#34d399" font-size="12" font-weight="bold" text-anchor="middle">/replica-test</text>
+          <text x="875" y="80" fill="#94a3b8" font-size="10" text-anchor="middle">E2E Playwright</text>
+
+          <!-- Turn down to row 2 -->
+          <path d="M 875 100 L 875 180" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <!-- Stage 7: Diff -->
+          <rect x="810" y="180" width="130" height="70" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+          <text x="875" y="210" fill="#fcd34d" font-size="12" font-weight="bold" text-anchor="middle">/replica-diff</text>
+          <text x="875" y="230" fill="#94a3b8" font-size="10" text-anchor="middle">imgdiff + parity.py</text>
+
+          <path d="M 810 215 L 770 215" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <!-- Stage 8: Entrepreneur -->
+          <rect x="630" y="180" width="140" height="70" rx="8" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+          <text x="700" y="210" fill="#c4b5fd" font-size="12" font-weight="bold" text-anchor="middle">/replica-entrepreneur</text>
+          <text x="700" y="230" fill="#94a3b8" font-size="10" text-anchor="middle">reviews.py (Pain Points)</text>
+
+          <path d="M 630 215 L 590 215" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <!-- Stage 9: Brand -->
+          <rect x="450" y="180" width="140" height="70" rx="8" fill="#1e293b" stroke="#ec4899" stroke-width="2"/>
+          <text x="520" y="210" fill="#f472b6" font-size="12" font-weight="bold" text-anchor="middle">/replica-brand</text>
+          <text x="520" y="230" fill="#94a3b8" font-size="10" text-anchor="middle">sweep.py (Clean-Room)</text>
+
+          <path d="M 450 215 L 410 215" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <!-- Stage 10: Launch -->
+          <rect x="270" y="180" width="140" height="70" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+          <text x="340" y="210" fill="#93c5fd" font-size="12" font-weight="bold" text-anchor="middle">/replica-launch</text>
+          <text x="340" y="230" fill="#94a3b8" font-size="10" text-anchor="middle">listing.py + Landing</text>
+
+          <path d="M 270 215 L 230 215" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <!-- Stage 11: Deploy -->
+          <rect x="70" y="180" width="160" height="70" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+          <text x="150" y="210" fill="#34d399" font-size="12" font-weight="bold" text-anchor="middle">/replica-deploy</text>
+          <text x="150" y="230" fill="#94a3b8" font-size="10" text-anchor="middle">preflight.md + DNS Live</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- OS 6 UTILITÁRIOS DETERMINÍSTICOS -->
+    <section id="ferramentas">
+      <h2>⚡ 3. Os 6 Utilitários Determinísticos (Deep Dive)</h2>
+      <p>
+        O coração técnico do repositório é seu conjunto de scripts em Python que operam sem qualquer biblioteca externa (apenas <code>struct</code>, <code>zlib</code>, <code>re</code>, <code>csv</code>, <code>json</code>, <code>math</code> e <code>unittest</code>):
+      </p>
+
+      <div class="tab-nav">
+        <button class="tab-btn active" onclick="switchTab(0)">1. imgdiff.py (Layout Diff)</button>
+        <button class="tab-btn" onclick="switchTab(1)">2. parity.py (Score Paridade)</button>
+        <button class="tab-btn" onclick="switchTab(2)">3. sweep.py (Legal Sweep)</button>
+        <button class="tab-btn" onclick="switchTab(3)">4. contrast.py (WCAG)</button>
+        <button class="tab-btn" onclick="switchTab(4)">5. reviews.py (Dores)</button>
+        <button class="tab-btn" onclick="switchTab(5)">6. listing.py (App Stores)</button>
+      </div>
+
+      <!-- PANE 1 -->
+      <div class="tab-pane active" id="pane-0">
+        <h3>replica-diff/imgdiff.py — Decodificador PNG e Comparador Estrutural</h3>
+        <p>
+          Em vez de depender de bibliotecas gigantes como PIL/Pillow ou OpenCV, este arquivo de 457 linhas implementa um decodificador de PNG completo do zero (reconstruindo scanlines com filtros Paeth e descompactando chunks IDAT com zlib).
+        </p>
+        <div class="code-box">
+          # Transforma ambas as imagens em mapas de bordas (edge maps) e compara a densidade estrutural em grade:<br>
+          python3 replica-diff/imgdiff.py original.png clone.png --out diff.png --json
+        </div>
+        <p><strong>A sacada sênior:</strong> Um clone comercial legítimo altera as cores da marca. Comparadores de imagem tradicionais pixel-a-pixel dão 0% de match ao mudar uma paleta azul para verde. O <code>imgdiff.py</code> converte as imagens em bordas em escala de cinza e pontua onde os componentes estão localizados, não a cor com que foram pintados.</p>
+      </div>
+
+      <!-- PANE 2 -->
+      <div class="tab-pane" id="pane-1">
+        <h3>replica-diff/parity.py — Pontuação Ponderada de Paridade</h3>
+        <p>
+          Lê a matriz <code>features.csv</code> e calcula o índice de paridade funcional com pesos objetivos:
+        </p>
+        <div class="code-box">
+          WEIGHT = {"must": 3, "should": 2, "could": 1}<br>
+          CREDIT = {"yes": 1.0, "partial": 0.5, "no": 0.0, "skip": omitido}<br>
+          Score Final = (80% Paridade de Funcionalidades) + (20% Estrutura Visual do imgdiff)
+        </div>
+        <p><strong>Regra Bloqueante:</strong> Se qualquer funcionalidade categorizada como <code>must</code> estiver faltando, o utilitário avisa categoricamente: <em>"not shippable"</em>.</p>
+      </div>
+
+      <!-- PANE 3 -->
+      <div class="tab-pane" id="pane-2">
+        <h3>replica-brand/sweep.py — Sanitização Antiprocesso</h3>
+        <p>
+          Varre todo o diretório do código-fonte procurando nomes de classes, variáveis, domínios e hexadecimais que pertençam à empresa original:
+        </p>
+        <div class="code-box">
+          python3 replica-brand/sweep.py . --avoid "Calendly" --domains calendly.com --colors "#006bff"
+        </div>
+        <p>
+          Ele detecta tanto em arquivos de texto quanto em identificadores mesclados (ex: <code>CalendlyButton</code> ou <code>calendly_sync</code>), impedindo o deploy enquanto o exit code não for 0.
+        </p>
+      </div>
+
+      <!-- PANE 4 -->
+      <div class="tab-pane" id="pane-3">
+        <h3>replica-design/contrast.py — Validação WCAG 2.1</h3>
+        <p>
+          Analisa arquivos de tokens de design em JSON e valida matematicamente a taxa de contraste (mínimo 4.5:1 para texto normal e 3:1 para texto grande) convertendo sRGB para luminância relativa linear.
+        </p>
+      </div>
+
+      <!-- PANE 5 -->
+      <div class="tab-pane" id="pane-4">
+        <h3>replica-entrepreneur/reviews.py — Inteligência Competitiva Concreta</h3>
+        <p>
+          Agrupa avaliações públicas (G2, Trustpilot, Reddit, App Store) por temas de reclamação (preço, suporte, bugs, complexidade). Proíbe alucinação:
+        </p>
+        <ul style="margin-left: 1.5rem; color: #d1d5db; margin-bottom: 1rem;">
+          <li>Qualquer review sem URL direta é <strong>descartada</strong>.</li>
+          <li>Todas as citações impressas são <strong>substrings literais</strong> do CSV fornecido.</li>
+          <li>Reviews com mais de 18 meses sofrem depreciação temporal e contam com peso reduzido (50%).</li>
+        </ul>
+      </div>
+
+      <!-- PANE 6 -->
+      <div class="tab-pane" id="pane-5">
+        <h3>replica-launch/listing.py — Linter de Lojas de Aplicativos</h3>
+        <p>
+          Verifica títulos e descrições contra as regras rígidas da Apple App Store e Google Play Store:
+        </p>
+        <ul style="margin-left: 1.5rem; color: #d1d5db;">
+          <li>Bloqueia termos de ranking não fundamentados (ex: "#1", "the best").</li>
+          <li>Garante que emojis sejam contados como 1 único caractere visível (evitando estouro do limite de 30 caracteres do título na Apple).</li>
+          <li>Detecta repetição inútil de palavras na lista de palavras-chave.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GUIA PRÁTICO ONDE MEXER -->
+    <section id="onde-mexer">
+      <h2>🛠️ 4. Guia Prático: Onde Mexer com Segurança</h2>
+      <table class="custom-table">
+        <thead>
+          <tr>
+            <th>Objetivo do Engenheiro</th>
+            <th>Arquivo / Diretório Alvo</th>
+            <th>Como Executar / Testar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Adicionar um novo tema de queixas de mercado</strong></td>
+            <td><code>replica-entrepreneur/themes.json</code></td>
+            <td>Adicione o objeto com <code>id</code>, <code>label</code> e <code>patterns</code> regex. Teste com: <code>python3 -m unittest tests/test_reviews.py</code></td>
+          </tr>
+          <tr>
+            <td><strong>Ajustar a tolerância de diff de layout</strong></td>
+            <td><code>replica-diff/imgdiff.py</code> (funções <code>edges()</code> e <code>compare()</code>)</td>
+            <td>Altere <code>threshold</code> ou a grade celular. Valide com: <code>python3 -m unittest tests/test_imgdiff.py</code></td>
+          </tr>
+          <tr>
+            <td><strong>Instalar o pack no Claude Code local</strong></td>
+            <td><code>~/.claude/skills/</code></td>
+            <td>Copie as pastas: <code>cp -r replica-* ~/.claude/skills/</code></td>
+          </tr>
+          <tr>
+            <td><strong>Configurar exclusões do scanner de rebrand</strong></td>
+            <td><code>replica-brand/sweep.py</code> (variável <code>SKIP_DIRS</code>)</td>
+            <td>Adicione pastas como <code>.husky</code> ou diretórios de testes. Teste com: <code>python3 -m unittest tests/test_sweep.py</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CARDÁPIO DE SAÚDE TÉCNICA -->
+    <section id="saude">
+      <h2>📊 5. Matriz de Maturidade Técnica & Rigor</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-title" style="color: #34d399;">Testabilidade (A+)</div>
+          <p>57 testes unitários determinísticos rodando em 0.45s sem mocks complexos ou fixtures pesadas. Testes incluem decodificação de PNGs reais gerados em memória byte-a-byte.</p>
+        </div>
+        <div class="card">
+          <div class="card-title" style="color: #60a5fa;">Coesão & Acoplamento (A)</div>
+          <p>Mapeamento AST via Graphify revelou 0 ciclos de importação e isolamento total entre os módulos CLI. Cada ferramenta funciona tanto isoladamente no terminal quanto orquestrada por agentes.</p>
+        </div>
+        <div class="card">
+          <div class="card-title" style="color: #fcd34d;">Segurança & Clean-Room (A)</div>
+          <p>Sem chamadas de rede ocultas, sem telemetria, sem bibliotecas de terceiros vulneráveis a supply-chain attacks. Varredura rigorosa em <code>sweep.py</code> para evitar vazamento de marca.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Mini-Aula gerada sob o protocolo <strong>CLEARER Engineering Harness & Repo Reverse Engineering</strong>.<br>
+      Antigravity Agentic Platform &copy; 2026. Todos os dados comprovados em <code>OBSERVED</code> no commit <code>77c9436f</code>.
+    </footer>
+  </div>
+
+  <script>
+    function switchTab(index) {
+      const buttons = document.querySelectorAll('.tab-btn');
+      const panes = document.querySelectorAll('.tab-pane');
+      buttons.forEach((btn, i) => {
+        btn.classList.toggle('active', i === index);
+      });
+      panes.forEach((pane, i) => {
+        pane.classList.toggle('active', i === index);
+      });
+    }
+  </script>
+</body>
+</html>

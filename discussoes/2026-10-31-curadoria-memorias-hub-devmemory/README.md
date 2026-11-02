@@ -84,6 +84,7 @@ Durante a auditoria de linha de base no hub local, identificou-se um caso real d
 
 ## Anexos
 
+- **Handoff Guiado de Harnesses (Operacional):** [`handoff-guiado-harnesses.md`](./handoff-guiado-harnesses.md) — Guia operacional passo a passo para qualquer agente (Muse, Antigravity, Claude Code, DSH) conectar, planejar, capturar, homologar e solucionar problemas no hub sob a Regra v2.0.
 - **Regra de Curadoria v2.0 (Canônica - Pronta para o Muse):** [`regra-curadoria-memorias-v2.md`](./regra-curadoria-memorias-v2.md) — Especificação técnica final com validação híbrida (Fast-track automático com manifesto de probe vs. Review Gate no projeto/plataforma), estado `deprecated` e guia de implementação no backend.
 - **Ata do Conselho de Seniores (Passo 5):** [`conselho_output/ata_conselho.md`](./conselho_output/ata_conselho.md) — Deliberação plenária dos conselheiros Codex (0.94), Muse (0.85) e Agy (0.95) com veredito "Homologado com Ressalvas".
 - **Piloto de Consumo em Planos (Passo 4):** [`piloto-consumo-em-planos.md`](./piloto-consumo-em-planos.md) — Demonstração prática da diferença entre `hub_briefing` (premissas validadas) e `memory_search` (alertas pendentes com inspeção obrigatória).

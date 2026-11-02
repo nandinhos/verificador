@@ -1,0 +1,237 @@
+{
+ "geradoDe": "Etapa 5 consolidada - DiD fechamento tardio",
+ "ufs": [
+  {
+   "uf": "AC",
+   "status": "OK",
+   "secoesPareadas": 2270,
+   "tardias2t": 1
+  },
+  {
+   "uf": "AL",
+   "status": "OK",
+   "secoesPareadas": 7101,
+   "tardias2t": 2
+  },
+  {
+   "uf": "AM",
+   "status": "OK",
+   "secoesPareadas": 8157,
+   "tardias2t": 1
+  },
+  {
+   "uf": "AP",
+   "status": "OK",
+   "secoesPareadas": 1914,
+   "tardias2t": 0
+  },
+  {
+   "uf": "CE",
+   "status": "OK",
+   "secoesPareadas": 23765,
+   "tardias2t": 1
+  },
+  {
+   "uf": "DF",
+   "status": "OK",
+   "secoesPareadas": 6969,
+   "tardias2t": 17
+  },
+  {
+   "uf": "ES",
+   "status": "OK",
+   "secoesPareadas": 9844,
+   "tardias2t": 2
+  },
+  {
+   "uf": "GO",
+   "status": "OK",
+   "secoesPareadas": 15686,
+   "tardias2t": 2
+  },
+  {
+   "uf": "MA",
+   "status": "OK",
+   "secoesPareadas": 18092,
+   "tardias2t": 4
+  },
+  {
+   "uf": "MG",
+   "status": "OK",
+   "secoesPareadas": 52061,
+   "tardias2t": 3
+  },
+  {
+   "uf": "MS",
+   "status": "OK",
+   "secoesPareadas": 7106,
+   "tardias2t": 0
+  },
+  {
+   "uf": "MT",
+   "status": "OK",
+   "secoesPareadas": 8287,
+   "tardias2t": 9
+  },
+  {
+   "uf": "PA",
+   "status": "OK",
+   "secoesPareadas": 20827,
+   "tardias2t": 9
+  },
+  {
+   "uf": "PB",
+   "status": "OK",
+   "secoesPareadas": 10712,
+   "tardias2t": 312,
+   "did_13": {
+    "pp": 0.175,
+    "tardias": 312,
+    "pontuais": 10400,
+    "pPermutacao": 0.242,
+    "placebo_pp": -0.433
+   },
+   "did_22": {
+    "pp": 2.079,
+    "tardias": 312,
+    "pontuais": 10400,
+    "pPermutacao": 0.0,
+    "placebo_pp": -0.378
+   }
+  },
+  {
+   "uf": "PE",
+   "status": "OK",
+   "secoesPareadas": 21418,
+   "tardias2t": 702,
+   "did_13": {
+    "pp": 0.16,
+    "tardias": 702,
+    "pontuais": 20716,
+    "pPermutacao": 0.048,
+    "placebo_pp": -0.171
+   },
+   "did_22": {
+    "pp": 0.386,
+    "tardias": 702,
+    "pontuais": 20716,
+    "pPermutacao": 0.0,
+    "placebo_pp": -0.393
+   }
+  },
+  {
+   "uf": "PI",
+   "status": "OK",
+   "secoesPareadas": 10225,
+   "tardias2t": 9
+  },
+  {
+   "uf": "PR",
+   "status": "OK",
+   "secoesPareadas": 27142,
+   "tardias2t": 1
+  },
+  {
+   "uf": "RJ",
+   "status": "OK",
+   "secoesPareadas": 37675,
+   "tardias2t": 3188,
+   "did_13": {
+    "pp": 0.032,
+    "tardias": 3188,
+    "pontuais": 34487,
+    "pPermutacao": 0.494,
+    "placebo_pp": 0.555
+   },
+   "did_22": {
+    "pp": 0.55,
+    "tardias": 3188,
+    "pontuais": 34487,
+    "pPermutacao": 0.0,
+    "placebo_pp": -0.453
+   }
+  },
+  {
+   "uf": "RN",
+   "status": "OK",
+   "secoesPareadas": 8115,
+   "tardias2t": 3
+  },
+  {
+   "uf": "RO",
+   "status": "OK",
+   "secoesPareadas": 4698,
+   "tardias2t": 1
+  },
+  {
+   "uf": "RR",
+   "status": "OK",
+   "secoesPareadas": 1519,
+   "tardias2t": 0
+  },
+  {
+   "uf": "RS",
+   "status": "OK",
+   "secoesPareadas": 27547,
+   "tardias2t": 4
+  },
+  {
+   "uf": "SC",
+   "status": "OK",
+   "secoesPareadas": 17326,
+   "tardias2t": 1
+  },
+  {
+   "uf": "SE",
+   "status": "OK",
+   "secoesPareadas": 5923,
+   "tardias2t": 54,
+   "did_13": {
+    "pp": 1.015,
+    "tardias": 54,
+    "pontuais": 5869,
+    "pPermutacao": 0.004,
+    "placebo_pp": -0.723
+   },
+   "did_22": {
+    "pp": 1.256,
+    "tardias": 54,
+    "pontuais": 5869,
+    "pPermutacao": 0.0,
+    "placebo_pp": -0.31
+   }
+  },
+  {
+   "uf": "SP",
+   "status": "OK",
+   "secoesPareadas": 103656,
+   "tardias2t": 1760,
+   "did_13": {
+    "pp": 0.792,
+    "tardias": 1760,
+    "pontuais": 101896,
+    "pPermutacao": 0.0,
+    "placebo_pp": -1.503
+   },
+   "did_22": {
+    "pp": 0.31,
+    "tardias": 1760,
+    "pontuais": 101896,
+    "pPermutacao": 0.0,
+    "placebo_pp": -1.399
+   }
+  },
+  {
+   "uf": "TO",
+   "status": "OK",
+   "secoesPareadas": 4384,
+   "tardias2t": 0
+  },
+  {
+   "uf": "ZZ",
+   "status": "OK",
+   "secoesPareadas": 1281,
+   "tardias2t": 3
+  }
+ ]
+}

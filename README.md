@@ -75,5 +75,9 @@ verificador-deterministico/
 | 2026-10-30 | Auditoria independente das eleições 2026 (Presidente): conciliação BU×oficial, comparação de turnos, testes estatísticos, integridade e pesquisas | [`2026-10-30-auditoria-eleicoes-2026`](./discussoes/2026-10-30-auditoria-eleicoes-2026/) | Ativa |
 | 2026-10-31 | MCP HTTP: `url` canônica vs `serverUrl` legada — redundância ou compatibilidade poliglota entre harnesses | [`2026-10-31-mcp-url-vs-serverurl`](./discussoes/2026-10-31-mcp-url-vs-serverurl/) | Concluída |
 | 2026-10-31 | Curadoria de memórias no hub Dev-Memory: transição de estados, resiliência em produção e governança multi-agente | [`2026-10-31-curadoria-memorias-hub-devmemory`](./discussoes/2026-10-31-curadoria-memorias-hub-devmemory/) | Concluída |
+| 2026-11-01 | Engenharia reversa do replica-skill (Jake Schincariol): 11 skills, 6 ferramentas stdlib e guia de adaptação para o harness Kiro | [`2026-11-01-replica-skill-analise-e-adaptacao-kiro`](./discussoes/2026-11-01-replica-skill-analise-e-adaptacao-kiro/) | Ativa |
+| 2026-11-02 | Método MALT no Ecossistema Laravel: Extração Integral e Análise de Enquadramento em Abordagem Paralela | [`2026-11-02-metodo-malt-laravel`](./discussoes/2026-11-02-metodo-malt-laravel/) | Ativa |
+| 2026-11-02 | Comparativo de Harnesses de Engenharia: Capivara (`Capivara2` + `doc-center`) vs. CLEARER (`CEH` + `dev-memory`) | [`2026-11-02-harness-capivara-vs-clearer`](./discussoes/2026-11-02-harness-capivara-vs-clearer/) | Concluída |
+| 2026-11-02 | mcp.ai sob auditoria: agregador MCP, critérios de segurança, risco de vazamento — mais llms.txt, IndexNow e o teste anedótico do grupo | [`2026-11-02-avaliacao-mcp-ai`](./discussoes/2026-11-02-avaliacao-mcp-ai/) — publicado em https://check.fssdev.com.br | Concluída |
 
 > Ao criar uma nova discussão, adicione uma linha nesta tabela.

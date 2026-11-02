@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verificador Independente — Eleições 2026 (Presidente)</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --line:#e3e6ea; --fg:#1b1f24; --mut:#5b6472;
+    --lula:#d94a2b; --bolso:#2b6fd9; --accent:#2b6fd9;
+    --ok:#1e9e5a; --warn:#c8900a; --bad:#c0392b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 system-ui,Segoe UI,Roboto,Arial,sans-serif}
+  .wrap{max-width:74rem;margin:0 auto;padding:0 1rem}
+  header{background:var(--card);border-bottom:1px solid var(--line);padding:1.5rem 0}
+  h1{margin:.1rem 0;font-size:1.45rem}
+  h2{font-size:1.12rem;margin:2rem 0 .7rem;padding-left:.6rem;border-left:4px solid var(--accent)}
+  .mut{color:var(--mut)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.8rem;margin:1rem 0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.9rem 1.1rem;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+  .card .n{font-size:1.6rem;font-weight:700}
+  .card .l{color:var(--mut);font-size:.82rem;margin-top:.15rem}
+  .grid-mapa{display:grid;grid-template-columns:minmax(300px,1fr) 1.1fr;gap:1.2rem;align-items:start}
+  @media(max-width:860px){.grid-mapa{grid-template-columns:1fr}}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;align-items:start}
+  @media(max-width:860px){.grid2{grid-template-columns:1fr}}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+  .panel h3{margin:.1rem 0 .8rem;font-size:1rem}
+  svg{max-width:100%;height:auto}
+  .uf-label{font:600 11px system-ui;fill:#fff;pointer-events:none;text-anchor:middle;paint-order:stroke;stroke:rgba(0,0,0,.25);stroke-width:2px}
+  path.uf{cursor:pointer;transition:opacity .15s}
+  path.uf:hover{opacity:.8}
+  path.uf.sel{stroke:#111;stroke-width:2.5}
+  table{width:100%;border-collapse:collapse;font-size:.86rem}
+  th,td{padding:.36rem .5rem;border-bottom:1px solid var(--line);text-align:right}
+  th:first-child,td:first-child{text-align:left}
+  thead th{color:var(--mut);font-weight:600}
+  tr.hl{background:#fff6e8}
+  .tag{font-size:.72rem;padding:.1rem .5rem;border-radius:999px;font-weight:700}
+  .t-ok{background:#e6f6ec;color:var(--ok)} .t-div{background:#fdf3d8;color:var(--warn)}
+  .note{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:10px;padding:.85rem 1.05rem;margin:.8rem 0}
+  .note.good{border-left-color:var(--ok)}
+  .legend{display:flex;gap:1rem;align-items:center;font-size:.82rem;margin:.3rem 0 .6rem;flex-wrap:wrap}
+  .sw{width:14px;height:14px;border-radius:3px;display:inline-block;vertical-align:-2px;margin-right:4px}
+  .bar-row{display:flex;align-items:center;gap:.5rem;margin:.18rem 0;font-size:.8rem}
+  .bar-row .uf{width:2.6rem;color:var(--mut)}
+  .bar-track{flex:1;background:#eef0f3;border-radius:4px;overflow:hidden;height:14px}
+  .bar-fill{height:100%;background:var(--lula)}
+  .dv-track{flex:1;display:flex;align-items:center;height:14px}
+  .dv-neg{width:50%;display:flex}.dv-pos{width:50%;display:flex}
+  .dv-zero{width:1px;height:14px;background:#bbb}
+  .dv-fill{height:14px;border-radius:3px}
+  .toggle{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-bottom:.6rem}
+  .toggle button{border:0;background:var(--card);color:var(--mut);padding:.4rem .8rem;cursor:pointer;font:inherit;font-size:.82rem}
+  .toggle button.on{background:var(--accent);color:#fff;font-weight:600}
+  .sw-total{display:flex;justify-content:space-between;align-items:center;margin-top:.6rem;padding-top:.5rem;font-size:.9rem}
+  .sw-total span{color:var(--mut)}
+  footer{color:var(--mut);font-size:.82rem;padding:2rem 0}
+  a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>Verificador Independente — Eleições 2026</h1>
+  <div class="mut">Auditoria reproduzível dos resultados oficiais do TSE · Presidente · 1º e 2º turnos</div>
+</div></header>
+
+<main class="wrap">
+  <div class="note good" style="margin-top:1.2rem">
+    <strong>Conclusão (dados examinados):</strong> não há indício de fraude ou manipulação do resultado.
+    Conciliação (28 federações), swing por seção (~499 mil seções), integridade de transmissão
+    (0 urnas não transmitidas) e testes estatísticos (BH/FDR, DiD) não revelam anomalia.
+    <a href="relatorios/resumo-executivo.md">Resumo executivo →</a>
+  </div>
+
+  <div class="cards" id="kpis"></div>
+
+  <h2>Mapa do 2º turno × resultado por UF</h2>
+  <div class="grid-mapa">
+    <div class="panel">
+      <div class="legend">
+        <span><span class="sw" style="background:var(--lula)"></span>Lula (13)</span>
+        <span><span class="sw" style="background:var(--bolso)"></span>Bolsonaro (22)</span>
+        <span class="mut">intensidade ∝ margem · clique numa UF (mapa ou tabela)</span>
+      </div>
+      <div id="mapa"></div>
+    </div>
+    <div class="panel" style="display:flex;flex-direction:column">
+      <h3>Resultado por UF (2º turno) <span class="mut" id="sel-uf" style="font-weight:400"></span></h3>
+      <div style="flex:1;max-height:520px;overflow:auto">
+        <table id="tab-uf"><thead><tr>
+          <th>UF</th><th>Lula %</th><th>Bolso %</th><th>Venc.</th><th>Swing</th><th>Transm.</th>
+        </tr></thead><tbody></tbody></table>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-top:1.2rem">
+    <h3>Nacional — 1º × 2º turno (% dos votos válidos)</h3>
+    <div id="barras-nac"></div>
+  </div>
+
+  <h2>Swing por UF — comparativo entre os finalistas</h2>
+  <p class="mut" style="margin:.2rem 0 .6rem">Swing = variação do % de votos válidos de cada candidato entre o 1º e o 2º turno, por UF. Alterne entre <strong>p.p.</strong> (intensidade relativa), <strong>votos absolutos</strong> (magnitude) e <strong>crescimento %</strong> (evolução proporcional: Δvotos ÷ votos do 1º turno). Positivo = cresceu.</p>
+  <div class="toggle" id="swing-toggle">
+    <button data-modo="pp" class="on">Pontos percentuais (p.p.)</button>
+    <button data-modo="votos">Quantidade de votos (Δ 2º−1º)</button>
+    <button data-modo="cresc">Crescimento % (2º vs 1º)</button>
+  </div>
+  <div class="grid2">
+    <div class="panel">
+      <h3><span class="sw" style="background:var(--lula)"></span> Swing do nº 13 (Lula) por UF</h3>
+      <div id="swing-13"></div>
+    </div>
+    <div class="panel">
+      <h3><span class="sw" style="background:var(--bolso)"></span> Swing do nº 22 (Bolsonaro) por UF</h3>
+      <div id="swing-22"></div>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-top:1.2rem">
+    <div class="panel">
+      <h3>Dispersão: margem de vitória × swing por UF</h3>
+      <div id="dispersao"></div>
+      <div class="mut" style="font-size:.8rem;margin-top:.4rem">Cada ponto é uma UF (cor = vencedor). Eixo X: margem de vitória no 2º turno; eixo Y: swing do nº 13. A nuvem dispersa indica <strong>ausência de relação</strong> entre tamanho da vitória e mudança entre turnos.</div>
+    </div>
+    <div class="panel">
+      <h3>Distribuição do swing por seção (SP, 103.656 seções)</h3>
+      <div id="histograma"></div>
+      <div class="mut" style="font-size:.8rem;margin-top:.4rem">Eixo X: swing do nº 13 por seção (p.p.); eixo Y: nº de seções. Linha tracejada = mediana. Forma de sino <strong>unimodal e simétrica</strong> — padrão esperado de mudança difusa, sem o pico secundário que indicaria injeção de votos.</div>
+    </div>
+  </div>
+
+  <h2>Contexto histórico — 4 últimas eleições presidenciais</h2>
+  <p class="mut" style="margin:.2rem 0 .6rem">2026 é a <strong>primeira virada</strong> das últimas 4 eleições: nos ciclos anteriores o líder do 1º turno sempre venceu o 2º. A tabela mostra o crescimento % de cada finalista entre turnos.</p>
+  <div class="panel" style="overflow:auto">
+    <table id="tab-hist"><thead><tr>
+      <th>Ano</th><th>Líder 1º turno</th><th>Venceu 2º turno</th><th>Virada?</th>
+      <th>Margem 1T</th><th>Cresc. 1º col.</th><th>Cresc. 2º col.</th>
+    </tr></thead><tbody></tbody></table>
+  </div>
+
+  <div class="panel" style="margin-top:1rem">
+    <h3>Crescimento % entre turnos — líder do 1º turno × 2º colocado</h3>
+    <div class="legend">
+      <span><span class="sw" style="background:#888"></span>Líder do 1º turno</span>
+      <span><span class="sw" style="background:var(--accent)"></span>2º colocado no 1º turno</span>
+      <span class="mut">ano com virada destacado</span>
+    </div>
+    <div id="graf-hist"></div>
+    <div class="mut" style="font-size:.8rem;margin-top:.4rem">Em todos os ciclos o 2º colocado cresceu mais; em 2026 isso bastou para virar, pois a margem do 1º turno (1,87 p.p.) era a menor da série.</div>
+  </div>
+
+  <h2>Integridade e conciliação</h2>
+  <div class="cards" id="integridade"></div>
+
+  <h2>Achados</h2>
+  <div class="note"><strong>AUD-001</strong> — nº 28 presente no BU (como "Leonardo Avalanche"), ausente dos
+    válidos oficiais, só no 1º turno, em todas as UFs. Situação formal de candidatura não divulgada no
+    dataset público; imaterial (não afeta finalistas).</div>
+  <div class="note"><strong>AUD-002</strong> — ZZ/Exterior: contagem de seções do oficial (1.351) difere do
+    BU (1.308) e das esperadas (1.281); 29 urnas "inesperadas" na transmissão. Particularidade dos postos
+    consulares; votos válidos conciliam.</div>
+</main>
+
+<footer class="wrap">
+  Fonte: TSE. Integridade verificada por sha512 (39/39 em cache conferem).
+  Relatórios: <a href="relatorios/resumo-executivo.md">Resumo</a> ·
+  <a href="relatorios/etapa2-conciliacao.md">Conciliação</a> ·
+  <a href="relatorios/etapa4fina-secoes.md">Swing/seção</a> ·
+  <a href="relatorios/etapa5-estatistica.md">DiD</a> ·
+  <a href="relatorios/etapa5-avancada.md">BH/bootstrap</a> ·
+  <a href="relatorios/etapa6-integridade.md">Integridade</a> ·
+  <a href="relatorios/etapa7-pesquisas.md">Pesquisas</a> · <a href="relatorios/qualidade-testes-digitos-assinatura.md">Qualidade (testes/d\u00edgitos/assinatura)</a>.
+</footer>
+
+<script type="module">
+import { UF_PATHS, BRASIL_VIEWBOX } from './js/brasil-ufs.js';
+const sign=n=>(n>0?'+':'')+n.toFixed(2);
+const sign2=n=>(n>0?'+':'')+n;
+const mix=(hex,t)=>{const c=parseInt(hex.slice(1),16),r=c>>16,g=(c>>8)&255,b=c&255;const f=x=>Math.round(x+(255-x)*t);return`rgb(${f(r)},${f(g)},${f(b)})`;};
+const J=u=>fetch(u+'?t='+Date.now(),{cache:'no-store'}).then(r=>r.json());
+
+Promise.all([
+  J('dados/por-uf.json'), J('dados/secoes-turnos.json'), J('dados/etapa6-correspondencia.json'),
+  J('dados/turnos.json'), J('dados/conciliacao-resultado.json'), J('dados/uf-centroides.json'),
+  J('dados/hist-swing-sp.json'),
+  J('dados/historico-comparativo.json'),
+]).then(([porUf,sec,e6,turnos,concil,cen,hist,histc])=>{
+  const LULA='#d94a2b',BOLSO='#2b6fd9';
+  const res={};
+  for(const [uf,r] of Object.entries(porUf)){const t2=r.t2;if(!t2||!t2.validos)continue;
+    const p13=100*t2.v13/t2.validos,p22=100*t2.v22/t2.validos;
+    res[uf]={p13,p22,venc:t2.v13>t2.v22?'13':'22',margem:Math.abs(p13-p22)};}
+  const swing={};for(const u of sec.ufs)if(u.status==='OK')swing[u.uf]=u.swingMediano_pp;
+
+  // KPIs
+  const kpi=[['51,79%','Lula (13) — 2º turno'],['48,21%','Bolsonaro (22) — 2º turno'],
+             ['28','federações auditadas'],[Object.values(swing).every(v=>v>0)?'28/28':'—','UFs c/ swing + p/ nº13']];
+  document.getElementById('kpis').innerHTML=kpi.map(([n,l])=>`<div class="card"><div class="n">${n}</div><div class="l">${l}</div></div>`).join('');
+
+  // MAPA + rótulos + interatividade
+  let sel=null;
+  const paths=Object.entries(UF_PATHS).map(([uf,d])=>{const U=uf.toUpperCase(),r=res[U];
+    let fill='#d4d8dd';if(r){const base=r.venc==='13'?LULA:BOLSO;fill=mix(base,Math.max(0,Math.min(.72,.72-(r.margem/60))));}
+    return `<path class="uf" data-uf="${U}" d="${d}" fill="${fill}" stroke="#fff" stroke-width="1.1"><title>${U}: Lula ${r?r.p13.toFixed(1):'—'}% × Bolsonaro ${r?r.p22.toFixed(1):'—'}%</title></path>`;}).join('');
+  const labels=Object.entries(cen).map(([U,xy])=>res[U]?`<text class="uf-label" x="${xy[0]}" y="${xy[1]}">${U}</text>`:'').join('');
+  document.getElementById('mapa').innerHTML=`<svg viewBox="${BRASIL_VIEWBOX}" role="img" aria-label="Mapa do Brasil por vencedor">${paths}${labels}</svg>`;
+
+  // barras nacional
+  document.getElementById('barras-nac').innerHTML=turnos.finalistas.map(c=>`<div style="margin:.5rem 0">
+    <div class="mut" style="font-size:.82rem">nº${c.num} ${c.nome}</div>
+    <div class="bar-row"><span class="uf">1º</span><div class="bar-track"><div class="bar-fill" style="width:${c.p1}%;background:${c.num==='13'?LULA:BOLSO}"></div></div><span>${c.p1.toFixed(2)}%</span></div>
+    <div class="bar-row"><span class="uf">2º</span><div class="bar-track"><div class="bar-fill" style="width:${c.p2}%;background:${c.num==='13'?LULA:BOLSO}"></div></div><span>${c.p2.toFixed(2)}%</span></div></div>`).join('');
+
+  // ---- swing por UF: p.p. (share) E votos absolutos (Δ 2º−1º) ----
+  const swAgg={};
+  for(const [uf,r] of Object.entries(porUf)){ if(!r.t1||!r.t2||!r.t1.validos||!r.t2.validos) continue;
+    swAgg[uf]={ pp13:100*(r.t2.v13/r.t2.validos - r.t1.v13/r.t1.validos),
+                pp22:100*(r.t2.v22/r.t2.validos - r.t1.v22/r.t1.validos),
+                vt13:r.t2.v13-r.t1.v13, vt22:r.t2.v22-r.t1.v22,
+                g13:r.t1.v13?100*(r.t2.v13-r.t1.v13)/r.t1.v13:0, g22:r.t1.v22?100*(r.t2.v22-r.t1.v22)/r.t1.v22:0 }; }
+  const fmtInt=n=>(n>0?'+':'')+Math.round(n).toLocaleString('pt-BR');
+  let modoSwing='pp';
+  function renderSwing(){
+    const kp = modoSwing==='pp' ? ['pp13','pp22'] : modoSwing==='votos' ? ['vt13','vt22'] : ['g13','g22'];
+    const maxAbs=Math.max(...Object.values(swAgg).flatMap(o=>[Math.abs(o[kp[0]]),Math.abs(o[kp[1]])]));
+    const rotulo = modoSwing==='pp' ? (v=>sign(v)+' p.p.') : modoSwing==='votos' ? (v=>fmtInt(v)) : (v=>sign(v)+'%');
+    function barras(key,cor){
+      const arr=Object.entries(swAgg).sort((a,b)=>b[1][key]-a[1][key]);
+      return arr.map(([uf,o])=>{const v=o[key]; const w=50*Math.abs(v)/maxAbs; const pos=v>=0;
+        return `<div class="bar-row"><span class="uf">${uf==='ZZ'?'ZZ':uf}</span>
+          <div class="dv-track">
+            <div class="dv-neg">${!pos?`<div class="dv-fill" style="width:${w}%;background:#c0392b;margin-left:auto"></div>`:''}</div>
+            <div class="dv-zero"></div>
+            <div class="dv-pos">${pos?`<div class="dv-fill" style="width:${w}%;background:${cor}"></div>`:''}</div>
+          </div><span style="width:5.2rem;text-align:right;font-variant-numeric:tabular-nums">${rotulo(v)}</span></div>`;}).join('');
+    }
+    // somatório nacional (rodapé de cada card)
+    let n13=0,n22=0, T1_13=0,T1_22=0,T2_13=0,T2_22=0,V1=0,V2=0;
+    for(const r of Object.values(porUf)){ if(!r.t1||!r.t2||!r.t1.validos||!r.t2.validos) continue;
+      n13+=r.t2.v13-r.t1.v13; n22+=r.t2.v22-r.t1.v22;
+      T1_13+=r.t1.v13;T1_22+=r.t1.v22;T2_13+=r.t2.v13;T2_22+=r.t2.v22;V1+=r.t1.validos;V2+=r.t2.validos; }
+    const totPP13=100*(T2_13/V2-T1_13/V1), totPP22=100*(T2_22/V2-T1_22/V1);
+    const totG13=T1_13?100*(T2_13-T1_13)/T1_13:0, totG22=T1_22?100*(T2_22-T1_22)/T1_22:0;
+    const valTot=(vt,pp,g)=> modoSwing==='pp'?sign(pp)+' p.p.' : modoSwing==='votos'?fmtInt(vt)+' votos' : sign(g)+'% de crescimento';
+    const rodape=(cor,label,vt,pp,g)=>`<div class="sw-total" style="border-top:2px solid ${cor}">
+      <span>${label}</span><strong style="font-variant-numeric:tabular-nums">${valTot(vt,pp,g)}</strong></div>`;
+    document.getElementById('swing-13').innerHTML=barras(kp[0],LULA)+rodape(LULA,'Total nacional nº 13',n13,totPP13,totG13);
+    document.getElementById('swing-22').innerHTML=barras(kp[1],BOLSO)+rodape(BOLSO,'Total nacional nº 22',n22,totPP22,totG22);
+  }
+  renderSwing();
+  document.querySelectorAll('#swing-toggle button').forEach(b=>b.addEventListener('click',()=>{
+    modoSwing=b.dataset.modo;
+    document.querySelectorAll('#swing-toggle button').forEach(x=>x.classList.toggle('on',x===b));
+    renderSwing();
+  }));
+
+  // ---- DISPERSÃO com eixos numéricos, linha zero e rótulos ----
+  const W=460,H=300,ml=46,mr=14,mt=14,mb=40;
+  const pts=Object.keys(swing).filter(uf=>res[uf]).map(uf=>({uf,x:res[uf].margem,y:swing[uf],venc:res[uf].venc}));
+  const xmax=Math.ceil(Math.max(...pts.map(p=>p.x))/10)*10;
+  const ymin=Math.floor(Math.min(...pts.map(p=>p.y))), ymax=Math.ceil(Math.max(...pts.map(p=>p.y)));
+  const sx=x=>ml+(W-ml-mr)*x/xmax, sy=y=>H-mb-(H-mt-mb)*(y-ymin)/(ymax-ymin||1);
+  let gx='',gy='';
+  for(let t=0;t<=xmax;t+=20){gx+=`<line x1="${sx(t)}" y1="${mt}" x2="${sx(t)}" y2="${H-mb}" stroke="#eef0f3"/><text x="${sx(t)}" y="${H-mb+14}" font-size="10" fill="#5b6472" text-anchor="middle">${t}</text>`;}
+  for(let t=ymin;t<=ymax;t+=2){gy+=`<line x1="${ml}" y1="${sy(t)}" x2="${W-mr}" y2="${sy(t)}" stroke="#eef0f3"/><text x="${ml-6}" y="${sy(t)+3}" font-size="10" fill="#5b6472" text-anchor="end">${sign2(t)}</text>`;}
+  const dots=pts.map(p=>`<g><circle cx="${sx(p.x).toFixed(1)}" cy="${sy(p.y).toFixed(1)}" r="5" fill="${p.venc==='13'?LULA:BOLSO}" opacity=".85"><title>${p.uf}: margem ${p.x.toFixed(1)}pp · swing nº13 ${sign(p.y)}pp</title></circle><text x="${(sx(p.x)+6).toFixed(1)}" y="${(sy(p.y)+3).toFixed(1)}" font-size="8.5" fill="#333">${p.uf}</text></g>`).join('');
+  document.getElementById('dispersao').innerHTML=`<svg viewBox="0 0 ${W} ${H}">${gx}${gy}
+    <line x1="${ml}" y1="${H-mb}" x2="${W-mr}" y2="${H-mb}" stroke="#aab"/>
+    <line x1="${ml}" y1="${mt}" x2="${ml}" y2="${H-mb}" stroke="#aab"/>
+    <text x="${ml+(W-ml-mr)/2}" y="${H-6}" font-size="11" fill="#333" text-anchor="middle">margem de vitória no 2º turno (p.p.)</text>
+    <text x="13" y="${mt+(H-mt-mb)/2}" font-size="11" fill="#333" transform="rotate(-90 13 ${mt+(H-mt-mb)/2})" text-anchor="middle">swing do nº 13 (p.p.)</text>
+    ${dots}</svg>`;
+
+  // ---- HISTOGRAMA com ticks no eixo X, eixo Y e mediana rotulada ----
+  const hb=hist.bins, hmax=Math.max(...hb.map(b=>b.n));
+  const HW=460,HH=300,hl=44,hr=12,ht=14,hbot=40, bw=(HW-hl-hr)/hb.length;
+  const total=hb.reduce((a,b)=>a+b.n,0);
+  // mediana
+  let acc=0,medSwing=0; for(const b of hb){acc+=b.n; if(acc>=total/2){medSwing=b.swing;break;}}
+  const bars=hb.map((b,i)=>{const h=(HH-ht-hbot)*b.n/hmax;const col=b.swing>=0?LULA:BOLSO;
+    return `<rect x="${(hl+i*bw).toFixed(1)}" y="${(HH-hbot-h).toFixed(1)}" width="${(bw-0.5).toFixed(1)}" height="${h.toFixed(1)}" fill="${col}" opacity=".8"><title>${sign2(b.swing)} p.p.: ${b.n.toLocaleString('pt-BR')} seções</title></rect>`;}).join('');
+  // ticks X a cada 5 p.p.
+  let hx='';for(let i=0;i<hb.length;i++){if(hb[i].swing%5===0){const x=hl+i*bw+bw/2; hx+=`<text x="${x.toFixed(1)}" y="${HH-hbot+14}" font-size="10" fill="#5b6472" text-anchor="middle">${sign2(hb[i].swing)}</text><line x1="${x.toFixed(1)}" y1="${HH-hbot}" x2="${x.toFixed(1)}" y2="${HH-hbot+4}" stroke="#aab"/>`;}}
+  // ticks Y
+  let hy='';for(let k=0;k<=4;k++){const val=Math.round(hmax*k/4); const y=HH-hbot-(HH-ht-hbot)*k/4; hy+=`<text x="${hl-6}" y="${y+3}" font-size="10" fill="#5b6472" text-anchor="end">${val.toLocaleString('pt-BR')}</text><line x1="${hl}" y1="${y}" x2="${HW-hr}" y2="${y}" stroke="#f0f2f4"/>`;}
+  const medIdx=hb.findIndex(b=>b.swing===medSwing); const medX=hl+medIdx*bw+bw/2;
+  document.getElementById('histograma').innerHTML=`<svg viewBox="0 0 ${HW} ${HH}">${hy}${bars}${hx}
+    <line x1="${hl}" y1="${ht}" x2="${hl}" y2="${HH-hbot}" stroke="#aab"/>
+    <line x1="${hl}" y1="${HH-hbot}" x2="${HW-hr}" y2="${HH-hbot}" stroke="#aab"/>
+    <line x1="${medX.toFixed(1)}" y1="${ht}" x2="${medX.toFixed(1)}" y2="${HH-hbot}" stroke="#444" stroke-dasharray="4"/>
+    <text x="${medX.toFixed(1)}" y="${ht+10}" font-size="10" fill="#444" text-anchor="middle">mediana ${sign2(medSwing)}</text>
+    <text x="${hl+(HW-hl-hr)/2}" y="${HH-6}" font-size="11" fill="#333" text-anchor="middle">swing do nº 13 por seção (p.p.)</text>
+    <text x="12" y="${ht+(HH-ht-hbot)/2}" font-size="11" fill="#333" transform="rotate(-90 12 ${ht+(HH-ht-hbot)/2})" text-anchor="middle">nº de seções</text></svg>`;
+
+  // integridade
+  const completas=e6.resumo?e6.resumo.completas:e6.ufs.filter(u=>u.completa).length;
+  const cOk=(concil.resultados||[]).filter(r=>r.concilia).length,cTot=(concil.resultados||[]).length;
+  const ig=[[`${completas}/28`,'UFs: esperadas = efetivadas'],['0','urnas não transmitidas (nacional)'],
+            [`${cOk}/${cTot}`,'conciliações BU×oficial sem diferença'],['100%','BUs (cache) sha512 = oficial'],['11/11','testes automatizados OK'],['\u03c7\u00b2<cr\u00edtico','\u00faltimo d\u00edgito ~ uniforme (calibrado)'],['100%','urnas com assinatura digital (RR)']];
+  document.getElementById('integridade').innerHTML=ig.map(([n,l])=>`<div class="card"><div class="n">${n}</div><div class="l">${l}</div></div>`).join('');
+
+  // tabela + interatividade
+  const e6map={};for(const u of e6.ufs)e6map[u.uf]=u;
+  const rows=Object.keys(res).sort().map(uf=>{const r=res[uf],s=swing[uf],t=e6map[uf];
+    const trans=t&&t.completa?'<span class="tag t-ok">100%</span>':(t?'<span class="tag t-div">ver nota</span>':'—');
+    const vn=r.venc==='13'?'<span style="color:var(--lula);font-weight:700">Lula</span>':'<span style="color:var(--bolso);font-weight:700">Bolsonaro</span>';
+    return `<tr data-uf="${uf}"><td>${uf==='ZZ'?'ZZ (Ext.)':uf}</td><td>${r.p13.toFixed(1)}</td><td>${r.p22.toFixed(1)}</td><td>${vn}</td><td>${s!=null?sign(s):'—'}</td><td>${trans}</td></tr>`;}).join('');
+  document.querySelector('#tab-uf tbody').innerHTML=rows;
+
+  // seleção bidirecional mapa <-> tabela
+  const selLabel=document.getElementById('sel-uf');
+  function selecionar(uf, origem){
+    document.querySelectorAll('path.uf').forEach(x=>x.classList.toggle('sel',x.dataset.uf===uf));
+    document.querySelectorAll('#tab-uf tbody tr').forEach(tr=>{
+      const on=tr.dataset.uf===uf; tr.classList.toggle('hl',on);
+      if(on && origem==='mapa') tr.scrollIntoView({block:'nearest',behavior:'smooth'});
+    });
+    const r=res[uf];
+    selLabel.textContent = r ? `· ${uf==='ZZ'?'ZZ (Exterior)':uf}: Lula ${r.p13.toFixed(1)}% × Bolsonaro ${r.p22.toFixed(1)}%` : '';
+  }
+  document.querySelectorAll('path.uf').forEach(p=>p.addEventListener('click',()=>selecionar(p.dataset.uf,'mapa')));
+  document.querySelectorAll('#tab-uf tbody tr').forEach(tr=>{
+    tr.style.cursor='pointer';
+    tr.addEventListener('click',()=>selecionar(tr.dataset.uf,'tabela'));
+  });
+
+  // ---- tabela histórica (4 eleições) ----
+  if(histc && histc.ciclos){
+    const marg={'2014':'+8,0','2018':'+16,8','2022':'+5,2','2026':'+1,87'};
+    const rows=Object.keys(histc.ciclos).sort().map(ano=>{
+      const c=histc.ciclos[ano];
+      const cl=c.crescimento[c.lider1T.num]; const vn=c.vencedor2T.num;
+      const c1=c.crescimento[c.lider1T.num]?c.crescimento[c.lider1T.num].crescPct:null;
+      const nums=Object.keys(c.crescimento);
+      const seg=nums.find(n=>n!==c.lider1T.num);
+      const c2=seg?c.crescimento[seg].crescPct:null;
+      const vir=c.houveVirada?'<span class="tag t-div">SIM</span>':'<span class="tag t-ok">não</span>';
+      return `<tr><td><strong>${ano}</strong></td><td>${c.lider1T.nome} (${c.lider1T.pct}%)</td>
+        <td>${c.vencedor2T.nome} (${c.vencedor2T.pct}%)</td><td>${vir}</td>
+        <td>${marg[ano]||'—'} p.p.</td><td>+${c1}%</td><td>+${c2}%</td></tr>`;}).join('');
+    document.querySelector('#tab-hist tbody').innerHTML=rows;
+    // gráfico de barras agrupadas: crescimento % por ciclo (líder 1T vs 2º colocado)
+    const anos=Object.keys(histc.ciclos).sort();
+    const dadosG=anos.map(ano=>{const c=histc.ciclos[ano];
+      const nL=c.lider1T.num; const nS=Object.keys(c.crescimento).find(n=>n!==nL);
+      return {ano, lider:c.crescimento[nL].crescPct, seg:c.crescimento[nS]?c.crescimento[nS].crescPct:0, virada:c.houveVirada};});
+    const GW=520,GH=300,gl=42,gr=14,gt=16,gb=42;
+    const maxV=Math.ceil(Math.max(...dadosG.flatMap(d=>[d.lider,d.seg]))/10)*10;
+    const gy=y=>GH-gb-(GH-gt-gb)*y/maxV;
+    const grupoW=(GW-gl-gr)/anos.length, barW=grupoW*0.28;
+    let eixoY='';for(let t=0;t<=maxV;t+=10){eixoY+=`<line x1="${gl}" y1="${gy(t)}" x2="${GW-gr}" y2="${gy(t)}" stroke="#eef0f3"/><text x="${gl-6}" y="${gy(t)+3}" font-size="10" fill="#5b6472" text-anchor="end">${t}%</text>`;}
+    const grupos=dadosG.map((d,i)=>{const x0=gl+i*grupoW+grupoW/2;
+      const xL=x0-barW-2, xS=x0+2;
+      const hL=GH-gb-gy(d.lider), hS=GH-gb-gy(d.seg);
+      const destaque=d.virada?`<rect x="${(gl+i*grupoW+2).toFixed(1)}" y="${gt}" width="${(grupoW-4).toFixed(1)}" height="${GH-gt-gb}" fill="#fff6e8"/>`:'';
+      return `${destaque}
+        <rect x="${xL.toFixed(1)}" y="${gy(d.lider).toFixed(1)}" width="${barW.toFixed(1)}" height="${hL.toFixed(1)}" fill="#888"><title>${d.ano} líder 1T: +${d.lider}%</title></rect>
+        <text x="${(xL+barW/2).toFixed(1)}" y="${(gy(d.lider)-3).toFixed(1)}" font-size="9" fill="#555" text-anchor="middle">+${d.lider}%</text>
+        <rect x="${xS.toFixed(1)}" y="${gy(d.seg).toFixed(1)}" width="${barW.toFixed(1)}" height="${hS.toFixed(1)}" fill="#2b6fd9"><title>${d.ano} 2º colocado: +${d.seg}%</title></rect>
+        <text x="${(xS+barW/2).toFixed(1)}" y="${(gy(d.seg)-3).toFixed(1)}" font-size="9" fill="#2b6fd9" text-anchor="middle">+${d.seg}%</text>
+        <text x="${x0.toFixed(1)}" y="${GH-gb+16}" font-size="11" fill="#333" text-anchor="middle" font-weight="${d.virada?'700':'400'}">${d.ano}${d.virada?' ⚡':''}</text>`;}).join('');
+    document.getElementById('graf-hist').innerHTML=`<svg viewBox="0 0 ${GW} ${GH}">${eixoY}
+      <line x1="${gl}" y1="${GH-gb}" x2="${GW-gr}" y2="${GH-gb}" stroke="#aab"/>
+      <line x1="${gl}" y1="${gt}" x2="${gl}" y2="${GH-gb}" stroke="#aab"/>
+      <text x="13" y="${gt+(GH-gt-gb)/2}" font-size="11" fill="#333" transform="rotate(-90 13 ${gt+(GH-gt-gb)/2})" text-anchor="middle">crescimento 2º/1º turno (%)</text>
+      ${grupos}</svg>`;
+  }
+}).catch(e=>{document.getElementById('kpis').innerHTML='<div class="card"><div class="l">Falha: '+e+'</div></div>';});
+</script>
+</body>
+</html>

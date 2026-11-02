@@ -1,0 +1,1853 @@
+{
+ "geradoDe": "BU bruto x resultado oficial TSE (Presidente)",
+ "resultados": [
+  {
+   "uf": "AC",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 2270,
+    "aptos": 613742,
+    "comparecimento": 488330,
+    "validos": 469089,
+    "brancos": 5579,
+    "nulos": 13662
+   },
+   "oficial": {
+    "secoes": 2270,
+    "aptos": 613742,
+    "comparecimento": 488330,
+    "validos": 469066,
+    "brancos": 5579,
+    "nulos": 13662
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 23,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 23
+   },
+   "concilia": false
+  },
+  {
+   "uf": "AL",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 7101,
+    "aptos": 2442126,
+    "comparecimento": 1938428,
+    "validos": 1818929,
+    "brancos": 33712,
+    "nulos": 85787
+   },
+   "oficial": {
+    "secoes": 7101,
+    "aptos": 2442126,
+    "comparecimento": 1938428,
+    "validos": 1818856,
+    "brancos": 33712,
+    "nulos": 85787
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 73,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 73
+   },
+   "concilia": false
+  },
+  {
+   "uf": "AP",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 1914,
+    "aptos": 576988,
+    "comparecimento": 476562,
+    "validos": 464875,
+    "brancos": 4415,
+    "nulos": 7272
+   },
+   "oficial": {
+    "secoes": 1914,
+    "aptos": 576988,
+    "comparecimento": 476562,
+    "validos": 464858,
+    "brancos": 4415,
+    "nulos": 7272
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 17,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 17
+   },
+   "concilia": false
+  },
+  {
+   "uf": "AM",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 8157,
+    "aptos": 2798611,
+    "comparecimento": 2234549,
+    "validos": 2170845,
+    "brancos": 24402,
+    "nulos": 39302
+   },
+   "oficial": {
+    "secoes": 8157,
+    "aptos": 2798611,
+    "comparecimento": 2234549,
+    "validos": 2170763,
+    "brancos": 24402,
+    "nulos": 39302
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 82,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 82
+   },
+   "concilia": false
+  },
+  {
+   "uf": "BA",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 35476,
+    "aptos": 11312752,
+    "comparecimento": 9053601,
+    "validos": 8560542,
+    "brancos": 154936,
+    "nulos": 338123
+   },
+   "oficial": {
+    "secoes": 35476,
+    "aptos": 11312752,
+    "comparecimento": 9053601,
+    "validos": 8560291,
+    "brancos": 154936,
+    "nulos": 338123
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 251,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 251
+   },
+   "concilia": false
+  },
+  {
+   "uf": "CE",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 23765,
+    "aptos": 6996545,
+    "comparecimento": 5910471,
+    "validos": 5617991,
+    "brancos": 103295,
+    "nulos": 189185
+   },
+   "oficial": {
+    "secoes": 23765,
+    "aptos": 6996545,
+    "comparecimento": 5910471,
+    "validos": 5617814,
+    "brancos": 103295,
+    "nulos": 189185
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 177,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 177
+   },
+   "concilia": false
+  },
+  {
+   "uf": "DF",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 6969,
+    "aptos": 2258320,
+    "comparecimento": 1831396,
+    "validos": 1772865,
+    "brancos": 25362,
+    "nulos": 33169
+   },
+   "oficial": {
+    "secoes": 6969,
+    "aptos": 2258320,
+    "comparecimento": 1831396,
+    "validos": 1772808,
+    "brancos": 25362,
+    "nulos": 33169
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 57,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 57
+   },
+   "concilia": false
+  },
+  {
+   "uf": "ES",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 9844,
+    "aptos": 2991650,
+    "comparecimento": 2352282,
+    "validos": 2251199,
+    "brancos": 43211,
+    "nulos": 57872
+   },
+   "oficial": {
+    "secoes": 9844,
+    "aptos": 2991650,
+    "comparecimento": 2352282,
+    "validos": 2251078,
+    "brancos": 43211,
+    "nulos": 57872
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 121,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 121
+   },
+   "concilia": false
+  },
+  {
+   "uf": "GO",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 15686,
+    "aptos": 5080590,
+    "comparecimento": 3971587,
+    "validos": 3827930,
+    "brancos": 45643,
+    "nulos": 98014
+   },
+   "oficial": {
+    "secoes": 15686,
+    "aptos": 5080590,
+    "comparecimento": 3971587,
+    "validos": 3827823,
+    "brancos": 45643,
+    "nulos": 98014
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 107,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 107
+   },
+   "concilia": false
+  },
+  {
+   "uf": "MA",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 18093,
+    "aptos": 5183115,
+    "comparecimento": 4160343,
+    "validos": 4010784,
+    "brancos": 46315,
+    "nulos": 103244
+   },
+   "oficial": {
+    "secoes": 18093,
+    "aptos": 5183115,
+    "comparecimento": 4160343,
+    "validos": 4010439,
+    "brancos": 46315,
+    "nulos": 103244
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 345,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 345
+   },
+   "concilia": false
+  },
+  {
+   "uf": "MT",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 8287,
+    "aptos": 2637801,
+    "comparecimento": 2052133,
+    "validos": 1993383,
+    "brancos": 20756,
+    "nulos": 37994
+   },
+   "oficial": {
+    "secoes": 8287,
+    "aptos": 2637801,
+    "comparecimento": 2052133,
+    "validos": 1993288,
+    "brancos": 20756,
+    "nulos": 37994
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 95,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 95
+   },
+   "concilia": false
+  },
+  {
+   "uf": "MS",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 7106,
+    "aptos": 2024430,
+    "comparecimento": 1541220,
+    "validos": 1490354,
+    "brancos": 21270,
+    "nulos": 29596
+   },
+   "oficial": {
+    "secoes": 7106,
+    "aptos": 2024430,
+    "comparecimento": 1541220,
+    "validos": 1490278,
+    "brancos": 21270,
+    "nulos": 29596
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 76,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 76
+   },
+   "concilia": false
+  },
+  {
+   "uf": "MG",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 52062,
+    "aptos": 16372372,
+    "comparecimento": 12637274,
+    "validos": 11976796,
+    "brancos": 268302,
+    "nulos": 392176
+   },
+   "oficial": {
+    "secoes": 52062,
+    "aptos": 16372372,
+    "comparecimento": 12637274,
+    "validos": 11976235,
+    "brancos": 268302,
+    "nulos": 392176
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 561,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 561
+   },
+   "concilia": false
+  },
+  {
+   "uf": "PA",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 20827,
+    "aptos": 6262397,
+    "comparecimento": 5066504,
+    "validos": 4863355,
+    "brancos": 54203,
+    "nulos": 148946
+   },
+   "oficial": {
+    "secoes": 20827,
+    "aptos": 6262397,
+    "comparecimento": 5066504,
+    "validos": 4863172,
+    "brancos": 54203,
+    "nulos": 148946
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 183,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 183
+   },
+   "concilia": false
+  },
+  {
+   "uf": "PB",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 10712,
+    "aptos": 3248531,
+    "comparecimento": 2683988,
+    "validos": 2513837,
+    "brancos": 52297,
+    "nulos": 117854
+   },
+   "oficial": {
+    "secoes": 10712,
+    "aptos": 3248531,
+    "comparecimento": 2683988,
+    "validos": 2513747,
+    "brancos": 52297,
+    "nulos": 117854
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 90,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 90
+   },
+   "concilia": false
+  },
+  {
+   "uf": "PR",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 27142,
+    "aptos": 8613657,
+    "comparecimento": 6841457,
+    "validos": 6585511,
+    "brancos": 122499,
+    "nulos": 133447
+   },
+   "oficial": {
+    "secoes": 27142,
+    "aptos": 8613657,
+    "comparecimento": 6841457,
+    "validos": 6585243,
+    "brancos": 122499,
+    "nulos": 133447
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 268,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 268
+   },
+   "concilia": false
+  },
+  {
+   "uf": "PE",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 21418,
+    "aptos": 7223450,
+    "comparecimento": 5911062,
+    "validos": 5601155,
+    "brancos": 109491,
+    "nulos": 200416
+   },
+   "oficial": {
+    "secoes": 21418,
+    "aptos": 7223450,
+    "comparecimento": 5911062,
+    "validos": 5601017,
+    "brancos": 109491,
+    "nulos": 200416
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 138,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 138
+   },
+   "concilia": false
+  },
+  {
+   "uf": "PI",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 10225,
+    "aptos": 2704758,
+    "comparecimento": 2240883,
+    "validos": 2146446,
+    "brancos": 28329,
+    "nulos": 66108
+   },
+   "oficial": {
+    "secoes": 10225,
+    "aptos": 2704758,
+    "comparecimento": 2240883,
+    "validos": 2146394,
+    "brancos": 28329,
+    "nulos": 66108
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 52,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 52
+   },
+   "concilia": false
+  },
+  {
+   "uf": "RJ",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 37675,
+    "aptos": 12857648,
+    "comparecimento": 9859802,
+    "validos": 9370087,
+    "brancos": 201979,
+    "nulos": 287736
+   },
+   "oficial": {
+    "secoes": 37675,
+    "aptos": 12857648,
+    "comparecimento": 9859802,
+    "validos": 9369700,
+    "brancos": 201979,
+    "nulos": 287736
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 387,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 387
+   },
+   "concilia": false
+  },
+  {
+   "uf": "RN",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 8115,
+    "aptos": 2659825,
+    "comparecimento": 2171013,
+    "validos": 2071961,
+    "brancos": 33172,
+    "nulos": 65880
+   },
+   "oficial": {
+    "secoes": 8115,
+    "aptos": 2659825,
+    "comparecimento": 2171013,
+    "validos": 2071898,
+    "brancos": 33172,
+    "nulos": 65880
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 63,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 63
+   },
+   "concilia": false
+  },
+  {
+   "uf": "RS",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 27547,
+    "aptos": 8522545,
+    "comparecimento": 6702903,
+    "validos": 6423299,
+    "brancos": 148339,
+    "nulos": 131265
+   },
+   "oficial": {
+    "secoes": 27547,
+    "aptos": 8522545,
+    "comparecimento": 6702903,
+    "validos": 6423046,
+    "brancos": 148339,
+    "nulos": 131265
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 253,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 253
+   },
+   "concilia": false
+  },
+  {
+   "uf": "RO",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 4698,
+    "aptos": 1265893,
+    "comparecimento": 991080,
+    "validos": 968125,
+    "brancos": 9846,
+    "nulos": 13109
+   },
+   "oficial": {
+    "secoes": 4698,
+    "aptos": 1265893,
+    "comparecimento": 991080,
+    "validos": 968059,
+    "brancos": 9846,
+    "nulos": 13109
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 66,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 66
+   },
+   "concilia": false
+  },
+  {
+   "uf": "RR",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 1519,
+    "aptos": 401521,
+    "comparecimento": 332772,
+    "validos": 325559,
+    "brancos": 2618,
+    "nulos": 4595
+   },
+   "oficial": {
+    "secoes": 1519,
+    "aptos": 401521,
+    "comparecimento": 332772,
+    "validos": 325545,
+    "brancos": 2618,
+    "nulos": 4595
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 14,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 14
+   },
+   "concilia": false
+  },
+  {
+   "uf": "SC",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 17326,
+    "aptos": 5734651,
+    "comparecimento": 4648159,
+    "validos": 4501081,
+    "brancos": 69007,
+    "nulos": 78071
+   },
+   "oficial": {
+    "secoes": 17326,
+    "aptos": 5734651,
+    "comparecimento": 4648159,
+    "validos": 4500897,
+    "brancos": 69007,
+    "nulos": 78071
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 184,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 184
+   },
+   "concilia": false
+  },
+  {
+   "uf": "SP",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 103656,
+    "aptos": 34122892,
+    "comparecimento": 26431992,
+    "validos": 24884303,
+    "brancos": 632801,
+    "nulos": 914888
+   },
+   "oficial": {
+    "secoes": 103656,
+    "aptos": 34122892,
+    "comparecimento": 26431992,
+    "validos": 24882948,
+    "brancos": 632801,
+    "nulos": 914888
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 1355,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 1355
+   },
+   "concilia": false
+  },
+  {
+   "uf": "SE",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 5923,
+    "aptos": 1740135,
+    "comparecimento": 1439082,
+    "validos": 1364253,
+    "brancos": 24859,
+    "nulos": 49970
+   },
+   "oficial": {
+    "secoes": 5923,
+    "aptos": 1740135,
+    "comparecimento": 1439082,
+    "validos": 1364196,
+    "brancos": 24859,
+    "nulos": 49970
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 57,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 57
+   },
+   "concilia": false
+  },
+  {
+   "uf": "TO",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 4384,
+    "aptos": 1182023,
+    "comparecimento": 965196,
+    "validos": 930475,
+    "brancos": 8344,
+    "nulos": 26377
+   },
+   "oficial": {
+    "secoes": 4384,
+    "aptos": 1182023,
+    "comparecimento": 965196,
+    "validos": 930447,
+    "brancos": 8344,
+    "nulos": 26377
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 28,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 28
+   },
+   "concilia": false
+  },
+  {
+   "uf": "ZZ",
+   "turno": 1,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 1309,
+    "aptos": 916039,
+    "comparecimento": 341766,
+    "validos": 331005,
+    "brancos": 5816,
+    "nulos": 4945
+   },
+   "oficial": {
+    "secoes": 1351,
+    "aptos": 916534,
+    "comparecimento": 341766,
+    "validos": 330882,
+    "brancos": 5816,
+    "nulos": 4945
+   },
+   "diferencaAbsoluta": {
+    "secoes": -42,
+    "aptos": -495,
+    "comparecimento": 0,
+    "validos": 123,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {
+    "28": 123
+   },
+   "concilia": false
+  },
+  {
+   "uf": "AC",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 2270,
+    "aptos": 613715,
+    "comparecimento": 453654,
+    "validos": 432228,
+    "brancos": 5016,
+    "nulos": 16410
+   },
+   "oficial": {
+    "secoes": 2270,
+    "aptos": 613715,
+    "comparecimento": 453654,
+    "validos": 432228,
+    "brancos": 5016,
+    "nulos": 16410
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "AL",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 7101,
+    "aptos": 2442081,
+    "comparecimento": 1951632,
+    "validos": 1896761,
+    "brancos": 16983,
+    "nulos": 37888
+   },
+   "oficial": {
+    "secoes": 7101,
+    "aptos": 2442081,
+    "comparecimento": 1951632,
+    "validos": 1896761,
+    "brancos": 16983,
+    "nulos": 37888
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "AP",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 1914,
+    "aptos": 576910,
+    "comparecimento": 429975,
+    "validos": 421642,
+    "brancos": 3320,
+    "nulos": 5013
+   },
+   "oficial": {
+    "secoes": 1914,
+    "aptos": 576910,
+    "comparecimento": 429975,
+    "validos": 421642,
+    "brancos": 3320,
+    "nulos": 5013
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "AM",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 8157,
+    "aptos": 2798661,
+    "comparecimento": 2192059,
+    "validos": 2121028,
+    "brancos": 18324,
+    "nulos": 52707
+   },
+   "oficial": {
+    "secoes": 8157,
+    "aptos": 2798661,
+    "comparecimento": 2192059,
+    "validos": 2121028,
+    "brancos": 18324,
+    "nulos": 52707
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "BA",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 35476,
+    "aptos": 11312891,
+    "comparecimento": 9422047,
+    "validos": 9094019,
+    "brancos": 92721,
+    "nulos": 235307
+   },
+   "oficial": {
+    "secoes": 35476,
+    "aptos": 11312891,
+    "comparecimento": 9422047,
+    "validos": 9094019,
+    "brancos": 92721,
+    "nulos": 235307
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "CE",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 23765,
+    "aptos": 6996521,
+    "comparecimento": 6024843,
+    "validos": 5855602,
+    "brancos": 56386,
+    "nulos": 112855
+   },
+   "oficial": {
+    "secoes": 23765,
+    "aptos": 6996521,
+    "comparecimento": 6024843,
+    "validos": 5855602,
+    "brancos": 56386,
+    "nulos": 112855
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "DF",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 6969,
+    "aptos": 2258995,
+    "comparecimento": 1868280,
+    "validos": 1804766,
+    "brancos": 22386,
+    "nulos": 41128
+   },
+   "oficial": {
+    "secoes": 6969,
+    "aptos": 2258995,
+    "comparecimento": 1868280,
+    "validos": 1804766,
+    "brancos": 22386,
+    "nulos": 41128
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "ES",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 9844,
+    "aptos": 2991515,
+    "comparecimento": 2409214,
+    "validos": 2296469,
+    "brancos": 33080,
+    "nulos": 79665
+   },
+   "oficial": {
+    "secoes": 9844,
+    "aptos": 2991515,
+    "comparecimento": 2409214,
+    "validos": 2296469,
+    "brancos": 33080,
+    "nulos": 79665
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "GO",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 15686,
+    "aptos": 5080385,
+    "comparecimento": 4047280,
+    "validos": 3930889,
+    "brancos": 43214,
+    "nulos": 73177
+   },
+   "oficial": {
+    "secoes": 15686,
+    "aptos": 5080385,
+    "comparecimento": 4047280,
+    "validos": 3930889,
+    "brancos": 43214,
+    "nulos": 73177
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "MA",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 18093,
+    "aptos": 5183049,
+    "comparecimento": 4127771,
+    "validos": 4038202,
+    "brancos": 30855,
+    "nulos": 58714
+   },
+   "oficial": {
+    "secoes": 18093,
+    "aptos": 5183049,
+    "comparecimento": 4127771,
+    "validos": 4038202,
+    "brancos": 30855,
+    "nulos": 58714
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "MT",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 8287,
+    "aptos": 2637879,
+    "comparecimento": 2085334,
+    "validos": 2045266,
+    "brancos": 15431,
+    "nulos": 24637
+   },
+   "oficial": {
+    "secoes": 8287,
+    "aptos": 2637879,
+    "comparecimento": 2085334,
+    "validos": 2045266,
+    "brancos": 15431,
+    "nulos": 24637
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "MS",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 7106,
+    "aptos": 2024437,
+    "comparecimento": 1594460,
+    "validos": 1556865,
+    "brancos": 14958,
+    "nulos": 22637
+   },
+   "oficial": {
+    "secoes": 7106,
+    "aptos": 2024437,
+    "comparecimento": 1594460,
+    "validos": 1556865,
+    "brancos": 14958,
+    "nulos": 22637
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "MG",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 52062,
+    "aptos": 16372144,
+    "comparecimento": 13044203,
+    "validos": 12592885,
+    "brancos": 164141,
+    "nulos": 287177
+   },
+   "oficial": {
+    "secoes": 52062,
+    "aptos": 16372144,
+    "comparecimento": 13044203,
+    "validos": 12592885,
+    "brancos": 164141,
+    "nulos": 287177
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "PA",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 20827,
+    "aptos": 6262063,
+    "comparecimento": 4989573,
+    "validos": 4890389,
+    "brancos": 36501,
+    "nulos": 62683
+   },
+   "oficial": {
+    "secoes": 20827,
+    "aptos": 6262063,
+    "comparecimento": 4989573,
+    "validos": 4890389,
+    "brancos": 36501,
+    "nulos": 62683
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "PB",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 10712,
+    "aptos": 3248434,
+    "comparecimento": 2743560,
+    "validos": 2659269,
+    "brancos": 25943,
+    "nulos": 58348
+   },
+   "oficial": {
+    "secoes": 10712,
+    "aptos": 3248434,
+    "comparecimento": 2743560,
+    "validos": 2659269,
+    "brancos": 25943,
+    "nulos": 58348
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "PR",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 27142,
+    "aptos": 8613628,
+    "comparecimento": 7059339,
+    "validos": 6857948,
+    "brancos": 82572,
+    "nulos": 118819
+   },
+   "oficial": {
+    "secoes": 27142,
+    "aptos": 8613628,
+    "comparecimento": 7059339,
+    "validos": 6857948,
+    "brancos": 82572,
+    "nulos": 118819
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "PE",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 21418,
+    "aptos": 7223227,
+    "comparecimento": 6126467,
+    "validos": 5950067,
+    "brancos": 56758,
+    "nulos": 119642
+   },
+   "oficial": {
+    "secoes": 21418,
+    "aptos": 7223227,
+    "comparecimento": 6126467,
+    "validos": 5950067,
+    "brancos": 56758,
+    "nulos": 119642
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "PI",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 10225,
+    "aptos": 2704695,
+    "comparecimento": 2239830,
+    "validos": 2179848,
+    "brancos": 16137,
+    "nulos": 43845
+   },
+   "oficial": {
+    "secoes": 10225,
+    "aptos": 2704695,
+    "comparecimento": 2239830,
+    "validos": 2179848,
+    "brancos": 16137,
+    "nulos": 43845
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "RJ",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 37675,
+    "aptos": 12857526,
+    "comparecimento": 10077449,
+    "validos": 9734426,
+    "brancos": 111682,
+    "nulos": 231341
+   },
+   "oficial": {
+    "secoes": 37675,
+    "aptos": 12857526,
+    "comparecimento": 10077449,
+    "validos": 9734426,
+    "brancos": 111682,
+    "nulos": 231341
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "RN",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 8115,
+    "aptos": 2659867,
+    "comparecimento": 2232823,
+    "validos": 2151005,
+    "brancos": 19939,
+    "nulos": 61879
+   },
+   "oficial": {
+    "secoes": 8115,
+    "aptos": 2659867,
+    "comparecimento": 2232823,
+    "validos": 2151005,
+    "brancos": 19939,
+    "nulos": 61879
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "RS",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 27547,
+    "aptos": 8522318,
+    "comparecimento": 6889638,
+    "validos": 6698930,
+    "brancos": 89463,
+    "nulos": 101245
+   },
+   "oficial": {
+    "secoes": 27547,
+    "aptos": 8522318,
+    "comparecimento": 6889638,
+    "validos": 6698930,
+    "brancos": 89463,
+    "nulos": 101245
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "RO",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 4698,
+    "aptos": 1265926,
+    "comparecimento": 988489,
+    "validos": 968828,
+    "brancos": 8361,
+    "nulos": 11300
+   },
+   "oficial": {
+    "secoes": 4698,
+    "aptos": 1265926,
+    "comparecimento": 988489,
+    "validos": 968828,
+    "brancos": 8361,
+    "nulos": 11300
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "RR",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 1519,
+    "aptos": 401540,
+    "comparecimento": 308597,
+    "validos": 303180,
+    "brancos": 2176,
+    "nulos": 3241
+   },
+   "oficial": {
+    "secoes": 1519,
+    "aptos": 401540,
+    "comparecimento": 308597,
+    "validos": 303180,
+    "brancos": 2176,
+    "nulos": 3241
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "SC",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 17326,
+    "aptos": 5734687,
+    "comparecimento": 4762303,
+    "validos": 4638385,
+    "brancos": 48674,
+    "nulos": 75244
+   },
+   "oficial": {
+    "secoes": 17326,
+    "aptos": 5734687,
+    "comparecimento": 4762303,
+    "validos": 4638385,
+    "brancos": 48674,
+    "nulos": 75244
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "SP",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 103656,
+    "aptos": 34123591,
+    "comparecimento": 27364389,
+    "validos": 26258452,
+    "brancos": 389606,
+    "nulos": 716331
+   },
+   "oficial": {
+    "secoes": 103656,
+    "aptos": 34123591,
+    "comparecimento": 27364389,
+    "validos": 26258452,
+    "brancos": 389606,
+    "nulos": 716331
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "SE",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 5923,
+    "aptos": 1740093,
+    "comparecimento": 1466659,
+    "validos": 1422395,
+    "brancos": 13135,
+    "nulos": 31129
+   },
+   "oficial": {
+    "secoes": 5923,
+    "aptos": 1740093,
+    "comparecimento": 1466659,
+    "validos": 1422395,
+    "brancos": 13135,
+    "nulos": 31129
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "TO",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 4384,
+    "aptos": 1182041,
+    "comparecimento": 954763,
+    "validos": 910878,
+    "brancos": 8059,
+    "nulos": 35826
+   },
+   "oficial": {
+    "secoes": 4384,
+    "aptos": 1182041,
+    "comparecimento": 954763,
+    "validos": 910878,
+    "brancos": 8059,
+    "nulos": 35826
+   },
+   "diferencaAbsoluta": {
+    "secoes": 0,
+    "aptos": 0,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": true
+  },
+  {
+   "uf": "ZZ",
+   "turno": 2,
+   "status": "OK",
+   "totalizacaoFinal": true,
+   "reconstruido": {
+    "secoes": 1308,
+    "aptos": 916158,
+    "comparecimento": 381443,
+    "validos": 371651,
+    "brancos": 4675,
+    "nulos": 5117
+   },
+   "oficial": {
+    "secoes": 1351,
+    "aptos": 916683,
+    "comparecimento": 381443,
+    "validos": 371651,
+    "brancos": 4675,
+    "nulos": 5117
+   },
+   "diferencaAbsoluta": {
+    "secoes": -43,
+    "aptos": -525,
+    "comparecimento": 0,
+    "validos": 0,
+    "brancos": 0,
+    "nulos": 0
+   },
+   "diferencaPorCandidato": {},
+   "concilia": false
+  }
+ ]
+}

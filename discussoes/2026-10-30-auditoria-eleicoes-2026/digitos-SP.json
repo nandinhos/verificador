@@ -1,0 +1,20 @@
+{
+ "uf": "SP",
+ "geradoDe": "teste de ultimo digito calibrado (Presidente, 2T)",
+ "nota": "Benford 1o digito NAO aplicavel a votos por secao (tamanho limitado); nao usado.",
+ "chi2CriticoAlpha5_9gl": 16.919,
+ "candidatos": {
+  "13": {
+   "secoes": 103649,
+   "chi2": 8.629,
+   "rejeitaUniforme5pct": false,
+   "taxaFalsosPositivosSimulada": 0.04
+  },
+  "22": {
+   "secoes": 103612,
+   "chi2": 7.647,
+   "rejeitaUniforme5pct": false,
+   "taxaFalsosPositivosSimulada": 0.05
+  }
+ }
+}

@@ -1,0 +1,2917 @@
+{
+ "geradoDe": "Etapa 4 fina consolidada - 28 federacoes (swing no13 por secao)",
+ "ufs": [
+  {
+   "uf": "AC",
+   "status": "OK",
+   "secoes1t": 2270,
+   "secoes2t": 2270,
+   "pareadas": 2270,
+   "usadas": 2270,
+   "swingMediano_pp": 4.67,
+   "swingMedio_pp": 4.703,
+   "swingDesvio_pp": 3.345,
+   "mad_pp": 2.0,
+   "outliers": [
+    {
+     "secao": "1554-3-160",
+     "swing_pp": -35.49,
+     "zRobusto": -13.55,
+     "validos2t": 152
+    },
+    {
+     "secao": "1139-7-67",
+     "swing_pp": 41.55,
+     "zRobusto": 12.44,
+     "validos2t": 66
+    },
+    {
+     "secao": "1031-3-95",
+     "swing_pp": 31.51,
+     "zRobusto": 9.05,
+     "validos2t": 221
+    },
+    {
+     "secao": "1066-4-313",
+     "swing_pp": -8.22,
+     "zRobusto": -4.35,
+     "validos2t": 79
+    },
+    {
+     "secao": "1040-4-196",
+     "swing_pp": -6.84,
+     "zRobusto": -3.88,
+     "validos2t": 116
+    },
+    {
+     "secao": "1040-4-444",
+     "swing_pp": -6.21,
+     "zRobusto": -3.67,
+     "validos2t": 107
+    },
+    {
+     "secao": "1040-4-223",
+     "swing_pp": 15.05,
+     "zRobusto": 3.5,
+     "validos2t": 121
+    },
+    {
+     "secao": "1074-4-470",
+     "swing_pp": 14.93,
+     "zRobusto": 3.46,
+     "validos2t": 87
+    },
+    {
+     "secao": "1074-4-297",
+     "swing_pp": 14.62,
+     "zRobusto": 3.36,
+     "validos2t": 84
+    },
+    {
+     "secao": "1392-9-472",
+     "swing_pp": 14.33,
+     "zRobusto": 3.26,
+     "validos2t": 262
+    },
+    {
+     "secao": "1074-4-300",
+     "swing_pp": 14.26,
+     "zRobusto": 3.23,
+     "validos2t": 90
+    },
+    {
+     "secao": "1538-8-207",
+     "swing_pp": -4.79,
+     "zRobusto": -3.19,
+     "validos2t": 62
+    },
+    {
+     "secao": "1074-4-452",
+     "swing_pp": -4.71,
+     "zRobusto": -3.17,
+     "validos2t": 80
+    },
+    {
+     "secao": "1392-1-724",
+     "swing_pp": 13.94,
+     "zRobusto": 3.13,
+     "validos2t": 253
+    },
+    {
+     "secao": "1139-7-89",
+     "swing_pp": 13.91,
+     "zRobusto": 3.12,
+     "validos2t": 214
+    }
+   ]
+  },
+  {
+   "uf": "AL",
+   "status": "OK",
+   "secoes1t": 7101,
+   "secoes2t": 7101,
+   "pareadas": 7101,
+   "usadas": 7101,
+   "swingMediano_pp": 5.892,
+   "swingMedio_pp": 5.874,
+   "swingDesvio_pp": 2.428,
+   "mad_pp": 1.588,
+   "outliers": [
+    {
+     "secao": "27170-29-23",
+     "swing_pp": -10.51,
+     "zRobusto": -6.97,
+     "validos2t": 276
+    },
+    {
+     "secao": "27170-29-53",
+     "swing_pp": -9.28,
+     "zRobusto": -6.44,
+     "validos2t": 301
+    },
+    {
+     "secao": "27170-29-47",
+     "swing_pp": -9.03,
+     "zRobusto": -6.34,
+     "validos2t": 295
+    },
+    {
+     "secao": "27170-29-56",
+     "swing_pp": -8.5,
+     "zRobusto": -6.11,
+     "validos2t": 305
+    },
+    {
+     "secao": "27170-29-64",
+     "swing_pp": -7.11,
+     "zRobusto": -5.53,
+     "validos2t": 290
+    },
+    {
+     "secao": "27936-26-175",
+     "swing_pp": 18.62,
+     "zRobusto": 5.41,
+     "validos2t": 64
+    },
+    {
+     "secao": "27170-29-21",
+     "swing_pp": -6.69,
+     "zRobusto": -5.35,
+     "validos2t": 273
+    },
+    {
+     "secao": "27170-29-28",
+     "swing_pp": -6.51,
+     "zRobusto": -5.27,
+     "validos2t": 300
+    },
+    {
+     "secao": "27170-29-22",
+     "swing_pp": -6.38,
+     "zRobusto": -5.21,
+     "validos2t": 264
+    },
+    {
+     "secao": "27170-29-65",
+     "swing_pp": -6.34,
+     "zRobusto": -5.2,
+     "validos2t": 284
+    },
+    {
+     "secao": "27855-54-554",
+     "swing_pp": 16.86,
+     "zRobusto": 4.66,
+     "validos2t": 62
+    },
+    {
+     "secao": "27170-29-93",
+     "swing_pp": -4.85,
+     "zRobusto": -4.56,
+     "validos2t": 281
+    },
+    {
+     "secao": "27170-29-27",
+     "swing_pp": -4.72,
+     "zRobusto": -4.51,
+     "validos2t": 280
+    },
+    {
+     "secao": "27855-3-337",
+     "swing_pp": 16.25,
+     "zRobusto": 4.4,
+     "validos2t": 210
+    },
+    {
+     "secao": "27170-29-20",
+     "swing_pp": -3.97,
+     "zRobusto": -4.19,
+     "validos2t": 296
+    }
+   ]
+  },
+  {
+   "uf": "AM",
+   "status": "OK",
+   "secoes1t": 8157,
+   "secoes2t": 8157,
+   "pareadas": 8157,
+   "usadas": 8157,
+   "swingMediano_pp": 5.997,
+   "swingMedio_pp": 5.957,
+   "swingDesvio_pp": 2.856,
+   "mad_pp": 1.832,
+   "outliers": [
+    {
+     "secao": "2097-18-37",
+     "swing_pp": 37.06,
+     "zRobusto": 11.44,
+     "validos2t": 155
+    },
+    {
+     "secao": "2399-45-63",
+     "swing_pp": 33.91,
+     "zRobusto": 10.28,
+     "validos2t": 169
+    },
+    {
+     "secao": "2437-24-67",
+     "swing_pp": -9.94,
+     "zRobusto": -5.87,
+     "validos2t": 32
+    },
+    {
+     "secao": "2097-18-39",
+     "swing_pp": -8.75,
+     "zRobusto": -5.43,
+     "validos2t": 58
+    },
+    {
+     "secao": "2550-40-613",
+     "swing_pp": 19.85,
+     "zRobusto": 5.1,
+     "validos2t": 16
+    },
+    {
+     "secao": "2003-67-39",
+     "swing_pp": -6.86,
+     "zRobusto": -4.73,
+     "validos2t": 25
+    },
+    {
+     "secao": "2291-11-94",
+     "swing_pp": 18.78,
+     "zRobusto": 4.71,
+     "validos2t": 145
+    },
+    {
+     "secao": "2577-16-33",
+     "swing_pp": 18.52,
+     "zRobusto": 4.61,
+     "validos2t": 137
+    },
+    {
+     "secao": "2518-12-75",
+     "swing_pp": 17.06,
+     "zRobusto": 4.08,
+     "validos2t": 53
+    },
+    {
+     "secao": "2330-10-12",
+     "swing_pp": -4.86,
+     "zRobusto": -4.0,
+     "validos2t": 144
+    },
+    {
+     "secao": "2410-3-122",
+     "swing_pp": -4.59,
+     "zRobusto": -3.9,
+     "validos2t": 174
+    },
+    {
+     "secao": "2550-63-822",
+     "swing_pp": 16.54,
+     "zRobusto": 3.88,
+     "validos2t": 275
+    },
+    {
+     "secao": "98353-56-185",
+     "swing_pp": 16.46,
+     "zRobusto": 3.85,
+     "validos2t": 128
+    },
+    {
+     "secao": "2577-16-63",
+     "swing_pp": 16.22,
+     "zRobusto": 3.76,
+     "validos2t": 81
+    },
+    {
+     "secao": "2011-34-20",
+     "swing_pp": 16.2,
+     "zRobusto": 3.76,
+     "validos2t": 34
+    }
+   ]
+  },
+  {
+   "uf": "AP",
+   "status": "OK",
+   "secoes1t": 1914,
+   "secoes2t": 1914,
+   "pareadas": 1914,
+   "usadas": 1914,
+   "swingMediano_pp": 7.418,
+   "swingMedio_pp": 7.363,
+   "swingDesvio_pp": 2.901,
+   "mad_pp": 1.773,
+   "outliers": [
+    {
+     "secao": "6050-10-482",
+     "swing_pp": 20.22,
+     "zRobusto": 4.87,
+     "validos2t": 56
+    },
+    {
+     "secao": "6041-10-410",
+     "swing_pp": 20.2,
+     "zRobusto": 4.86,
+     "validos2t": 96
+    },
+    {
+     "secao": "6076-5-119",
+     "swing_pp": -3.62,
+     "zRobusto": -4.2,
+     "validos2t": 59
+    },
+    {
+     "secao": "6050-14-398",
+     "swing_pp": -3.01,
+     "zRobusto": -3.97,
+     "validos2t": 95
+    },
+    {
+     "secao": "6050-10-451",
+     "swing_pp": -2.95,
+     "zRobusto": -3.95,
+     "validos2t": 43
+    },
+    {
+     "secao": "6041-10-6",
+     "swing_pp": 17.31,
+     "zRobusto": 3.77,
+     "validos2t": 135
+    },
+    {
+     "secao": "6076-5-5",
+     "swing_pp": -2.31,
+     "zRobusto": -3.7,
+     "validos2t": 160
+    },
+    {
+     "secao": "6157-6-78",
+     "swing_pp": 17.08,
+     "zRobusto": 3.68,
+     "validos2t": 133
+    },
+    {
+     "secao": "6050-2-800",
+     "swing_pp": 17.02,
+     "zRobusto": 3.65,
+     "validos2t": 166
+    },
+    {
+     "secao": "6041-10-429",
+     "swing_pp": -1.86,
+     "zRobusto": -3.53,
+     "validos2t": 148
+    },
+    {
+     "secao": "6050-2-706",
+     "swing_pp": 16.69,
+     "zRobusto": 3.53,
+     "validos2t": 282
+    },
+    {
+     "secao": "6017-1-90",
+     "swing_pp": 16.67,
+     "zRobusto": 3.52,
+     "validos2t": 84
+    },
+    {
+     "secao": "6009-1-26",
+     "swing_pp": 16.6,
+     "zRobusto": 3.49,
+     "validos2t": 158
+    },
+    {
+     "secao": "6017-1-8",
+     "swing_pp": -1.66,
+     "zRobusto": -3.46,
+     "validos2t": 154
+    },
+    {
+     "secao": "6076-5-77",
+     "swing_pp": 16.43,
+     "zRobusto": 3.43,
+     "validos2t": 83
+    }
+   ]
+  },
+  {
+   "uf": "BA",
+   "status": "OK",
+   "secoes1t": 35476,
+   "secoes2t": 35476,
+   "pareadas": 35476,
+   "usadas": 35476,
+   "swingMediano_pp": 4.826,
+   "swingMedio_pp": 4.867,
+   "swingDesvio_pp": 2.87,
+   "mad_pp": 1.972,
+   "outliers": [
+    {
+     "secao": "34134-170-262",
+     "swing_pp": 31.09,
+     "zRobusto": 8.98,
+     "validos2t": 60
+    },
+    {
+     "secao": "35653-173-79",
+     "swing_pp": 18.32,
+     "zRobusto": 4.62,
+     "validos2t": 70
+    },
+    {
+     "secao": "37656-94-122",
+     "swing_pp": -8.5,
+     "zRobusto": -4.56,
+     "validos2t": 65
+    },
+    {
+     "secao": "34096-115-99",
+     "swing_pp": -8.44,
+     "zRobusto": -4.54,
+     "validos2t": 204
+    },
+    {
+     "secao": "34134-171-409",
+     "swing_pp": -8.33,
+     "zRobusto": -4.5,
+     "validos2t": 12
+    },
+    {
+     "secao": "30872-186-160",
+     "swing_pp": 17.48,
+     "zRobusto": 4.33,
+     "validos2t": 197
+    },
+    {
+     "secao": "34096-115-83",
+     "swing_pp": -7.76,
+     "zRobusto": -4.31,
+     "validos2t": 168
+    },
+    {
+     "secao": "34096-115-100",
+     "swing_pp": -7.35,
+     "zRobusto": -4.17,
+     "validos2t": 204
+    },
+    {
+     "secao": "39314-197-217",
+     "swing_pp": -7.21,
+     "zRobusto": -4.12,
+     "validos2t": 47
+    },
+    {
+     "secao": "35157-156-483",
+     "swing_pp": 16.37,
+     "zRobusto": 3.95,
+     "validos2t": 45
+    },
+    {
+     "secao": "34193-53-274",
+     "swing_pp": 16.12,
+     "zRobusto": 3.86,
+     "validos2t": 102
+    },
+    {
+     "secao": "37877-105-71",
+     "swing_pp": 15.91,
+     "zRobusto": 3.79,
+     "validos2t": 44
+    },
+    {
+     "secao": "33090-111-263",
+     "swing_pp": -6.22,
+     "zRobusto": -3.78,
+     "validos2t": 75
+    },
+    {
+     "secao": "38490-14-595",
+     "swing_pp": 15.74,
+     "zRobusto": 3.73,
+     "validos2t": 231
+    },
+    {
+     "secao": "36617-22-325",
+     "swing_pp": 15.65,
+     "zRobusto": 3.7,
+     "validos2t": 62
+    }
+   ]
+  },
+  {
+   "uf": "CE",
+   "status": "OK",
+   "secoes1t": 23765,
+   "secoes2t": 23765,
+   "pareadas": 23765,
+   "usadas": 23765,
+   "swingMediano_pp": 5.5,
+   "swingMedio_pp": 5.465,
+   "swingDesvio_pp": 2.687,
+   "mad_pp": 1.783,
+   "outliers": [
+    {
+     "secao": "13480-78-419",
+     "swing_pp": -17.58,
+     "zRobusto": -8.73,
+     "validos2t": 13
+    },
+    {
+     "secao": "13897-117-483",
+     "swing_pp": -10.78,
+     "zRobusto": -6.16,
+     "validos2t": 18
+    },
+    {
+     "secao": "15210-40-134",
+     "swing_pp": -9.61,
+     "zRobusto": -5.72,
+     "validos2t": 58
+    },
+    {
+     "secao": "14672-26-142",
+     "swing_pp": -9.05,
+     "zRobusto": -5.51,
+     "validos2t": 79
+    },
+    {
+     "secao": "14079-73-46",
+     "swing_pp": -8.65,
+     "zRobusto": -5.36,
+     "validos2t": 40
+    },
+    {
+     "secao": "15490-36-54",
+     "swing_pp": 18.94,
+     "zRobusto": 5.08,
+     "validos2t": 264
+    },
+    {
+     "secao": "13188-78-418",
+     "swing_pp": 18.06,
+     "zRobusto": 4.75,
+     "validos2t": 24
+    },
+    {
+     "secao": "13056-60-141",
+     "swing_pp": -6.97,
+     "zRobusto": -4.72,
+     "validos2t": 55
+    },
+    {
+     "secao": "98574-65-197",
+     "swing_pp": 17.61,
+     "zRobusto": 4.58,
+     "validos2t": 239
+    },
+    {
+     "secao": "13471-63-101",
+     "swing_pp": 17.42,
+     "zRobusto": 4.51,
+     "validos2t": 114
+    },
+    {
+     "secao": "15610-55-162",
+     "swing_pp": 17.39,
+     "zRobusto": 4.5,
+     "validos2t": 92
+    },
+    {
+     "secao": "13730-120-320",
+     "swing_pp": 17.1,
+     "zRobusto": 4.39,
+     "validos2t": 225
+    },
+    {
+     "secao": "14133-39-176",
+     "swing_pp": -6.01,
+     "zRobusto": -4.35,
+     "validos2t": 70
+    },
+    {
+     "secao": "15598-121-315",
+     "swing_pp": 16.67,
+     "zRobusto": 4.23,
+     "validos2t": 24
+    },
+    {
+     "secao": "14192-40-184",
+     "swing_pp": -5.05,
+     "zRobusto": -3.99,
+     "validos2t": 59
+    }
+   ]
+  },
+  {
+   "uf": "DF",
+   "status": "OK",
+   "secoes1t": 6969,
+   "secoes2t": 6969,
+   "pareadas": 6969,
+   "usadas": 6969,
+   "swingMediano_pp": 7.556,
+   "swingMedio_pp": 7.617,
+   "swingDesvio_pp": 2.241,
+   "mad_pp": 1.487,
+   "outliers": [
+    {
+     "secao": "97012-21-328",
+     "swing_pp": 17.35,
+     "zRobusto": 4.44,
+     "validos2t": 243
+    },
+    {
+     "secao": "97012-16-398",
+     "swing_pp": 16.85,
+     "zRobusto": 4.22,
+     "validos2t": 238
+    },
+    {
+     "secao": "97012-17-377",
+     "swing_pp": 16.76,
+     "zRobusto": 4.18,
+     "validos2t": 211
+    },
+    {
+     "secao": "97012-16-345",
+     "swing_pp": 16.74,
+     "zRobusto": 4.17,
+     "validos2t": 110
+    },
+    {
+     "secao": "97012-21-354",
+     "swing_pp": -1.61,
+     "zRobusto": -4.16,
+     "validos2t": 62
+    },
+    {
+     "secao": "97012-13-433",
+     "swing_pp": 16.2,
+     "zRobusto": 3.92,
+     "validos2t": 267
+    },
+    {
+     "secao": "97012-21-346",
+     "swing_pp": 16.05,
+     "zRobusto": 3.85,
+     "validos2t": 268
+    },
+    {
+     "secao": "97012-4-354",
+     "swing_pp": 16.03,
+     "zRobusto": 3.85,
+     "validos2t": 240
+    },
+    {
+     "secao": "97012-13-591",
+     "swing_pp": 15.81,
+     "zRobusto": 3.75,
+     "validos2t": 215
+    },
+    {
+     "secao": "97012-4-600",
+     "swing_pp": 15.78,
+     "zRobusto": 3.73,
+     "validos2t": 225
+    },
+    {
+     "secao": "97012-21-352",
+     "swing_pp": 15.5,
+     "zRobusto": 3.6,
+     "validos2t": 266
+    },
+    {
+     "secao": "97012-6-286",
+     "swing_pp": 15.37,
+     "zRobusto": 3.55,
+     "validos2t": 286
+    },
+    {
+     "secao": "97012-6-362",
+     "swing_pp": 15.07,
+     "zRobusto": 3.41,
+     "validos2t": 282
+    },
+    {
+     "secao": "97012-21-351",
+     "swing_pp": 15.05,
+     "zRobusto": 3.4,
+     "validos2t": 265
+    },
+    {
+     "secao": "97012-21-65",
+     "swing_pp": 15.04,
+     "zRobusto": 3.39,
+     "validos2t": 215
+    }
+   ]
+  },
+  {
+   "uf": "ES",
+   "status": "OK",
+   "secoes1t": 9844,
+   "secoes2t": 9844,
+   "pareadas": 9844,
+   "usadas": 9844,
+   "swingMediano_pp": 5.681,
+   "swingMedio_pp": 5.785,
+   "swingDesvio_pp": 2.545,
+   "mad_pp": 1.666,
+   "outliers": [
+    {
+     "secao": "56235-48-319",
+     "swing_pp": 26.92,
+     "zRobusto": 8.6,
+     "validos2t": 22
+    },
+    {
+     "secao": "56499-14-84",
+     "swing_pp": -4.84,
+     "zRobusto": -4.26,
+     "validos2t": 81
+    },
+    {
+     "secao": "56030-4-157",
+     "swing_pp": 16.04,
+     "zRobusto": 4.19,
+     "validos2t": 162
+    },
+    {
+     "secao": "57037-55-609",
+     "swing_pp": 16.02,
+     "zRobusto": 4.18,
+     "validos2t": 59
+    },
+    {
+     "secao": "56995-59-266",
+     "swing_pp": 15.95,
+     "zRobusto": 4.16,
+     "validos2t": 212
+    },
+    {
+     "secao": "56634-25-660",
+     "swing_pp": 15.79,
+     "zRobusto": 4.09,
+     "validos2t": 90
+    },
+    {
+     "secao": "57070-46-120",
+     "swing_pp": 15.73,
+     "zRobusto": 4.07,
+     "validos2t": 260
+    },
+    {
+     "secao": "56111-20-193",
+     "swing_pp": 15.63,
+     "zRobusto": 4.03,
+     "validos2t": 190
+    },
+    {
+     "secao": "56294-6-452",
+     "swing_pp": 15.38,
+     "zRobusto": 3.93,
+     "validos2t": 169
+    },
+    {
+     "secao": "56030-4-164",
+     "swing_pp": 15.31,
+     "zRobusto": 3.9,
+     "validos2t": 98
+    },
+    {
+     "secao": "57070-46-109",
+     "swing_pp": 15.21,
+     "zRobusto": 3.86,
+     "validos2t": 159
+    },
+    {
+     "secao": "56251-54-609",
+     "swing_pp": 15.15,
+     "zRobusto": 3.83,
+     "validos2t": 33
+    },
+    {
+     "secao": "56995-26-632",
+     "swing_pp": 14.94,
+     "zRobusto": 3.75,
+     "validos2t": 227
+    },
+    {
+     "secao": "57053-1-1054",
+     "swing_pp": 14.91,
+     "zRobusto": 3.73,
+     "validos2t": 268
+    },
+    {
+     "secao": "57010-47-13",
+     "swing_pp": 14.77,
+     "zRobusto": 3.68,
+     "validos2t": 155
+    }
+   ]
+  },
+  {
+   "uf": "GO",
+   "status": "OK",
+   "secoes1t": 15686,
+   "secoes2t": 15686,
+   "pareadas": 15686,
+   "usadas": 15686,
+   "swingMediano_pp": 9.078,
+   "swingMedio_pp": 9.21,
+   "swingDesvio_pp": 2.956,
+   "mad_pp": 1.923,
+   "outliers": [
+    {
+     "secao": "93599-11-147",
+     "swing_pp": 29.85,
+     "zRobusto": 7.29,
+     "validos2t": 97
+    },
+    {
+     "secao": "93831-47-76",
+     "swing_pp": 28.82,
+     "zRobusto": 6.93,
+     "validos2t": 115
+    },
+    {
+     "secao": "93939-29-78",
+     "swing_pp": 28.81,
+     "zRobusto": 6.92,
+     "validos2t": 118
+    },
+    {
+     "secao": "93831-47-74",
+     "swing_pp": 27.82,
+     "zRobusto": 6.57,
+     "validos2t": 246
+    },
+    {
+     "secao": "93831-47-60",
+     "swing_pp": 27.18,
+     "zRobusto": 6.35,
+     "validos2t": 223
+    },
+    {
+     "secao": "92274-132-673",
+     "swing_pp": -8.26,
+     "zRobusto": -6.08,
+     "validos2t": 20
+    },
+    {
+     "secao": "92932-50-92",
+     "swing_pp": -8.2,
+     "zRobusto": -6.06,
+     "validos2t": 44
+    },
+    {
+     "secao": "93831-47-71",
+     "swing_pp": 24.63,
+     "zRobusto": 5.46,
+     "validos2t": 230
+    },
+    {
+     "secao": "93050-99-20",
+     "swing_pp": 24.43,
+     "zRobusto": 5.39,
+     "validos2t": 114
+    },
+    {
+     "secao": "92215-144-342",
+     "swing_pp": -6.0,
+     "zRobusto": -5.29,
+     "validos2t": 41
+    },
+    {
+     "secao": "93831-47-75",
+     "swing_pp": 24.15,
+     "zRobusto": 5.29,
+     "validos2t": 141
+    },
+    {
+     "secao": "93831-47-70",
+     "swing_pp": 23.35,
+     "zRobusto": 5.0,
+     "validos2t": 247
+    },
+    {
+     "secao": "94951-47-54",
+     "swing_pp": 23.16,
+     "zRobusto": 4.94,
+     "validos2t": 203
+    },
+    {
+     "secao": "93939-29-173",
+     "swing_pp": 23.0,
+     "zRobusto": 4.88,
+     "validos2t": 81
+    },
+    {
+     "secao": "93890-132-667",
+     "swing_pp": 22.71,
+     "zRobusto": 4.78,
+     "validos2t": 115
+    }
+   ]
+  },
+  {
+   "uf": "MA",
+   "status": "OK",
+   "secoes1t": 18093,
+   "secoes2t": 18093,
+   "pareadas": 18093,
+   "usadas": 18092,
+   "swingMediano_pp": 5.372,
+   "swingMedio_pp": 5.373,
+   "swingDesvio_pp": 2.638,
+   "mad_pp": 1.773,
+   "outliers": [
+    {
+     "secao": "7714-14-75",
+     "swing_pp": 21.34,
+     "zRobusto": 6.08,
+     "validos2t": 22
+    },
+    {
+     "secao": "8974-70-403",
+     "swing_pp": 21.05,
+     "zRobusto": 5.96,
+     "validos2t": 127
+    },
+    {
+     "secao": "7340-95-191",
+     "swing_pp": -8.88,
+     "zRobusto": -5.42,
+     "validos2t": 54
+    },
+    {
+     "secao": "7110-99-169",
+     "swing_pp": -8.85,
+     "zRobusto": -5.41,
+     "validos2t": 112
+    },
+    {
+     "secao": "7110-99-167",
+     "swing_pp": -7.99,
+     "zRobusto": -5.08,
+     "validos2t": 103
+    },
+    {
+     "secao": "7447-101-137",
+     "swing_pp": 17.95,
+     "zRobusto": 4.79,
+     "validos2t": 39
+    },
+    {
+     "secao": "9555-78-263",
+     "swing_pp": -7.03,
+     "zRobusto": -4.72,
+     "validos2t": 41
+    },
+    {
+     "secao": "8036-65-849",
+     "swing_pp": -6.56,
+     "zRobusto": -4.54,
+     "validos2t": 58
+    },
+    {
+     "secao": "7900-102-104",
+     "swing_pp": -6.54,
+     "zRobusto": -4.53,
+     "validos2t": 78
+    },
+    {
+     "secao": "9636-82-101",
+     "swing_pp": 17.07,
+     "zRobusto": 4.45,
+     "validos2t": 37
+    },
+    {
+     "secao": "8133-74-66",
+     "swing_pp": 16.91,
+     "zRobusto": 4.39,
+     "validos2t": 232
+    },
+    {
+     "secao": "8613-9-194",
+     "swing_pp": -5.92,
+     "zRobusto": -4.3,
+     "validos2t": 38
+    },
+    {
+     "secao": "7269-95-190",
+     "swing_pp": -5.88,
+     "zRobusto": -4.28,
+     "validos2t": 51
+    },
+    {
+     "secao": "7110-99-152",
+     "swing_pp": 15.59,
+     "zRobusto": 3.89,
+     "validos2t": 124
+    },
+    {
+     "secao": "7781-100-137",
+     "swing_pp": -4.65,
+     "zRobusto": -3.81,
+     "validos2t": 68
+    }
+   ]
+  },
+  {
+   "uf": "MG",
+   "status": "OK",
+   "secoes1t": 52062,
+   "secoes2t": 52062,
+   "pareadas": 52062,
+   "usadas": 52061,
+   "swingMediano_pp": 6.888,
+   "swingMedio_pp": 6.883,
+   "swingDesvio_pp": 2.891,
+   "mad_pp": 1.887,
+   "outliers": [
+    {
+     "secao": "41998-56-145",
+     "swing_pp": -16.97,
+     "zRobusto": -8.53,
+     "validos2t": 11
+    },
+    {
+     "secao": "41416-43-132",
+     "swing_pp": 30.35,
+     "zRobusto": 8.39,
+     "validos2t": 17
+    },
+    {
+     "secao": "46531-136-216",
+     "swing_pp": 29.81,
+     "zRobusto": 8.19,
+     "validos2t": 16
+    },
+    {
+     "secao": "41157-309-92",
+     "swing_pp": 28.24,
+     "zRobusto": 7.63,
+     "validos2t": 27
+    },
+    {
+     "secao": "43753-94-130",
+     "swing_pp": 26.43,
+     "zRobusto": 6.99,
+     "validos2t": 94
+    },
+    {
+     "secao": "48658-317-264",
+     "swing_pp": 23.52,
+     "zRobusto": 5.95,
+     "validos2t": 66
+    },
+    {
+     "secao": "46396-184-464",
+     "swing_pp": -8.91,
+     "zRobusto": -5.65,
+     "validos2t": 101
+    },
+    {
+     "secao": "52213-252-132",
+     "swing_pp": 22.46,
+     "zRobusto": 5.57,
+     "validos2t": 57
+    },
+    {
+     "secao": "41831-54-53",
+     "swing_pp": 21.86,
+     "zRobusto": 5.35,
+     "validos2t": 70
+    },
+    {
+     "secao": "44270-106-92",
+     "swing_pp": 21.4,
+     "zRobusto": 5.19,
+     "validos2t": 80
+    },
+    {
+     "secao": "52370-22-135",
+     "swing_pp": 21.21,
+     "zRobusto": 5.12,
+     "validos2t": 33
+    },
+    {
+     "secao": "41262-244-218",
+     "swing_pp": -6.97,
+     "zRobusto": -4.95,
+     "validos2t": 58
+    },
+    {
+     "secao": "48658-184-367",
+     "swing_pp": -6.8,
+     "zRobusto": -4.89,
+     "validos2t": 57
+    },
+    {
+     "secao": "49417-202-338",
+     "swing_pp": 20.06,
+     "zRobusto": 4.71,
+     "validos2t": 134
+    },
+    {
+     "secao": "52531-237-384",
+     "swing_pp": -6.18,
+     "zRobusto": -4.67,
+     "validos2t": 42
+    }
+   ]
+  },
+  {
+   "uf": "MS",
+   "status": "OK",
+   "secoes1t": 7106,
+   "secoes2t": 7106,
+   "pareadas": 7106,
+   "usadas": 7106,
+   "swingMediano_pp": 5.501,
+   "swingMedio_pp": 5.53,
+   "swingDesvio_pp": 2.532,
+   "mad_pp": 1.684,
+   "outliers": [
+    {
+     "secao": "90514-54-218",
+     "swing_pp": 14.66,
+     "zRobusto": 3.67,
+     "validos2t": 255
+    },
+    {
+     "secao": "90212-10-82",
+     "swing_pp": -3.45,
+     "zRobusto": -3.58,
+     "validos2t": 134
+    },
+    {
+     "secao": "90735-18-271",
+     "swing_pp": 14.31,
+     "zRobusto": 3.53,
+     "validos2t": 241
+    },
+    {
+     "secao": "90379-6-49",
+     "swing_pp": -3.3,
+     "zRobusto": -3.52,
+     "validos2t": 144
+    },
+    {
+     "secao": "90212-10-130",
+     "swing_pp": 14.23,
+     "zRobusto": 3.5,
+     "validos2t": 26
+    },
+    {
+     "secao": "90514-53-451",
+     "swing_pp": 14.11,
+     "zRobusto": 3.45,
+     "validos2t": 224
+    },
+    {
+     "secao": "90638-50-74",
+     "swing_pp": 14.04,
+     "zRobusto": 3.42,
+     "validos2t": 80
+    },
+    {
+     "secao": "90654-12-118",
+     "swing_pp": -2.84,
+     "zRobusto": -3.34,
+     "validos2t": 75
+    },
+    {
+     "secao": "91847-1-179",
+     "swing_pp": 13.82,
+     "zRobusto": 3.33,
+     "validos2t": 155
+    },
+    {
+     "secao": "90212-10-67",
+     "swing_pp": -2.8,
+     "zRobusto": -3.33,
+     "validos2t": 168
+    },
+    {
+     "secao": "91375-20-8",
+     "swing_pp": -2.79,
+     "zRobusto": -3.32,
+     "validos2t": 187
+    },
+    {
+     "secao": "90654-12-8",
+     "swing_pp": -2.76,
+     "zRobusto": -3.31,
+     "validos2t": 108
+    },
+    {
+     "secao": "90158-6-89",
+     "swing_pp": 13.72,
+     "zRobusto": 3.29,
+     "validos2t": 207
+    },
+    {
+     "secao": "90514-53-174",
+     "swing_pp": 13.72,
+     "zRobusto": 3.29,
+     "validos2t": 237
+    },
+    {
+     "secao": "90417-17-53",
+     "swing_pp": 13.71,
+     "zRobusto": 3.29,
+     "validos2t": 125
+    }
+   ]
+  },
+  {
+   "uf": "MT",
+   "status": "OK",
+   "secoes1t": 8287,
+   "secoes2t": 8287,
+   "pareadas": 8287,
+   "usadas": 8287,
+   "swingMediano_pp": 4.595,
+   "swingMedio_pp": 4.724,
+   "swingDesvio_pp": 2.472,
+   "mad_pp": 1.662,
+   "outliers": [
+    {
+     "secao": "91197-17-95",
+     "swing_pp": -11.04,
+     "zRobusto": -6.34,
+     "validos2t": 21
+    },
+    {
+     "secao": "91677-20-537",
+     "swing_pp": 18.13,
+     "zRobusto": 5.49,
+     "validos2t": 54
+    },
+    {
+     "secao": "90344-34-155",
+     "swing_pp": 17.5,
+     "zRobusto": 5.24,
+     "validos2t": 42
+    },
+    {
+     "secao": "91510-10-469",
+     "swing_pp": 15.57,
+     "zRobusto": 4.46,
+     "validos2t": 220
+    },
+    {
+     "secao": "90620-33-294",
+     "swing_pp": 15.22,
+     "zRobusto": 4.31,
+     "validos2t": 46
+    },
+    {
+     "secao": "90581-48-134",
+     "swing_pp": -5.95,
+     "zRobusto": -4.28,
+     "validos2t": 123
+    },
+    {
+     "secao": "91391-47-239",
+     "swing_pp": 14.75,
+     "zRobusto": 4.12,
+     "validos2t": 215
+    },
+    {
+     "secao": "91677-20-393",
+     "swing_pp": 14.64,
+     "zRobusto": 4.08,
+     "validos2t": 163
+    },
+    {
+     "secao": "90123-29-59",
+     "swing_pp": -5.21,
+     "zRobusto": -3.98,
+     "validos2t": 148
+    },
+    {
+     "secao": "91510-46-434",
+     "swing_pp": 14.18,
+     "zRobusto": 3.89,
+     "validos2t": 147
+    },
+    {
+     "secao": "90670-51-386",
+     "swing_pp": 14.11,
+     "zRobusto": 3.86,
+     "validos2t": 47
+    },
+    {
+     "secao": "90255-17-3",
+     "swing_pp": -4.91,
+     "zRobusto": -3.86,
+     "validos2t": 194
+    },
+    {
+     "secao": "91936-31-45",
+     "swing_pp": 13.5,
+     "zRobusto": 3.61,
+     "validos2t": 210
+    },
+    {
+     "secao": "90956-14-106",
+     "swing_pp": 13.44,
+     "zRobusto": 3.59,
+     "validos2t": 211
+    },
+    {
+     "secao": "90670-39-381",
+     "swing_pp": 13.24,
+     "zRobusto": 3.51,
+     "validos2t": 230
+    }
+   ]
+  },
+  {
+   "uf": "PA",
+   "status": "OK",
+   "secoes1t": 20827,
+   "secoes2t": 20827,
+   "pareadas": 20827,
+   "usadas": 20827,
+   "swingMediano_pp": 5.116,
+   "swingMedio_pp": 5.087,
+   "swingDesvio_pp": 2.911,
+   "mad_pp": 1.929,
+   "outliers": [
+    {
+     "secao": "4332-13-104",
+     "swing_pp": 22.25,
+     "zRobusto": 5.99,
+     "validos2t": 35
+    },
+    {
+     "secao": "5053-38-232",
+     "swing_pp": 21.63,
+     "zRobusto": 5.78,
+     "validos2t": 59
+    },
+    {
+     "secao": "5894-68-149",
+     "swing_pp": 21.28,
+     "zRobusto": 5.65,
+     "validos2t": 47
+    },
+    {
+     "secao": "5053-38-203",
+     "swing_pp": -10.9,
+     "zRobusto": -5.6,
+     "validos2t": 29
+    },
+    {
+     "secao": "4715-34-376",
+     "swing_pp": 21.03,
+     "zRobusto": 5.56,
+     "validos2t": 60
+    },
+    {
+     "secao": "4367-89-28",
+     "swing_pp": 20.86,
+     "zRobusto": 5.51,
+     "validos2t": 46
+    },
+    {
+     "secao": "4855-31-145",
+     "swing_pp": 20.63,
+     "zRobusto": 5.43,
+     "validos2t": 35
+    },
+    {
+     "secao": "5355-83-291",
+     "swing_pp": 20.44,
+     "zRobusto": 5.36,
+     "validos2t": 56
+    },
+    {
+     "secao": "4111-18-522",
+     "swing_pp": -9.63,
+     "zRobusto": -5.16,
+     "validos2t": 37
+    },
+    {
+     "secao": "4278-97-553",
+     "swing_pp": 19.28,
+     "zRobusto": 4.95,
+     "validos2t": 75
+    },
+    {
+     "secao": "5150-44-141",
+     "swing_pp": 19.16,
+     "zRobusto": 4.91,
+     "validos2t": 155
+    },
+    {
+     "secao": "5053-38-189",
+     "swing_pp": 19.14,
+     "zRobusto": 4.91,
+     "validos2t": 44
+    },
+    {
+     "secao": "5010-22-173",
+     "swing_pp": -8.33,
+     "zRobusto": -4.7,
+     "validos2t": 46
+    },
+    {
+     "secao": "5355-20-718",
+     "swing_pp": 18.28,
+     "zRobusto": 4.6,
+     "validos2t": 56
+    },
+    {
+     "secao": "4200-102-31",
+     "swing_pp": -7.77,
+     "zRobusto": -4.51,
+     "validos2t": 214
+    }
+   ]
+  },
+  {
+   "uf": "PB",
+   "status": "OK",
+   "secoes1t": 10712,
+   "secoes2t": 10712,
+   "pareadas": 10712,
+   "usadas": 10712,
+   "swingMediano_pp": 5.899,
+   "swingMedio_pp": 5.977,
+   "swingDesvio_pp": 2.439,
+   "mad_pp": 1.616,
+   "outliers": [
+    {
+     "secao": "20672-13-169",
+     "swing_pp": 16.44,
+     "zRobusto": 4.4,
+     "validos2t": 69
+    },
+    {
+     "secao": "19810-72-390",
+     "swing_pp": 16.32,
+     "zRobusto": 4.35,
+     "validos2t": 120
+    },
+    {
+     "secao": "20516-77-274",
+     "swing_pp": 15.47,
+     "zRobusto": 4.0,
+     "validos2t": 277
+    },
+    {
+     "secao": "19658-57-115",
+     "swing_pp": 15.1,
+     "zRobusto": 3.84,
+     "validos2t": 266
+    },
+    {
+     "secao": "20516-77-140",
+     "swing_pp": 14.97,
+     "zRobusto": 3.79,
+     "validos2t": 185
+    },
+    {
+     "secao": "19372-61-131",
+     "swing_pp": 14.95,
+     "zRobusto": 3.78,
+     "validos2t": 263
+    },
+    {
+     "secao": "20516-77-214",
+     "swing_pp": 14.95,
+     "zRobusto": 3.78,
+     "validos2t": 256
+    },
+    {
+     "secao": "20516-64-5",
+     "swing_pp": 14.87,
+     "zRobusto": 3.75,
+     "validos2t": 218
+    },
+    {
+     "secao": "21598-55-139",
+     "swing_pp": -2.92,
+     "zRobusto": -3.68,
+     "validos2t": 50
+    },
+    {
+     "secao": "20575-56-105",
+     "swing_pp": 14.65,
+     "zRobusto": 3.65,
+     "validos2t": 242
+    },
+    {
+     "secao": "20516-77-389",
+     "swing_pp": 14.51,
+     "zRobusto": 3.59,
+     "validos2t": 289
+    },
+    {
+     "secao": "19658-57-134",
+     "swing_pp": 14.46,
+     "zRobusto": 3.57,
+     "validos2t": 243
+    },
+    {
+     "secao": "20516-77-372",
+     "swing_pp": 14.35,
+     "zRobusto": 3.53,
+     "validos2t": 276
+    },
+    {
+     "secao": "20214-19-110",
+     "swing_pp": 14.26,
+     "zRobusto": 3.49,
+     "validos2t": 270
+    },
+    {
+     "secao": "19372-61-218",
+     "swing_pp": 14.05,
+     "zRobusto": 3.4,
+     "validos2t": 270
+    }
+   ]
+  },
+  {
+   "uf": "PE",
+   "status": "OK",
+   "secoes1t": 21418,
+   "secoes2t": 21418,
+   "pareadas": 21418,
+   "usadas": 21418,
+   "swingMediano_pp": 5.581,
+   "swingMedio_pp": 5.612,
+   "swingDesvio_pp": 2.163,
+   "mad_pp": 1.425,
+   "outliers": [
+    {
+     "secao": "23817-106-334",
+     "swing_pp": 16.25,
+     "zRobusto": 5.05,
+     "validos2t": 80
+    },
+    {
+     "secao": "25216-145-480",
+     "swing_pp": 16.24,
+     "zRobusto": 5.04,
+     "validos2t": 54
+    },
+    {
+     "secao": "25216-83-581",
+     "swing_pp": 15.36,
+     "zRobusto": 4.63,
+     "validos2t": 317
+    },
+    {
+     "secao": "23035-107-31",
+     "swing_pp": 15.26,
+     "zRobusto": 4.58,
+     "validos2t": 308
+    },
+    {
+     "secao": "23795-20-141",
+     "swing_pp": 14.97,
+     "zRobusto": 4.44,
+     "validos2t": 130
+    },
+    {
+     "secao": "25216-145-230",
+     "swing_pp": 14.74,
+     "zRobusto": 4.34,
+     "validos2t": 240
+    },
+    {
+     "secao": "25216-145-92",
+     "swing_pp": 14.59,
+     "zRobusto": 4.26,
+     "validos2t": 152
+    },
+    {
+     "secao": "24597-54-206",
+     "swing_pp": 14.55,
+     "zRobusto": 4.25,
+     "validos2t": 50
+    },
+    {
+     "secao": "25216-83-597",
+     "swing_pp": 14.5,
+     "zRobusto": 4.22,
+     "validos2t": 150
+    },
+    {
+     "secao": "23035-107-25",
+     "swing_pp": 14.39,
+     "zRobusto": 4.17,
+     "validos2t": 292
+    },
+    {
+     "secao": "24910-117-420",
+     "swing_pp": 14.33,
+     "zRobusto": 4.14,
+     "validos2t": 293
+    },
+    {
+     "secao": "24910-117-16",
+     "swing_pp": -3.15,
+     "zRobusto": -4.13,
+     "validos2t": 128
+    },
+    {
+     "secao": "25216-145-156",
+     "swing_pp": 14.28,
+     "zRobusto": 4.12,
+     "validos2t": 261
+    },
+    {
+     "secao": "25216-144-307",
+     "swing_pp": 14.23,
+     "zRobusto": 4.1,
+     "validos2t": 258
+    },
+    {
+     "secao": "25216-145-481",
+     "swing_pp": 14.2,
+     "zRobusto": 4.08,
+     "validos2t": 65
+    }
+   ]
+  },
+  {
+   "uf": "PI",
+   "status": "OK",
+   "secoes1t": 10225,
+   "secoes2t": 10225,
+   "pareadas": 10225,
+   "usadas": 10225,
+   "swingMediano_pp": 4.674,
+   "swingMedio_pp": 4.735,
+   "swingDesvio_pp": 2.826,
+   "mad_pp": 1.89,
+   "outliers": [
+    {
+     "secao": "11878-28-99",
+     "swing_pp": -23.34,
+     "zRobusto": -10.0,
+     "validos2t": 268
+    },
+    {
+     "secao": "12505-90-80",
+     "swing_pp": 19.82,
+     "zRobusto": 5.41,
+     "validos2t": 169
+    },
+    {
+     "secao": "12343-94-57",
+     "swing_pp": -9.92,
+     "zRobusto": -5.21,
+     "validos2t": 132
+    },
+    {
+     "secao": "11878-28-94",
+     "swing_pp": -9.91,
+     "zRobusto": -5.2,
+     "validos2t": 230
+    },
+    {
+     "secao": "12246-12-208",
+     "swing_pp": -9.17,
+     "zRobusto": -4.94,
+     "validos2t": 120
+    },
+    {
+     "secao": "11878-28-95",
+     "swing_pp": -8.41,
+     "zRobusto": -4.67,
+     "validos2t": 223
+    },
+    {
+     "secao": "11878-28-93",
+     "swing_pp": -8.27,
+     "zRobusto": -4.62,
+     "validos2t": 254
+    },
+    {
+     "secao": "11878-28-87",
+     "swing_pp": -6.31,
+     "zRobusto": -3.92,
+     "validos2t": 247
+    },
+    {
+     "secao": "11878-28-91",
+     "swing_pp": -6.31,
+     "zRobusto": -3.92,
+     "validos2t": 242
+    },
+    {
+     "secao": "11878-28-90",
+     "swing_pp": -6.25,
+     "zRobusto": -3.9,
+     "validos2t": 256
+    },
+    {
+     "secao": "12505-90-66",
+     "swing_pp": 15.54,
+     "zRobusto": 3.88,
+     "validos2t": 155
+    },
+    {
+     "secao": "10634-26-79",
+     "swing_pp": -6.12,
+     "zRobusto": -3.85,
+     "validos2t": 68
+    },
+    {
+     "secao": "12246-12-139",
+     "swing_pp": -6.05,
+     "zRobusto": -3.83,
+     "validos2t": 232
+    },
+    {
+     "secao": "12190-97-434",
+     "swing_pp": 15.39,
+     "zRobusto": 3.82,
+     "validos2t": 150
+    },
+    {
+     "secao": "11878-28-83",
+     "swing_pp": -5.98,
+     "zRobusto": -3.8,
+     "validos2t": 230
+    }
+   ]
+  },
+  {
+   "uf": "PR",
+   "status": "OK",
+   "secoes1t": 27142,
+   "secoes2t": 27142,
+   "pareadas": 27142,
+   "usadas": 27142,
+   "swingMediano_pp": 6.037,
+   "swingMedio_pp": 6.114,
+   "swingDesvio_pp": 2.532,
+   "mad_pp": 1.682,
+   "outliers": [
+    {
+     "secao": "77771-14-453",
+     "swing_pp": 32.9,
+     "zRobusto": 10.77,
+     "validos2t": 43
+    },
+    {
+     "secao": "75833-43-432",
+     "swing_pp": 27.06,
+     "zRobusto": 8.43,
+     "validos2t": 72
+    },
+    {
+     "secao": "77917-30-37",
+     "swing_pp": -8.96,
+     "zRobusto": -6.01,
+     "validos2t": 152
+    },
+    {
+     "secao": "79375-33-95",
+     "swing_pp": 20.27,
+     "zRobusto": 5.71,
+     "validos2t": 84
+    },
+    {
+     "secao": "77771-14-452",
+     "swing_pp": -7.97,
+     "zRobusto": -5.62,
+     "validos2t": 65
+    },
+    {
+     "secao": "77917-30-111",
+     "swing_pp": 19.89,
+     "zRobusto": 5.55,
+     "validos2t": 84
+    },
+    {
+     "secao": "78115-39-26",
+     "swing_pp": 19.3,
+     "zRobusto": 5.32,
+     "validos2t": 142
+    },
+    {
+     "secao": "74594-48-33",
+     "swing_pp": -6.81,
+     "zRobusto": -5.15,
+     "validos2t": 53
+    },
+    {
+     "secao": "74950-16-83",
+     "swing_pp": 18.35,
+     "zRobusto": 4.94,
+     "validos2t": 113
+    },
+    {
+     "secao": "75850-6-58",
+     "swing_pp": -6.07,
+     "zRobusto": -4.85,
+     "validos2t": 53
+    },
+    {
+     "secao": "76678-146-421",
+     "swing_pp": 17.93,
+     "zRobusto": 4.77,
+     "validos2t": 192
+    },
+    {
+     "secao": "75850-6-41",
+     "swing_pp": -5.43,
+     "zRobusto": -4.6,
+     "validos2t": 195
+    },
+    {
+     "secao": "75353-177-559",
+     "swing_pp": 17.22,
+     "zRobusto": 4.48,
+     "validos2t": 231
+    },
+    {
+     "secao": "75353-175-464",
+     "swing_pp": 17.19,
+     "zRobusto": 4.47,
+     "validos2t": 275
+    },
+    {
+     "secao": "75183-44-474",
+     "swing_pp": -5.06,
+     "zRobusto": -4.45,
+     "validos2t": 50
+    }
+   ]
+  },
+  {
+   "uf": "RJ",
+   "status": "OK",
+   "secoes1t": 37675,
+   "secoes2t": 37675,
+   "pareadas": 37675,
+   "usadas": 37675,
+   "swingMediano_pp": 7.322,
+   "swingMedio_pp": 7.381,
+   "swingDesvio_pp": 2.365,
+   "mad_pp": 1.559,
+   "outliers": [
+    {
+     "secao": "58190-129-94",
+     "swing_pp": 19.2,
+     "zRobusto": 5.14,
+     "validos2t": 184
+    },
+    {
+     "secao": "60011-188-167",
+     "swing_pp": 18.73,
+     "zRobusto": 4.94,
+     "validos2t": 121
+    },
+    {
+     "secao": "58912-60-53",
+     "swing_pp": 18.58,
+     "zRobusto": 4.87,
+     "validos2t": 51
+    },
+    {
+     "secao": "58190-75-83",
+     "swing_pp": 17.77,
+     "zRobusto": 4.52,
+     "validos2t": 160
+    },
+    {
+     "secao": "58190-75-61",
+     "swing_pp": 17.55,
+     "zRobusto": 4.43,
+     "validos2t": 257
+    },
+    {
+     "secao": "59218-111-39",
+     "swing_pp": 17.52,
+     "zRobusto": 4.41,
+     "validos2t": 142
+    },
+    {
+     "secao": "58041-152-338",
+     "swing_pp": 17.46,
+     "zRobusto": 4.39,
+     "validos2t": 67
+    },
+    {
+     "secao": "58190-75-68",
+     "swing_pp": 17.17,
+     "zRobusto": 4.26,
+     "validos2t": 236
+    },
+    {
+     "secao": "60011-125-114",
+     "swing_pp": 17.14,
+     "zRobusto": 4.25,
+     "validos2t": 127
+    },
+    {
+     "secao": "58670-26-208",
+     "swing_pp": 17.08,
+     "zRobusto": 4.22,
+     "validos2t": 242
+    },
+    {
+     "secao": "58513-54-118",
+     "swing_pp": -2.35,
+     "zRobusto": -4.19,
+     "validos2t": 146
+    },
+    {
+     "secao": "58777-65-287",
+     "swing_pp": 16.98,
+     "zRobusto": 4.18,
+     "validos2t": 212
+    },
+    {
+     "secao": "58106-149-113",
+     "swing_pp": 16.97,
+     "zRobusto": 4.18,
+     "validos2t": 225
+    },
+    {
+     "secao": "58050-93-250",
+     "swing_pp": 16.94,
+     "zRobusto": 4.16,
+     "validos2t": 239
+    },
+    {
+     "secao": "60011-162-88",
+     "swing_pp": 16.92,
+     "zRobusto": 4.15,
+     "validos2t": 95
+    }
+   ]
+  },
+  {
+   "uf": "RN",
+   "status": "OK",
+   "secoes1t": 8115,
+   "secoes2t": 8115,
+   "pareadas": 8115,
+   "usadas": 8115,
+   "swingMediano_pp": 5.845,
+   "swingMedio_pp": 5.923,
+   "swingDesvio_pp": 2.319,
+   "mad_pp": 1.539,
+   "outliers": [
+    {
+     "secao": "17590-34-326",
+     "swing_pp": -5.25,
+     "zRobusto": -4.87,
+     "validos2t": 23
+    },
+    {
+     "secao": "17418-5-197",
+     "swing_pp": 16.74,
+     "zRobusto": 4.78,
+     "validos2t": 114
+    },
+    {
+     "secao": "17612-1-638",
+     "swing_pp": 15.78,
+     "zRobusto": 4.35,
+     "validos2t": 100
+    },
+    {
+     "secao": "17612-69-418",
+     "swing_pp": 15.75,
+     "zRobusto": 4.34,
+     "validos2t": 207
+    },
+    {
+     "secao": "17612-69-424",
+     "swing_pp": 15.27,
+     "zRobusto": 4.13,
+     "validos2t": 325
+    },
+    {
+     "secao": "17612-4-436",
+     "swing_pp": 15.07,
+     "zRobusto": 4.05,
+     "validos2t": 340
+    },
+    {
+     "secao": "17612-4-450",
+     "swing_pp": 14.79,
+     "zRobusto": 3.92,
+     "validos2t": 310
+    },
+    {
+     "secao": "18937-37-74",
+     "swing_pp": 14.3,
+     "zRobusto": 3.71,
+     "validos2t": 244
+    },
+    {
+     "secao": "17990-41-37",
+     "swing_pp": -2.57,
+     "zRobusto": -3.69,
+     "validos2t": 205
+    },
+    {
+     "secao": "17612-69-422",
+     "swing_pp": 14.03,
+     "zRobusto": 3.59,
+     "validos2t": 288
+    },
+    {
+     "secao": "17795-50-536",
+     "swing_pp": 13.99,
+     "zRobusto": 3.57,
+     "validos2t": 274
+    },
+    {
+     "secao": "16357-44-170",
+     "swing_pp": 13.88,
+     "zRobusto": 3.52,
+     "validos2t": 133
+    },
+    {
+     "secao": "17795-50-584",
+     "swing_pp": 13.82,
+     "zRobusto": 3.49,
+     "validos2t": 276
+    },
+    {
+     "secao": "18937-37-76",
+     "swing_pp": 13.73,
+     "zRobusto": 3.46,
+     "validos2t": 267
+    },
+    {
+     "secao": "16438-11-165",
+     "swing_pp": -1.98,
+     "zRobusto": -3.43,
+     "validos2t": 69
+    }
+   ]
+  },
+  {
+   "uf": "RO",
+   "status": "OK",
+   "secoes1t": 4698,
+   "secoes2t": 4698,
+   "pareadas": 4698,
+   "usadas": 4698,
+   "swingMediano_pp": 4.211,
+   "swingMedio_pp": 4.48,
+   "swingDesvio_pp": 2.709,
+   "mad_pp": 1.724,
+   "outliers": [
+    {
+     "secao": "116-9-167",
+     "swing_pp": 22.22,
+     "zRobusto": 7.05,
+     "validos2t": 54
+    },
+    {
+     "secao": "35-20-376",
+     "swing_pp": -11.9,
+     "zRobusto": -6.3,
+     "validos2t": 14
+    },
+    {
+     "secao": "116-9-160",
+     "swing_pp": -10.29,
+     "zRobusto": -5.67,
+     "validos2t": 17
+    },
+    {
+     "secao": "35-20-209",
+     "swing_pp": 18.39,
+     "zRobusto": 5.55,
+     "validos2t": 158
+    },
+    {
+     "secao": "35-20-398",
+     "swing_pp": 16.27,
+     "zRobusto": 4.72,
+     "validos2t": 150
+    },
+    {
+     "secao": "35-20-193",
+     "swing_pp": 15.75,
+     "zRobusto": 4.52,
+     "validos2t": 94
+    },
+    {
+     "secao": "35-6-396",
+     "swing_pp": 15.72,
+     "zRobusto": 4.5,
+     "validos2t": 207
+    },
+    {
+     "secao": "35-20-314",
+     "swing_pp": 15.43,
+     "zRobusto": 4.39,
+     "validos2t": 219
+    },
+    {
+     "secao": "35-21-367",
+     "swing_pp": 15.18,
+     "zRobusto": 4.29,
+     "validos2t": 224
+    },
+    {
+     "secao": "35-2-579",
+     "swing_pp": 14.89,
+     "zRobusto": 4.18,
+     "validos2t": 202
+    },
+    {
+     "secao": "35-21-420",
+     "swing_pp": 14.87,
+     "zRobusto": 4.17,
+     "validos2t": 211
+    },
+    {
+     "secao": "256-12-55",
+     "swing_pp": 14.85,
+     "zRobusto": 4.16,
+     "validos2t": 141
+    },
+    {
+     "secao": "35-2-424",
+     "swing_pp": 14.57,
+     "zRobusto": 4.05,
+     "validos2t": 232
+    },
+    {
+     "secao": "35-2-587",
+     "swing_pp": 14.56,
+     "zRobusto": 4.05,
+     "validos2t": 154
+    },
+    {
+     "secao": "256-12-88",
+     "swing_pp": 14.11,
+     "zRobusto": 3.87,
+     "validos2t": 147
+    }
+   ]
+  },
+  {
+   "uf": "RR",
+   "status": "OK",
+   "secoes1t": 1519,
+   "secoes2t": 1519,
+   "pareadas": 1519,
+   "usadas": 1519,
+   "swingMediano_pp": 4.628,
+   "swingMedio_pp": 4.705,
+   "swingDesvio_pp": 2.565,
+   "mad_pp": 1.57,
+   "outliers": [
+    {
+     "secao": "3085-8-99",
+     "swing_pp": 18.65,
+     "zRobusto": 6.02,
+     "validos2t": 29
+    },
+    {
+     "secao": "3123-7-107",
+     "swing_pp": 17.61,
+     "zRobusto": 5.58,
+     "validos2t": 154
+    },
+    {
+     "secao": "3085-8-94",
+     "swing_pp": -7.27,
+     "zRobusto": -5.11,
+     "validos2t": 56
+    },
+    {
+     "secao": "3042-7-79",
+     "swing_pp": 14.81,
+     "zRobusto": 4.38,
+     "validos2t": 182
+    },
+    {
+     "secao": "3050-3-207",
+     "swing_pp": 14.69,
+     "zRobusto": 4.33,
+     "validos2t": 179
+    },
+    {
+     "secao": "3018-5-280",
+     "swing_pp": 14.12,
+     "zRobusto": 4.08,
+     "validos2t": 129
+    },
+    {
+     "secao": "3018-5-765",
+     "swing_pp": 13.81,
+     "zRobusto": 3.95,
+     "validos2t": 74
+    },
+    {
+     "secao": "3018-5-43",
+     "swing_pp": 13.8,
+     "zRobusto": 3.94,
+     "validos2t": 181
+    },
+    {
+     "secao": "3018-1-843",
+     "swing_pp": 13.62,
+     "zRobusto": 3.87,
+     "validos2t": 108
+    },
+    {
+     "secao": "3018-5-687",
+     "swing_pp": 13.6,
+     "zRobusto": 3.85,
+     "validos2t": 207
+    },
+    {
+     "secao": "3158-4-87",
+     "swing_pp": -4.22,
+     "zRobusto": -3.8,
+     "validos2t": 136
+    },
+    {
+     "secao": "3018-5-421",
+     "swing_pp": 13.19,
+     "zRobusto": 3.68,
+     "validos2t": 145
+    },
+    {
+     "secao": "3034-2-11",
+     "swing_pp": -3.73,
+     "zRobusto": -3.59,
+     "validos2t": 144
+    },
+    {
+     "secao": "3018-1-832",
+     "swing_pp": 12.41,
+     "zRobusto": 3.34,
+     "validos2t": 86
+    },
+    {
+     "secao": "3042-7-78",
+     "swing_pp": -3.11,
+     "zRobusto": -3.32,
+     "validos2t": 150
+    }
+   ]
+  },
+  {
+   "uf": "RS",
+   "status": "OK",
+   "secoes1t": 27547,
+   "secoes2t": 27547,
+   "pareadas": 27547,
+   "usadas": 27547,
+   "swingMediano_pp": 6.186,
+   "swingMedio_pp": 6.223,
+   "swingDesvio_pp": 2.728,
+   "mad_pp": 1.786,
+   "outliers": [
+    {
+     "secao": "87912-60-506",
+     "swing_pp": -18.18,
+     "zRobusto": -9.2,
+     "validos2t": 11
+    },
+    {
+     "secao": "87718-172-300",
+     "swing_pp": -13.75,
+     "zRobusto": -7.53,
+     "validos2t": 16
+    },
+    {
+     "secao": "87254-27-19",
+     "swing_pp": 26.11,
+     "zRobusto": 7.52,
+     "validos2t": 68
+    },
+    {
+     "secao": "89532-58-50",
+     "swing_pp": -11.17,
+     "zRobusto": -6.55,
+     "validos2t": 24
+    },
+    {
+     "secao": "87858-128-483",
+     "swing_pp": -7.94,
+     "zRobusto": -5.33,
+     "validos2t": 18
+    },
+    {
+     "secao": "89036-83-152",
+     "swing_pp": -7.89,
+     "zRobusto": -5.32,
+     "validos2t": 19
+    },
+    {
+     "secao": "86916-120-32",
+     "swing_pp": -7.7,
+     "zRobusto": -5.24,
+     "validos2t": 53
+    },
+    {
+     "secao": "87050-23-374",
+     "swing_pp": -7.69,
+     "zRobusto": -5.24,
+     "validos2t": 26
+    },
+    {
+     "secao": "85740-55-321",
+     "swing_pp": 20.02,
+     "zRobusto": 5.22,
+     "validos2t": 49
+    },
+    {
+     "secao": "88013-114-574",
+     "swing_pp": -7.2,
+     "zRobusto": -5.06,
+     "validos2t": 30
+    },
+    {
+     "secao": "85553-9-28",
+     "swing_pp": -7.05,
+     "zRobusto": -5.0,
+     "validos2t": 52
+    },
+    {
+     "secao": "89109-29-41",
+     "swing_pp": 18.63,
+     "zRobusto": 4.7,
+     "validos2t": 203
+    },
+    {
+     "secao": "87912-60-307",
+     "swing_pp": 18.2,
+     "zRobusto": 4.54,
+     "validos2t": 283
+    },
+    {
+     "secao": "85596-10-55",
+     "swing_pp": 18.07,
+     "zRobusto": 4.49,
+     "validos2t": 148
+    },
+    {
+     "secao": "88714-50-9",
+     "swing_pp": 18.02,
+     "zRobusto": 4.47,
+     "validos2t": 124
+    }
+   ]
+  },
+  {
+   "uf": "SC",
+   "status": "OK",
+   "secoes1t": 17326,
+   "secoes2t": 17326,
+   "pareadas": 17326,
+   "usadas": 17326,
+   "swingMediano_pp": 5.323,
+   "swingMedio_pp": 5.465,
+   "swingDesvio_pp": 2.338,
+   "mad_pp": 1.511,
+   "outliers": [
+    {
+     "secao": "81779-18-326",
+     "swing_pp": 24.17,
+     "zRobusto": 8.41,
+     "validos2t": 15
+    },
+    {
+     "secao": "81990-22-152",
+     "swing_pp": -13.03,
+     "zRobusto": -8.19,
+     "validos2t": 19
+    },
+    {
+     "secao": "81639-91-293",
+     "swing_pp": 20.0,
+     "zRobusto": 6.55,
+     "validos2t": 15
+    },
+    {
+     "secao": "83275-84-188",
+     "swing_pp": 17.39,
+     "zRobusto": 5.39,
+     "validos2t": 253
+    },
+    {
+     "secao": "80250-27-248",
+     "swing_pp": 16.54,
+     "zRobusto": 5.01,
+     "validos2t": 102
+    },
+    {
+     "secao": "82210-106-247",
+     "swing_pp": 16.52,
+     "zRobusto": 5.0,
+     "validos2t": 155
+    },
+    {
+     "secao": "81833-104-232",
+     "swing_pp": -5.82,
+     "zRobusto": -4.97,
+     "validos2t": 28
+    },
+    {
+     "secao": "81795-105-319",
+     "swing_pp": 15.94,
+     "zRobusto": 4.74,
+     "validos2t": 267
+    },
+    {
+     "secao": "80691-7-48",
+     "swing_pp": 15.87,
+     "zRobusto": 4.71,
+     "validos2t": 149
+    },
+    {
+     "secao": "81051-100-493",
+     "swing_pp": 15.81,
+     "zRobusto": 4.68,
+     "validos2t": 78
+    },
+    {
+     "secao": "80470-3-765",
+     "swing_pp": 15.77,
+     "zRobusto": 4.66,
+     "validos2t": 66
+    },
+    {
+     "secao": "83097-67-155",
+     "swing_pp": 15.54,
+     "zRobusto": 4.56,
+     "validos2t": 129
+    },
+    {
+     "secao": "81051-13-193",
+     "swing_pp": 15.45,
+     "zRobusto": 4.52,
+     "validos2t": 296
+    },
+    {
+     "secao": "80667-6-177",
+     "swing_pp": -4.68,
+     "zRobusto": -4.46,
+     "validos2t": 103
+    },
+    {
+     "secao": "83259-28-102",
+     "swing_pp": 15.31,
+     "zRobusto": 4.46,
+     "validos2t": 251
+    }
+   ]
+  },
+  {
+   "uf": "SE",
+   "status": "OK",
+   "secoes1t": 5923,
+   "secoes2t": 5923,
+   "pareadas": 5923,
+   "usadas": 5923,
+   "swingMediano_pp": 6.592,
+   "swingMedio_pp": 6.676,
+   "swingDesvio_pp": 2.526,
+   "mad_pp": 1.689,
+   "outliers": [
+    {
+     "secao": "31054-27-625",
+     "swing_pp": 16.54,
+     "zRobusto": 3.97,
+     "validos2t": 93
+    },
+    {
+     "secao": "31054-27-577",
+     "swing_pp": 16.24,
+     "zRobusto": 3.85,
+     "validos2t": 246
+    },
+    {
+     "secao": "31330-30-66",
+     "swing_pp": -1.92,
+     "zRobusto": -3.4,
+     "validos2t": 161
+    },
+    {
+     "secao": "31950-34-358",
+     "swing_pp": -1.85,
+     "zRobusto": -3.37,
+     "validos2t": 26
+    },
+    {
+     "secao": "31054-27-601",
+     "swing_pp": 15.02,
+     "zRobusto": 3.37,
+     "validos2t": 296
+    },
+    {
+     "secao": "31054-1-399",
+     "swing_pp": 14.76,
+     "zRobusto": 3.26,
+     "validos2t": 280
+    },
+    {
+     "secao": "31976-15-257",
+     "swing_pp": -1.51,
+     "zRobusto": -3.23,
+     "validos2t": 193
+    },
+    {
+     "secao": "31054-1-531",
+     "swing_pp": 14.61,
+     "zRobusto": 3.2,
+     "validos2t": 297
+    },
+    {
+     "secao": "31577-9-225",
+     "swing_pp": 14.51,
+     "zRobusto": 3.16,
+     "validos2t": 200
+    },
+    {
+     "secao": "31690-12-136",
+     "swing_pp": 14.47,
+     "zRobusto": 3.14,
+     "validos2t": 242
+    },
+    {
+     "secao": "31950-34-300",
+     "swing_pp": 14.46,
+     "zRobusto": 3.14,
+     "validos2t": 234
+    },
+    {
+     "secao": "31054-27-528",
+     "swing_pp": 14.39,
+     "zRobusto": 3.11,
+     "validos2t": 272
+    },
+    {
+     "secao": "31054-1-18",
+     "swing_pp": 14.36,
+     "zRobusto": 3.1,
+     "validos2t": 303
+    },
+    {
+     "secao": "31518-3-107",
+     "swing_pp": -1.17,
+     "zRobusto": -3.1,
+     "validos2t": 183
+    },
+    {
+     "secao": "31054-1-516",
+     "swing_pp": 14.32,
+     "zRobusto": 3.09,
+     "validos2t": 187
+    }
+   ]
+  },
+  {
+   "uf": "SP",
+   "status": "OK",
+   "secoes1t": 103656,
+   "secoes2t": 103656,
+   "pareadas": 103656,
+   "usadas": 103656,
+   "swingMediano_pp": 7.757,
+   "swingMedio_pp": 7.789,
+   "swingDesvio_pp": 2.633,
+   "mad_pp": 1.757,
+   "outliers": [
+    {
+     "secao": "64254-291-381",
+     "swing_pp": 36.61,
+     "zRobusto": 11.08,
+     "validos2t": 14
+    },
+    {
+     "secao": "65471-52-386",
+     "swing_pp": 25.0,
+     "zRobusto": 6.62,
+     "validos2t": 12
+    },
+    {
+     "secao": "71072-381-729",
+     "swing_pp": 24.58,
+     "zRobusto": 6.46,
+     "validos2t": 51
+    },
+    {
+     "secao": "69213-406-368",
+     "swing_pp": -9.03,
+     "zRobusto": -6.45,
+     "validos2t": 17
+    },
+    {
+     "secao": "71455-342-328",
+     "swing_pp": -7.08,
+     "zRobusto": -5.7,
+     "validos2t": 80
+    },
+    {
+     "secao": "70572-307-424",
+     "swing_pp": 22.49,
+     "zRobusto": 5.66,
+     "validos2t": 74
+    },
+    {
+     "secao": "61891-17-213",
+     "swing_pp": -6.91,
+     "zRobusto": -5.63,
+     "validos2t": 36
+    },
+    {
+     "secao": "62910-380-354",
+     "swing_pp": -6.04,
+     "zRobusto": -5.3,
+     "validos2t": 39
+    },
+    {
+     "secao": "63290-205-74",
+     "swing_pp": 21.18,
+     "zRobusto": 5.15,
+     "validos2t": 17
+    },
+    {
+     "secao": "71072-256-470",
+     "swing_pp": -5.59,
+     "zRobusto": -5.12,
+     "validos2t": 46
+    },
+    {
+     "secao": "61085-205-81",
+     "swing_pp": 21.1,
+     "zRobusto": 5.12,
+     "validos2t": 23
+    },
+    {
+     "secao": "71072-2-519",
+     "swing_pp": -5.34,
+     "zRobusto": -5.03,
+     "validos2t": 293
+    },
+    {
+     "secao": "71153-132-317",
+     "swing_pp": 20.69,
+     "zRobusto": 4.97,
+     "validos2t": 51
+    },
+    {
+     "secao": "70572-306-295",
+     "swing_pp": 20.63,
+     "zRobusto": 4.94,
+     "validos2t": 59
+    },
+    {
+     "secao": "63894-149-119",
+     "swing_pp": 20.59,
+     "zRobusto": 4.93,
+     "validos2t": 17
+    }
+   ]
+  },
+  {
+   "uf": "TO",
+   "status": "OK",
+   "secoes1t": 4384,
+   "secoes2t": 4384,
+   "pareadas": 4384,
+   "usadas": 4384,
+   "swingMediano_pp": 5.178,
+   "swingMedio_pp": 5.2,
+   "swingDesvio_pp": 2.558,
+   "mad_pp": 1.65,
+   "outliers": [
+    {
+     "secao": "73270-26-60",
+     "swing_pp": -9.96,
+     "zRobusto": -6.19,
+     "validos2t": 31
+    },
+    {
+     "secao": "73091-32-38",
+     "swing_pp": 16.96,
+     "zRobusto": 4.82,
+     "validos2t": 147
+    },
+    {
+     "secao": "92410-1-458",
+     "swing_pp": -6.09,
+     "zRobusto": -4.6,
+     "validos2t": 32
+    },
+    {
+     "secao": "94811-19-20",
+     "swing_pp": 15.2,
+     "zRobusto": 4.1,
+     "validos2t": 93
+    },
+    {
+     "secao": "96156-17-61",
+     "swing_pp": 15.19,
+     "zRobusto": 4.09,
+     "validos2t": 79
+    },
+    {
+     "secao": "95699-35-77",
+     "swing_pp": 15.0,
+     "zRobusto": 4.01,
+     "validos2t": 101
+    },
+    {
+     "secao": "94056-33-11",
+     "swing_pp": -4.39,
+     "zRobusto": -3.91,
+     "validos2t": 172
+    },
+    {
+     "secao": "96598-3-96",
+     "swing_pp": 14.55,
+     "zRobusto": 3.83,
+     "validos2t": 55
+    },
+    {
+     "secao": "93653-15-81",
+     "swing_pp": -4.13,
+     "zRobusto": -3.8,
+     "validos2t": 88
+    },
+    {
+     "secao": "92452-31-19",
+     "swing_pp": 14.47,
+     "zRobusto": 3.8,
+     "validos2t": 90
+    },
+    {
+     "secao": "95214-18-78",
+     "swing_pp": 14.13,
+     "zRobusto": 3.66,
+     "validos2t": 170
+    },
+    {
+     "secao": "93238-13-92",
+     "swing_pp": 13.96,
+     "zRobusto": 3.59,
+     "validos2t": 156
+    },
+    {
+     "secao": "73440-29-694",
+     "swing_pp": 13.7,
+     "zRobusto": 3.48,
+     "validos2t": 220
+    },
+    {
+     "secao": "92002-4-113",
+     "swing_pp": -3.3,
+     "zRobusto": -3.46,
+     "validos2t": 155
+    },
+    {
+     "secao": "92410-1-375",
+     "swing_pp": 13.65,
+     "zRobusto": 3.46,
+     "validos2t": 219
+    }
+   ]
+  },
+  {
+   "uf": "ZZ",
+   "status": "OK",
+   "secoes1t": 1309,
+   "secoes2t": 1308,
+   "pareadas": 1308,
+   "usadas": 1305,
+   "swingMediano_pp": 6.072,
+   "swingMedio_pp": 6.182,
+   "swingDesvio_pp": 3.18,
+   "mad_pp": 1.904,
+   "outliers": [
+    {
+     "secao": "29505-1-78",
+     "swing_pp": -10.67,
+     "zRobusto": -5.93,
+     "validos2t": 107
+    },
+    {
+     "secao": "30325-1-352",
+     "swing_pp": 21.8,
+     "zRobusto": 5.57,
+     "validos2t": 21
+    },
+    {
+     "secao": "30341-1-1894",
+     "swing_pp": 21.06,
+     "zRobusto": 5.31,
+     "validos2t": 239
+    },
+    {
+     "secao": "30821-1-1524",
+     "swing_pp": 20.51,
+     "zRobusto": 5.11,
+     "validos2t": 12
+    },
+    {
+     "secao": "99473-1-1327",
+     "swing_pp": -7.97,
+     "zRobusto": -4.97,
+     "validos2t": 39
+    },
+    {
+     "secao": "29955-1-3457",
+     "swing_pp": 18.76,
+     "zRobusto": 4.5,
+     "validos2t": 152
+    },
+    {
+     "secao": "30341-1-3576",
+     "swing_pp": 18.59,
+     "zRobusto": 4.43,
+     "validos2t": 251
+    },
+    {
+     "secao": "30066-1-1062",
+     "swing_pp": 18.57,
+     "zRobusto": 4.43,
+     "validos2t": 85
+    },
+    {
+     "secao": "29491-1-735",
+     "swing_pp": 18.44,
+     "zRobusto": 4.38,
+     "validos2t": 110
+    },
+    {
+     "secao": "39020-1-1004",
+     "swing_pp": -6.03,
+     "zRobusto": -4.29,
+     "validos2t": 57
+    },
+    {
+     "secao": "29890-1-391",
+     "swing_pp": -5.42,
+     "zRobusto": -4.07,
+     "validos2t": 85
+    },
+    {
+     "secao": "30805-1-1691",
+     "swing_pp": 17.18,
+     "zRobusto": 3.93,
+     "validos2t": 124
+    },
+    {
+     "secao": "29505-1-561",
+     "swing_pp": -4.6,
+     "zRobusto": -3.78,
+     "validos2t": 48
+    },
+    {
+     "secao": "39209-1-1069",
+     "swing_pp": 16.7,
+     "zRobusto": 3.77,
+     "validos2t": 61
+    },
+    {
+     "secao": "30074-1-205",
+     "swing_pp": -4.35,
+     "zRobusto": -3.69,
+     "validos2t": 69
+    }
+   ]
+  }
+ ]
+}

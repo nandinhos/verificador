@@ -1,0 +1,255 @@
+{
+ "2022": {
+  "t1": {
+   "validos": 118229719,
+   "cands": {
+    "12": {
+     "nome": "CIRO GOMES",
+     "votos": 3599287,
+     "pct": 3.04
+    },
+    "22": {
+     "nome": "JAIR BOLSONARO",
+     "votos": 51072345,
+     "pct": 43.2
+    },
+    "14": {
+     "nome": "PADRE KELMON",
+     "votos": 81129,
+     "pct": 0.07
+    },
+    "21": {
+     "nome": "SOFIA MANZANO",
+     "votos": 45620,
+     "pct": 0.04
+    },
+    "16": {
+     "nome": "VERA",
+     "votos": 25625,
+     "pct": 0.02
+    },
+    "15": {
+     "nome": "SIMONE TEBET",
+     "votos": 4915423,
+     "pct": 4.16
+    },
+    "44": {
+     "nome": "SORAYA THRONICKE",
+     "votos": 600955,
+     "pct": 0.51
+    },
+    "27": {
+     "nome": "CONSTITUINTE EYMAEL",
+     "votos": 16604,
+     "pct": 0.01
+    },
+    "30": {
+     "nome": "FELIPE D AVILA",
+     "votos": 559708,
+     "pct": 0.47
+    },
+    "13": {
+     "nome": "LULA",
+     "votos": 57259504,
+     "pct": 48.43
+    },
+    "80": {
+     "nome": "LÉO PÉRICLES",
+     "votos": 53519,
+     "pct": 0.05
+    }
+   }
+  },
+  "t2": {
+   "validos": 118552353,
+   "cands": {
+    "22": {
+     "nome": "JAIR BOLSONARO",
+     "votos": 58206354,
+     "pct": 49.1
+    },
+    "13": {
+     "nome": "LULA",
+     "votos": 60345999,
+     "pct": 50.9
+    }
+   }
+  },
+  "finalistas": [
+   "13",
+   "22"
+  ]
+ },
+ "2018": {
+  "t1": {
+   "validos": 107050749,
+   "cands": {
+    "19": {
+     "nome": "ALVARO DIAS",
+     "votos": 859601,
+     "pct": 0.8
+    },
+    "15": {
+     "nome": "HENRIQUE MEIRELLES",
+     "votos": 1288950,
+     "pct": 1.2
+    },
+    "50": {
+     "nome": "GUILHERME BOULOS",
+     "votos": 617122,
+     "pct": 0.58
+    },
+    "45": {
+     "nome": "GERALDO ALCKMIN",
+     "votos": 5096350,
+     "pct": 4.76
+    },
+    "27": {
+     "nome": "EYMAEL",
+     "votos": 41710,
+     "pct": 0.04
+    },
+    "12": {
+     "nome": "CIRO GOMES",
+     "votos": 13344371,
+     "pct": 12.47
+    },
+    "18": {
+     "nome": "MARINA SILVA",
+     "votos": 1069578,
+     "pct": 1.0
+    },
+    "30": {
+     "nome": "JOÃO AMOÊDO",
+     "votos": 2679745,
+     "pct": 2.5
+    },
+    "54": {
+     "nome": "JOÃO GOULART FILHO",
+     "votos": 30176,
+     "pct": 0.03
+    },
+    "17": {
+     "nome": "JAIR BOLSONARO",
+     "votos": 49277010,
+     "pct": 46.03
+    },
+    "16": {
+     "nome": "VERA",
+     "votos": 55762,
+     "pct": 0.05
+    },
+    "51": {
+     "nome": "CABO DACIOLO",
+     "votos": 1348323,
+     "pct": 1.26
+    },
+    "13": {
+     "nome": "FERNANDO HADDAD",
+     "votos": 31342051,
+     "pct": 29.28
+    }
+   }
+  },
+  "t2": {
+   "validos": 104838753,
+   "cands": {
+    "13": {
+     "nome": "FERNANDO HADDAD",
+     "votos": 47040906,
+     "pct": 44.87
+    },
+    "17": {
+     "nome": "JAIR BOLSONARO",
+     "votos": 57797847,
+     "pct": 55.13
+    }
+   }
+  },
+  "finalistas": [
+   "17",
+   "13"
+  ]
+ },
+ "2014": {
+  "t1": {
+   "validos": 104023802,
+   "cands": {
+    "45": {
+     "nome": "AÉCIO NEVES",
+     "votos": 34897211,
+     "pct": 33.55
+    },
+    "13": {
+     "nome": "DILMA",
+     "votos": 43267668,
+     "pct": 41.59
+    },
+    "43": {
+     "nome": "EDUARDO JORGE",
+     "votos": 630099,
+     "pct": 0.61
+    },
+    "27": {
+     "nome": "EYMAEL",
+     "votos": 61250,
+     "pct": 0.06
+    },
+    "28": {
+     "nome": "LEVY FIDELIX",
+     "votos": 446878,
+     "pct": 0.43
+    },
+    "50": {
+     "nome": "LUCIANA GENRO",
+     "votos": 1612186,
+     "pct": 1.55
+    },
+    "40": {
+     "nome": "MARINA SILVA",
+     "votos": 22176619,
+     "pct": 21.32
+    },
+    "21": {
+     "nome": "MAURO IASI",
+     "votos": 47845,
+     "pct": 0.05
+    },
+    "20": {
+     "nome": "PASTOR EVERALDO",
+     "votos": 780513,
+     "pct": 0.75
+    },
+    "29": {
+     "nome": "RUI COSTA PIMENTA",
+     "votos": 12324,
+     "pct": 0.01
+    },
+    "16": {
+     "nome": "ZÉ MARIA",
+     "votos": 91209,
+     "pct": 0.09
+    }
+   }
+  },
+  "t2": {
+   "validos": 105542273,
+   "cands": {
+    "45": {
+     "nome": "AÉCIO NEVES",
+     "votos": 51041155,
+     "pct": 48.36
+    },
+    "13": {
+     "nome": "DILMA",
+     "votos": 54501118,
+     "pct": 51.64
+    }
+   }
+  },
+  "finalistas": [
+   "13",
+   "45"
+  ]
+ }
+}

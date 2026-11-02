@@ -1,0 +1,19 @@
+{
+ "geradoDe": "Resumos oficiais nacionais TSE (Presidente 1T/2T), totalizacao final",
+ "eleitorado": {
+   "eleitorado":    {"t1":158745502,"t2":158745502},
+   "comparecimento":{"t1":125275835,"t2":128236074},
+   "abstencao":     {"t1":33469667, "t2":30509428},
+   "validos":       {"t1":119300788,"t2":124082273},
+   "brancos":       {"t1":2300798,  "t2":1430496},
+   "nulos":         {"t1":3669003,  "t2":2723305}
+ },
+ "participacaoPct": {"t1":78.92,"t2":80.78},
+ "protestoPct":     {"t1":4.77,"t2":3.24},
+ "finalistas": [
+   {"num":"13","nome":"LULA (PT)",      "v1":53879538,"p1":45.16,"v2":64256232,"p2":51.79},
+   {"num":"22","nome":"BOLSONARO (PL)", "v1":56104503,"p1":47.03,"v2":59826041,"p2":48.21}
+ ],
+ "boloEliminados":9316747,
+ "ganhoFinalistas":{"13":10376694,"22":3721538,"soma":14098232}
+}

@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mcp.ai sob auditoria — relatório independente</title>
+<meta name="description" content="Análise independente do agregador MCP mcp.ai: arquitetura, critérios de segurança, risco de vazamento e o que ele realmente entrega.">
+<style>
+  :root {
+    --paper: #FAF7F2;
+    --ink: #16130F;
+    --ink-soft: #4A443C;
+    --hair: #DCD4C8;
+    --accent: #A8431F;
+    --accent-soft: #F3E3DA;
+    --safe: #2F6B4F;
+    --safe-soft: #E4EFE8;
+    --warn: #8A5A12;
+    --warn-soft: #F6EAD3;
+    --risk: #8C2B22;
+    --risk-soft: #F6E0DC;
+    --measure: 68ch;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+  }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 28px 96px; }
+  .display { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; }
+
+  /* ---------- capa ---------- */
+  header.hero { border-top: 5px solid var(--accent); padding: 56px 0 34px; }
+  .kicker {
+    font-size: 12px; letter-spacing: .18em; text-transform: uppercase;
+    color: var(--accent); font-weight: 700; margin: 0 0 18px;
+  }
+  h1 { font-size: clamp(2.1rem, 4.6vw, 3.3rem); line-height: 1.08; margin: 0 0 18px; letter-spacing: -.015em; font-weight: 600; }
+  .lede { font-size: 1.16rem; color: var(--ink-soft); max-width: var(--measure); margin: 0 0 30px; }
+  .byline { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px 40px; border-top: 1px solid var(--hair); padding-top: 18px; }
+  .byline span { display: flex; flex-direction: column; gap: 3px; font-size: 13.5px; color: var(--ink-soft); line-height: 1.45; }
+  .byline strong { font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+
+  /* ---------- estrutura ---------- */
+  section { margin: 56px 0 0; }
+  h2 { font-size: 1.55rem; line-height: 1.2; margin: 0 0 6px; letter-spacing: -.01em; font-weight: 600; }
+  h2 .num { color: var(--accent); font-variant-numeric: tabular-nums; margin-right: .5rem; }
+  .sub { color: var(--ink-soft); font-size: .95rem; margin: 0 0 24px; }
+  h3 { font-size: 1.02rem; margin: 30px 0 8px; font-weight: 650; }
+  p { max-width: var(--measure); }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+
+  /* ---------- veredito ---------- */
+  .verdict {
+    background: var(--ink); color: #F7F3EC; border-radius: 4px;
+    padding: 30px 32px; margin-top: 34px;
+  }
+  .verdict .label { font-size: 11.5px; letter-spacing: .16em; text-transform: uppercase; color: #C9A99A; font-weight: 700; }
+  .verdict p { margin: 10px 0 0; font-size: 1.16rem; line-height: 1.5; max-width: 62ch; color: #F7F3EC; }
+  .verdict .tag { display: inline-block; margin-top: 18px; padding: 5px 12px; border: 1px solid #6E655B; border-radius: 999px; font-size: 12.5px; letter-spacing: .04em; color: #EDE6DB; }
+
+  /* ---------- componentes ---------- */
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip {
+    display: inline-block; padding: 2px 8px; border-radius: 3px;
+    font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+    border: 1px solid transparent; white-space: nowrap;
+  }
+  .chip.obs { background: var(--safe-soft); color: var(--safe); border-color: #C6DCCF; }
+  .chip.inf { background: var(--warn-soft); color: var(--warn); border-color: #E6D2AC; }
+  .chip.unk { background: #ECE8E2; color: #5B544B; border-color: #D8D0C4; }
+
+  table { width: 100%; border-collapse: collapse; margin: 20px 0 8px; font-size: 14.5px; }
+  caption { text-align: left; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); padding-bottom: 8px; }
+  th { text-align: left; font-size: 11.5px; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-soft); font-weight: 700; border-bottom: 1.5px solid var(--ink); padding: 0 12px 8px 0; vertical-align: bottom; }
+  td { padding: 12px 12px 12px 0; border-bottom: 1px solid var(--hair); vertical-align: top; }
+  tbody tr:last-child td { border-bottom: 1px solid var(--ink); }
+  td.num, th.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; margin-top: 18px; }
+  .panel { border: 1px solid var(--hair); background: #FFFDFA; padding: 22px 24px; border-radius: 3px; }
+  .panel h4 { margin: 0 0 12px; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+  .panel.yes h4 { color: var(--safe); }
+  .panel.no h4 { color: var(--risk); }
+  .panel ul { margin: 0; padding-left: 18px; }
+  .panel li { margin: 7px 0; font-size: 14.5px; line-height: 1.5; }
+
+  .flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 24px 0 8px; counter-reset: step; }
+  .flow .step { border: 1px solid var(--hair); background: #FFFDFA; padding: 16px 14px; border-radius: 3px; position: relative; }
+  .flow .step::before {
+    counter-increment: step; content: counter(step);
+    font-family: Georgia, serif; font-size: 22px; color: var(--accent); display: block; margin-bottom: 6px;
+  }
+  .flow .step b { display: block; font-size: 14px; margin-bottom: 4px; }
+  .flow .step span { font-size: 12.8px; color: var(--ink-soft); line-height: 1.45; display: block; }
+
+  .matrix td.low { background: var(--safe-soft); }
+  .matrix td.med { background: var(--warn-soft); }
+  .matrix td.high { background: var(--risk-soft); }
+  .matrix td { font-weight: 600; }
+  th.tright, td.tright { text-align: right; }
+
+  .checklist { list-style: none; padding: 0; margin: 20px 0 0; counter-reset: c; }
+  .checklist li { position: relative; padding: 12px 0 12px 42px; border-bottom: 1px solid var(--hair); font-size: 15px; }
+  .checklist li::before {
+    counter-increment: c; content: counter(c);
+    position: absolute; left: 0; top: 12px; width: 26px; height: 26px; border-radius: 50%;
+    background: var(--accent); color: #fff; font-size: 12.5px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .checklist li b { display: block; margin-bottom: 2px; }
+
+  blockquote.pull {
+    margin: 30px 0; padding: 4px 0 4px 22px; border-left: 3px solid var(--accent);
+    font-family: "Iowan Old Style", Palatino, Georgia, serif; font-size: 1.22rem; line-height: 1.45; color: var(--ink);
+    max-width: 60ch;
+  }
+  blockquote.pull footer { font-family: inherit; font-size: 13px; color: var(--ink-soft); margin-top: 10px; }
+
+  .note { font-size: 13.5px; color: var(--ink-soft); border-top: 1px solid var(--hair); padding-top: 14px; margin-top: 34px; max-width: var(--measure); }
+
+  footer.end { margin-top: 64px; border-top: 1px solid var(--ink); padding-top: 22px; font-size: 12.8px; color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 14px 40px; justify-content: space-between; }
+
+  @media (max-width: 760px) {
+    .byline { grid-template-columns: 1fr; gap: 12px; }
+    .grid2 { grid-template-columns: 1fr; }
+    .flow { grid-template-columns: 1fr 1fr; }
+    body { font-size: 16px; }
+  }
+  @media print {
+    body { background: #fff; font-size: 11pt; }
+    .wrap { padding: 0; max-width: none; }
+    .verdict { background: #16130F !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    section { page-break-inside: avoid; }
+    table, .panel, .flow { page-break-inside: avoid; }
+    a { color: var(--ink); }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <p class="kicker">Relatório independente · Segurança de fornecedor</p>
+  <h1 class="display">mcp.ai sob auditoria</h1>
+  <p class="lede">O que é o agregador MCP, o que ele promete, o que foi possível verificar — e por que o risco de vazamento não está onde parece.</p>
+  <div class="byline">
+    <span><strong>Data</strong> 2 de novembro de 2026</span>
+    <span><strong>Escopo</strong> mcp.ai, api.mcp.ai e conector de Open Finance</span>
+    <span><strong>Método</strong> verificação direta em produção, sem conta</span>
+  </div>
+</header>
+
+<div class="verdict">
+  <p class="label">Veredito</p>
+  <p>Infraestrutura real e funcional, operada por uma empresa pequena, sem certificação pública e com uma credencial estática que concentra Gmail, banco e WhatsApp. <strong>Seguro com escopo</strong> para Open Finance somente-leitura; arriscado para caixa de e-mail e mensagens pessoais.</p>
+  <span class="tag">Confiança alta no observado · média nas inferências</span>
+</div>
+
+<section>
+  <h2><span class="num">01</span>Quem opera</h2>
+  <p class="sub">O domínio é antigo; o produto não é.</p>
+  <table>
+    <tbody>
+      <tr><td style="width:34%"><strong>Operadora</strong></td><td>DL WEB LTDA — CNPJ 20.873.739/0001-15, Campo Grande/MS <span class="chips"><span class="chip obs">Observado</span></span></td></tr>
+      <tr><td><strong>Situação</strong></td><td>Ativa desde 2014, capital de R$ 100 mil, um sócio-administrador, CNAE de portais e conteúdo</td></tr>
+      <tr><td><strong>Domínio</strong></td><td>mcp.ai registrado em 2019, transferido em 26/11/2024, WHOIS privado</td></tr>
+      <tr><td><strong>Infra</strong></td><td>Site em Next.js/Vercel; API em Express atrás de Cloudflare</td></tr>
+      <tr><td><strong>Catálogo</strong></td><td>2.271 conectores declarados — com dezenas de páginas derivadas do mesmo backend por banco e por prompt</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2><span class="num">02</span>Como funciona</h2>
+  <p class="sub">Um link, muitos conectores — e um ponto onde tudo se concentra.</p>
+  <div class="flow">
+    <div class="step"><b>Conecta</b><span>Uma URL MCP remota: api.mcp.ai/install, com OAuth e PKCE.</span></div>
+    <div class="step"><b>Autentica</b><span>Pelo navegador — ou copiando um token e colando no chat.</span></div>
+    <div class="step"><b>Agrega</b><span>55 ferramentas no hub; o agente instala novos conectores sozinho.</span></div>
+    <div class="step"><b>Entrega</b><span>O pedido passa pelo mcp.ai até o provedor: Pluggy, Google, bridge própria.</span></div>
+  </div>
+  <p>O dado do seu banco vai até você por uma infraestrutura de terceiro — o que é o modelo de negócio, e também a superfície de risco.</p>
+</section>
+
+<section>
+  <h2><span class="num">03</span>Promessa e entrega</h2>
+  <table>
+    <thead><tr><th style="width:30%">Promessa</th><th>O que foi verificado</th><th class="tright" style="width:16%">Classe</th></tr></thead>
+    <tbody>
+      <tr><td>Open Finance regulado</td><td>Via Pluggy, instituição autorizada pelo BCB; o mcp.ai fica fora do perímetro regulado</td><td class="tright"><span class="chip obs">Observado</span></td></tr>
+      <tr><td>Somente leitura</td><td>19 ferramentas de consulta; nenhum endpoint de Pix ou transferência</td><td class="tright"><span class="chip obs">Observado</span></td></tr>
+      <tr><td>Não armazena conteúdo</td><td>Contradito pela própria documentação: arquivo de WhatsApp com busca full-text e anexos em S3</td><td class="tright"><span class="chip obs">Observado</span></td></tr>
+      <tr><td>100+ servidores</td><td>2.271 no catálogo, com forte duplicação por página derivada</td><td class="tright"><span class="chip inf">Inferido</span></td></tr>
+      <tr><td>Funciona em qualquer cliente</td><td>Protocolo responde e autentica; execução com dados reais não testada</td><td class="tright"><span class="chip unk">Não verificado</span></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2><span class="num">04</span>Segurança: o que existe e o que falta</h2>
+  <div class="grid2">
+    <div class="panel yes">
+      <h4>Presente e declarado</h4>
+      <ul>
+        <li>TLS 1.3+ e credenciais cifradas em repouso (AES-256-GCM, no produto bancário)</li>
+        <li>OAuth com PKCE S256, chaves RS256 e endpoint de revogação</li>
+        <li>Retenção definida: tokens 30 dias após desconexão, logs 90 dias</li>
+        <li>2FA, passkey e step-up no painel do banco</li>
+        <li>Política LGPD com controlador e encarregado identificados</li>
+      </ul>
+    </div>
+    <div class="panel no">
+      <h4>Ausente (nas páginas consultadas)</h4>
+      <ul>
+        <li>SOC 2, ISO 27001 ou qualquer certificação independente</li>
+        <li>Página de segurança real, security.txt e status page</li>
+        <li>Lista pública de suboperadores e DPA</li>
+        <li>Canal de divulgação de vulnerabilidades</li>
+        <li>Cláusula de notificação de incidente</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">Contrato: serviço “como está”, responsabilidade limitada ao maior valor entre 12 meses de mensalidade e R$ 1.000. Em caso de incidente, o fornecedor responde por muito pouco — e isso é parte da avaliação.</p>
+</section>
+
+<section>
+  <h2><span class="num">05</span>Onde mora o risco</h2>
+  <p class="sub">Não é “alguém invadir o mcp.ai”. É concentração de acesso com credencial de longa duração.</p>
+  <table class="matrix">
+    <thead><tr><th>Conector</th><th style="width:22%">Risco</th><th>Por quê</th></tr></thead>
+    <tbody>
+      <tr><td>Banco (Open Finance)</td><td class="med">Médio-baixo</td><td>Somente leitura, consentimento revogável no banco, trilho regulado</td></tr>
+      <tr><td>Gmail / Drive / Sheets</td><td class="high">Alto</td><td>Leitura total e envio; o e-mail é a chave-mestra de reset de senhas</td></tr>
+      <tr><td>WhatsApp</td><td class="high">Alto</td><td>Conexão não oficial, histórico armazenado, dados de terceiros</td></tr>
+      <tr><td>Instagram</td><td class="high">Alto</td><td>Custódia de senha e automação contra os termos da plataforma</td></tr>
+    </tbody>
+  </table>
+
+  <blockquote class="pull">
+    “O token não expira.”
+    <footer>Resposta literal da ferramenta de autenticação do mcp.ai, com a recomendação de gravá-lo na configuração do cliente.</footer>
+  </blockquote>
+
+  <p>Um único Bearer estático dá acesso a todos os conectores habilitados. Se ele vazar — configuração sincronizada, print, histórico de chat — o atacante não precisa atacar ninguém. Somam-se a isso o fluxo que manda colar o token no chat e o compartilhamento de conversa com terceiros, vendido como recurso.</p>
+</section>
+
+<section>
+  <h2><span class="num">06</span>llms.txt e IndexNow</h2>
+  <p class="sub">Duas camadas diferentes, nenhuma delas um atalho para “respostas melhores”.</p>
+  <p><strong>llms.txt</strong> é uma proposta de 2024, revisada em 2026, para dar aos agentes um índice em markdown do site. Não substitui sitemap e não é sinal de indexação documentado pelos provedores. Os laboratórios publicam o seu; isso não significa que leiam o seu.</p>
+  <p><strong>IndexNow</strong> avisa buscadores de que uma URL mudou. Vale para Bing, Yandex, Naver, Seznam, Yep e Amazon. Google não consta. É ortogonal ao mcp.ai e ao llms.txt: não existe chamada de API que ligue um ao outro.</p>
+  <p>O que de fato melhora a resposta de um agente é contrato de ferramenta, escopo mínimo e avaliação medida — não a soma de arquivos e avisos.</p>
+</section>
+
+<section>
+  <h2><span class="num">07</span>Como usar sem se expor</h2>
+  <ul class="checklist">
+    <li><b>Nunca cole o token no chat</b>Use cabeçalho no cliente, em máquina com disco criptografado.</li>
+    <li><b>Confirme o 2FA da conta</b>Existe no produto bancário; para a conta principal, não foi possível verificar.</li>
+    <li><b>Olhe o app na tela do Google</b>Antes de conectar Gmail, verifique nome e selo de verificação.</li>
+    <li><b>Prefira chaves de convidado</b>Escopo mínimo em vez de um token de dono.</li>
+    <li><b>Revogue nos dois lados</b>No painel e no provedor; tokens duram até 30 dias após a desconexão.</li>
+    <li><b>Exija DPA para uso corporativo</b>Lista de suboperadores, região de hospedagem e resposta a incidente.</li>
+    <li><b>Trate o link como segredo</b>A URL do workspace e o token são credenciais de produção.</li>
+  </ul>
+</section>
+
+<footer class="end">
+  <span>Metodologia: leitura de políticas e documentação, verificação de CNPJ e domínio, e chamadas diretas ao servidor MCP em produção. Nenhuma conta foi criada.</span>
+  <span>O que não foi testado: criptografia em repouso, identidade do app OAuth, histórico de incidentes e execução ponta a ponta com dados reais.</span>
+</footer>
+
+</div>
+</body>
+</html>

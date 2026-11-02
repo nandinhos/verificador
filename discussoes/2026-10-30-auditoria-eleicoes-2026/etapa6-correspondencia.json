@@ -1,0 +1,234 @@
+{
+ "geradoDe": "CESP x CEFT 2o turno (urnas esperadas x efetivadas)",
+ "resumo": {
+  "ufs": 28,
+  "completas": 27,
+  "totalNaoTransmitiram": 0
+ },
+ "ufs": [
+  {
+   "uf": "AC",
+   "esperadas": 2270,
+   "efetivadas": 2270,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "AL",
+   "esperadas": 7101,
+   "efetivadas": 7101,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "AM",
+   "esperadas": 8157,
+   "efetivadas": 8157,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "AP",
+   "esperadas": 1914,
+   "efetivadas": 1914,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "BA",
+   "esperadas": 35476,
+   "efetivadas": 35476,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "CE",
+   "esperadas": 23765,
+   "efetivadas": 23765,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "DF",
+   "esperadas": 6969,
+   "efetivadas": 6969,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "ES",
+   "esperadas": 9844,
+   "efetivadas": 9844,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "GO",
+   "esperadas": 15686,
+   "efetivadas": 15686,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "MA",
+   "esperadas": 18093,
+   "efetivadas": 18093,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "MG",
+   "esperadas": 52062,
+   "efetivadas": 52062,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "MS",
+   "esperadas": 7106,
+   "efetivadas": 7106,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "MT",
+   "esperadas": 8287,
+   "efetivadas": 8287,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "PA",
+   "esperadas": 20827,
+   "efetivadas": 20827,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "PB",
+   "esperadas": 10712,
+   "efetivadas": 10712,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "PE",
+   "esperadas": 21418,
+   "efetivadas": 21418,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "PI",
+   "esperadas": 10225,
+   "efetivadas": 10225,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "PR",
+   "esperadas": 27142,
+   "efetivadas": 27142,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "RJ",
+   "esperadas": 37675,
+   "efetivadas": 37675,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "RN",
+   "esperadas": 8115,
+   "efetivadas": 8115,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "RO",
+   "esperadas": 4698,
+   "efetivadas": 4698,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "RR",
+   "esperadas": 1519,
+   "efetivadas": 1519,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "RS",
+   "esperadas": 27547,
+   "efetivadas": 27547,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "SC",
+   "esperadas": 17326,
+   "efetivadas": 17326,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "SE",
+   "esperadas": 5923,
+   "efetivadas": 5923,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "SP",
+   "esperadas": 103656,
+   "efetivadas": 103656,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "TO",
+   "esperadas": 4384,
+   "efetivadas": 4384,
+   "naoTransmitiram": 0,
+   "inesperadas": 0,
+   "completa": true
+  },
+  {
+   "uf": "ZZ",
+   "esperadas": 1281,
+   "efetivadas": 1310,
+   "naoTransmitiram": 0,
+   "inesperadas": 29,
+   "completa": false
+  }
+ ]
+}

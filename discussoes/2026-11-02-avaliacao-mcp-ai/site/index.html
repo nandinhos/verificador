@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mcp.ai sob auditoria — relatório independente</title>
+<meta name="description" content="Auditoria independente do agregador MCP mcp.ai: arquitetura, critérios de segurança, risco de vazamento e o que ele realmente entrega.">
+<meta name="theme-color" content="#05070C">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="mcp.ai sob auditoria">
+<meta property="og:description" content="Um link para todos os conectores. O que isso resolve — e o que isso concentra.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="./assets/style.css?v=20261102">
+<script src="./assets/boot.js?v=20261102"></script>
+</head>
+<body>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<div class="bg" aria-hidden="true">
+  <div class="bg__aurora a"></div>
+  <div class="bg__aurora b"></div>
+  <div class="bg__aurora c"></div>
+  <div class="bg__grid"></div>
+  <div class="bg__vignette"></div>
+  <div class="bg__noise"></div>
+</div>
+
+<header class="topbar">
+  <a class="brand" href="#topo"><span class="brand__dot"></span> FSSDEV · Auditoria</a>
+  <nav class="nav" aria-label="Seções">
+    <a href="#veredito">Veredito</a>
+    <a href="#fluxo">Fluxo</a>
+    <a href="#seguranca">Segurança</a>
+    <a href="#risco">Risco</a>
+    <a href="#checklist">Checklist</a>
+  </nav>
+</header>
+
+<main id="conteudo">
+
+  <section class="hero" id="topo">
+    <p class="hero__kicker" data-reveal>Relatório independente · 02 nov 2026</p>
+    <h1 class="d1" data-reveal>mcp.ai <em>sob auditoria</em></h1>
+    <p class="hero__sub d2" data-reveal>Um link para todos os conectores. O que isso resolve — e o que isso concentra.</p>
+    <div class="hero__meta" data-reveal>
+      <span class="chip"><strong>55</strong> ferramentas no hub</span>
+      <span class="chip"><strong>2.271</strong> conectores no catálogo</span>
+      <span class="chip chip--danger">1 token que não expira</span>
+    </div>
+    <div class="scrollcue" aria-hidden="true">
+      <span class="scrollcue__line"></span>
+      <span>Role para ler</span>
+    </div>
+  </section>
+
+  <section class="section" id="veredito">
+    <div class="section__head" data-reveal>
+      <span class="section__num">01</span>
+      <span class="section__label">Veredito</span>
+    </div>
+    <div class="glass verdict" data-reveal data-tilt>
+      <p class="verdict__label">Conclusão da auditoria</p>
+      <p class="verdict__text">Infraestrutura real, operada por uma empresa pequena, com uma credencial que concentra <b>Gmail, banco e WhatsApp</b>.</p>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat__num" data-count="55">55</span>
+          <span class="stat__label">ferramentas expostas</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="2271">2.271</span>
+          <span class="stat__label">conectores declarados</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="1000" data-prefix="R$ ">R$ 1.000</span>
+          <span class="stat__label">teto de responsabilidade</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="quem">
+    <div class="section__head" data-reveal>
+      <span class="section__num">02</span>
+      <span class="section__label">Quem opera</span>
+    </div>
+    <h2 data-reveal>O domínio é antigo.<br>O produto não é.</h2>
+
+    <dl class="facts">
+      <div class="glass fact" data-reveal>
+        <dt>Operadora</dt>
+        <dd>DL WEB LTDA — CNPJ 20.873.739/0001-15 <span>· Campo Grande/MS</span></dd>
+      </div>
+      <div class="glass fact d1" data-reveal>
+        <dt>Situação</dt>
+        <dd>Ativa desde 2014 <span>· capital de R$ 100 mil · um sócio-administrador</span></dd>
+      </div>
+      <div class="glass fact" data-reveal>
+        <dt>Domínio</dt>
+        <dd>mcp.ai de 2019, transferido em 26/11/2024 <span>· WHOIS privado</span></dd>
+      </div>
+      <div class="glass fact" data-reveal>
+        <dt>Infraestrutura</dt>
+        <dd>Site em Next.js/Vercel <span>· API em Express atrás de Cloudflare</span></dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="section" id="fluxo">
+    <div class="section__head" data-reveal>
+      <span class="section__num">03</span>
+      <span class="section__label">Como funciona</span>
+    </div>
+    <h2 data-reveal>Um link, muitos conectores —<br>e um ponto onde tudo se concentra.</h2>
+
+    <div class="glass flow" data-reveal>
+      <svg viewBox="0 0 1000 240" role="img" aria-label="Fluxo: cliente de IA envia pedido ao mcp.ai, que roteia para o provedor upstream e devolve a resposta.">
+        <defs>
+          <linearGradient id="wire" gradientUnits="userSpaceOnUse" x1="90" y1="120" x2="900" y2="120">
+            <stop offset="0" stop-color="#E9A178" stop-opacity=".75"/>
+            <stop offset="1" stop-color="#86E3C9" stop-opacity=".75"/>
+          </linearGradient>
+          <radialGradient id="nodeFill" cx="50%" cy="28%" r="78%">
+            <stop offset="0" stop-color="rgba(255,255,255,.14)"/>
+            <stop offset="1" stop-color="rgba(255,255,255,.02)"/>
+          </radialGradient>
+          <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="rgba(233,161,120,.22)"/>
+            <stop offset="1" stop-color="rgba(233,161,120,0)"/>
+          </radialGradient>
+        </defs>
+
+        <circle cx="360" cy="120" r="92" fill="url(#halo)"/>
+
+        <g class="wires" stroke="url(#wire)" stroke-width="1.6" stroke-linecap="round" fill="none" opacity=".85">
+          <path d="M128 120 H322" class="wire"/>
+          <path d="M398 120 H592" class="wire"/>
+          <path d="M668 120 H862" class="wire"/>
+        </g>
+
+        <g class="nodes" text-anchor="middle" font-size="12" fill="rgba(241,236,228,.88)" letter-spacing=".6">
+          <circle cx="90" cy="120" r="34" fill="url(#nodeFill)" stroke="rgba(255,255,255,.24)"/>
+          <text x="90" y="124">IA</text>
+
+          <circle cx="360" cy="120" r="34" fill="url(#nodeFill)" stroke="rgba(233,161,120,.7)" stroke-width="1.2"/>
+          <text x="360" y="124" fill="#F3C6A6">MCP</text>
+          <circle cx="360" cy="120" r="46" class="pulse" fill="none" stroke="rgba(233,161,120,.4)"/>
+
+          <circle cx="630" cy="120" r="34" fill="url(#nodeFill)" stroke="rgba(255,255,255,.24)"/>
+          <text x="630" y="124">API</text>
+
+          <circle cx="900" cy="120" r="34" fill="url(#nodeFill)" stroke="rgba(134,227,201,.55)" stroke-width="1.2"/>
+          <text x="900" y="124" fill="#B4F0DF">DB</text>
+        </g>
+
+        <g class="labels" font-size="10.5" letter-spacing="2.6" text-anchor="middle" fill="rgba(241,236,228,.5)">
+          <text x="90" y="186">CLIENTE</text>
+          <text x="360" y="186" fill="rgba(233,161,120,.95)">MCP.AI</text>
+          <text x="630" y="186">UPSTREAM</text>
+          <text x="900" y="186">DADOS</text>
+        </g>
+
+        <g class="labels" font-size="13" letter-spacing="0" text-anchor="middle" fill="rgba(241,236,228,.8)">
+          <text x="90" y="58">Claude · Cursor · VS Code</text>
+          <text x="360" y="48">OAuth · 55 tools</text>
+          <text x="630" y="58">Pluggy · Google · bridge</text>
+          <text x="900" y="58">saldo · e-mail · chat</text>
+        </g>
+
+        <circle class="packet p1" r="3.6" fill="#E9A178"/>
+        <circle class="packet p2" r="3.6" fill="#E9A178"/>
+        <circle class="packet p3" r="3.6" fill="#86E3C9"/>
+      </svg>
+
+      <div class="flow__legend">
+        <div><b>Conecta</b>Uma URL MCP remota, com OAuth e PKCE.</div>
+        <div><b>Autentica</b>Pelo navegador — ou colando um token no chat.</div>
+        <div><b>Agrega</b>O agente instala conectores novos sozinho.</div>
+        <div><b>Entrega</b>O pedido passa pela infraestrutura deles.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="promessa">
+    <div class="section__head" data-reveal>
+      <span class="section__num">04</span>
+      <span class="section__label">Promessa e entrega</span>
+    </div>
+    <h2 data-reveal>O que a página diz.<br>O que a verificação encontrou.</h2>
+
+    <div class="cards">
+      <article class="glass card" data-reveal>
+        <span class="tag tag--obs">Observado</span>
+        <h3>Open Finance regulado</h3>
+        <p>O acesso é via Pluggy, autorizada pelo Banco Central. O mcp.ai fica fora do perímetro regulado — o consentimento é com a Pluggy.</p>
+      </article>
+      <article class="glass card d1" data-reveal>
+        <span class="tag tag--obs">Observado</span>
+        <h3>Somente leitura</h3>
+        <p>19 ferramentas de consulta, nenhum endpoint de Pix ou transferência. A promessa se sustenta na arquitetura.</p>
+      </article>
+      <article class="glass card" data-reveal>
+        <span class="tag tag--obs">Observado</span>
+        <h3>“Não armazenamos conteúdo”</h3>
+        <p>Contradito pela própria documentação: o WhatsApp mantém arquivo com busca full-text e anexos do Gmail passam por S3.</p>
+      </article>
+      <article class="glass card d1" data-reveal>
+        <span class="tag tag--inf">Inferido</span>
+        <h3>100+ servidores</h3>
+        <p>O catálogo declara 2.271, com dezenas de páginas derivadas do mesmo backend por banco e por prompt.</p>
+      </article>
+      <article class="glass card" data-reveal>
+        <span class="tag tag--unk">Não verificado</span>
+        <h3>Funciona em qualquer cliente</h3>
+        <p>O protocolo responde e autentica. A execução com dados reais depende de conta e não foi testada.</p>
+      </article>
+      <article class="glass card d1" data-reveal>
+        <span class="tag tag--obs">Observado</span>
+        <h3>2.271 conectores</h3>
+        <p>Número real do catálogo público — e a razão pela qual “quantidade” não é a pergunta certa sobre cobertura.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="seguranca">
+    <div class="section__head" data-reveal>
+      <span class="section__num">05</span>
+      <span class="section__label">Segurança</span>
+    </div>
+    <h2 data-reveal>O que existe.<br>O que não foi encontrado.</h2>
+
+    <div class="two">
+      <div class="glass panel good" data-reveal>
+        <h3 class="good">Presente e declarado</h3>
+        <ul>
+          <li>TLS 1.3+ e credenciais cifradas em repouso com AES-256-GCM</li>
+          <li>OAuth com PKCE S256, chaves RS256 e endpoint de revogação</li>
+          <li>Retenção definida: tokens 30 dias, logs 90 dias</li>
+          <li>2FA, passkey e step-up no painel bancário</li>
+          <li>Política LGPD com controlador e encarregado</li>
+        </ul>
+      </div>
+      <div class="glass panel bad d1" data-reveal>
+        <h3 class="bad">Ausente nas páginas consultadas</h3>
+        <ul>
+          <li>SOC 2, ISO 27001 ou qualquer certificação independente</li>
+          <li>Página de segurança real, security.txt e status page</li>
+          <li>Lista pública de suboperadores e DPA</li>
+          <li>Canal de divulgação de vulnerabilidades</li>
+          <li>Cláusula de notificação de incidente</li>
+        </ul>
+      </div>
+    </div>
+    <p class="contract">Contrato: serviço “como está”, responsabilidade limitada ao maior valor entre 12 meses de mensalidade e R$ 1.000.</p>
+  </section>
+
+  <section class="section" id="risco">
+    <div class="section__head" data-reveal>
+      <span class="section__num">06</span>
+      <span class="section__label">Onde mora o risco</span>
+    </div>
+    <h2 data-reveal>Não é alguém invadir o mcp.ai.<br>É a concentração de acesso.</h2>
+
+    <div class="risk">
+      <div class="risk__row" data-reveal>
+        <span class="risk__name">Banco · Open Finance</span>
+        <span class="risk__why">Somente leitura, consentimento revogável no banco, trilho regulado.</span>
+        <span class="risk__level med">Médio-baixo</span>
+      </div>
+      <div class="risk__row" data-reveal>
+        <span class="risk__name">Gmail · Drive · Sheets</span>
+        <span class="risk__why">Leitura total e envio; o e-mail é a chave-mestra de reset de senhas.</span>
+        <span class="risk__level high">Alto</span>
+      </div>
+      <div class="risk__row" data-reveal>
+        <span class="risk__name">WhatsApp</span>
+        <span class="risk__why">Conexão não oficial, histórico armazenado, dados de terceiros.</span>
+        <span class="risk__level high">Alto</span>
+      </div>
+      <div class="risk__row" data-reveal>
+        <span class="risk__name">Instagram</span>
+        <span class="risk__why">Custódia de senha e automação contra os termos da plataforma.</span>
+        <span class="risk__level high">Alto</span>
+      </div>
+    </div>
+
+    <div class="glass quote" data-reveal>
+      <blockquote>“O token não expira.”</blockquote>
+      <footer>Resposta literal da ferramenta de autenticação, com a recomendação de gravá-lo na configuração do cliente.</footer>
+    </div>
+
+    <p class="risk__note">Um único Bearer estático dá acesso a todos os conectores habilitados. Se ele vazar — configuração sincronizada, print, histórico de chat — o atacante não precisa atacar ninguém.</p>
+  </section>
+
+  <section class="section" id="fontes">
+    <div class="section__head" data-reveal>
+      <span class="section__num">07</span>
+      <span class="section__label">Duas camadas</span>
+    </div>
+    <h2 data-reveal>llms.txt e IndexNow não<br>são atalhos para “respostas melhores”.</h2>
+
+    <div class="split">
+      <article class="glass card" data-reveal>
+        <span class="layer">Camada · documentação</span>
+        <h3>llms.txt</h3>
+        <p>Proposta de 2024, revisada em 2026, para dar aos agentes um índice em markdown do site. Não substitui sitemap e não é sinal de indexação documentado pelos provedores.</p>
+        <p>Os laboratórios publicam o seu. Isso não significa que leiam o seu.</p>
+      </article>
+      <article class="glass card d1" data-reveal>
+        <span class="layer">Camada · indexação</span>
+        <h3>IndexNow</h3>
+        <p>Avisa buscadores de que uma URL mudou. Vale para Bing, Yandex, Naver, Seznam, Yep e Amazon. Google não consta.</p>
+        <p>Ortogonal ao mcp.ai e ao llms.txt: nenhuma chamada de API liga um ao outro.</p>
+      </article>
+    </div>
+    <div class="arrow">O que melhora resposta é contrato de ferramenta, escopo mínimo e avaliação medida</div>
+  </section>
+
+  <section class="section" id="checklist">
+    <div class="section__head" data-reveal>
+      <span class="section__num">08</span>
+      <span class="section__label">Como usar sem se expor</span>
+    </div>
+    <h2 data-reveal>Sete decisões antes<br>de conectar qualquer conta.</h2>
+
+    <ol class="checklist">
+      <li class="glass" data-reveal><b>Nunca cole o token no chat</b><span>Use cabeçalho no cliente, em máquina com disco criptografado.</span></li>
+      <li class="glass" data-reveal><b>Confirme o 2FA da conta</b><span>Existe no produto bancário; para a conta principal, não foi possível verificar.</span></li>
+      <li class="glass" data-reveal><b>Olhe o app na tela do Google</b><span>Antes de conectar Gmail, verifique nome e selo de verificação.</span></li>
+      <li class="glass" data-reveal><b>Prefira chaves de convidado</b><span>Escopo mínimo em vez de um token de dono.</span></li>
+      <li class="glass" data-reveal><b>Revogue nos dois lados</b><span>No painel e no provedor; tokens duram até 30 dias após a desconexão.</span></li>
+      <li class="glass" data-reveal><b>Exija DPA para uso corporativo</b><span>Suboperadores, região de hospedagem e resposta a incidente.</span></li>
+      <li class="glass" data-reveal><b>Trate o link como segredo</b><span>A URL do workspace e o token são credenciais de produção.</span></li>
+    </ol>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div>
+      <p><strong>Metodologia.</strong> Leitura de políticas e documentação, verificação de CNPJ e domínio, chamadas diretas ao servidor MCP em produção. Nenhuma conta foi criada.</p>
+      <p><strong>O que não foi testado.</strong> Criptografia em repouso, identidade do app OAuth, histórico de incidentes e execução ponta a ponta com dados reais.</p>
+      <p>Versão em PDF: <a href="./relatorio.pdf">relatório completo</a>.</p>
+    </div>
+    <div class="footer__meta">
+      <p>2 de novembro de 2026</p>
+      <p>check.fssdev.com.br</p>
+    </div>
+  </div>
+</footer>
+
+<script src="./assets/app.js?v=20261102" defer></script>
+</body>
+</html>

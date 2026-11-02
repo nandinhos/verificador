@@ -1,0 +1,174 @@
+{
+ "geradoDe": "Swing por secao: BH/FDR + bootstrap IC95 (Presidente)",
+ "nota": "FDR = secoes 'outlier' sobreviventes ao controle de falsos positivos; seed 20261030",
+ "ufs": [
+  {
+   "uf": "AC",
+   "status": "OK",
+   "n": 2270,
+   "swingMediano_pp": 4.67,
+   "swingMedio_pp": 4.703,
+   "ic95Mediano_pp": [
+    4.507,
+    4.846
+   ],
+   "sig_FDR5pct": 5,
+   "sig_FDR1pct": 4,
+   "pctSobreviveFDR5": 0.22
+  },
+  {
+   "uf": "AL",
+   "status": "OK",
+   "n": 7101,
+   "swingMediano_pp": 5.892,
+   "swingMedio_pp": 5.874,
+   "ic95Mediano_pp": [
+    5.821,
+    5.954
+   ],
+   "sig_FDR5pct": 17,
+   "sig_FDR1pct": 14,
+   "pctSobreviveFDR5": 0.24
+  },
+  {
+   "uf": "AP",
+   "status": "OK",
+   "n": 1914,
+   "swingMediano_pp": 7.418,
+   "swingMedio_pp": 7.363,
+   "ic95Mediano_pp": [
+    7.272,
+    7.556
+   ],
+   "sig_FDR5pct": 5,
+   "sig_FDR1pct": 2,
+   "pctSobreviveFDR5": 0.26
+  },
+  {
+   "uf": "AM",
+   "status": "OK",
+   "n": 8157,
+   "swingMediano_pp": 5.997,
+   "swingMedio_pp": 5.957,
+   "ic95Mediano_pp": [
+    5.929,
+    6.073
+   ],
+   "sig_FDR5pct": 9,
+   "sig_FDR1pct": 8,
+   "pctSobreviveFDR5": 0.11
+  },
+  {
+   "uf": "MS",
+   "status": "OK",
+   "n": 7106,
+   "swingMediano_pp": 5.501,
+   "swingMedio_pp": 5.53,
+   "ic95Mediano_pp": [
+    5.413,
+    5.556
+   ],
+   "sig_FDR5pct": 0,
+   "sig_FDR1pct": 0,
+   "pctSobreviveFDR5": 0.0
+  },
+  {
+   "uf": "PR",
+   "status": "OK",
+   "n": 27142,
+   "swingMediano_pp": 6.037,
+   "swingMedio_pp": 6.114,
+   "ic95Mediano_pp": [
+    6.0,
+    6.073
+   ],
+   "sig_FDR5pct": 31,
+   "sig_FDR1pct": 12,
+   "pctSobreviveFDR5": 0.11
+  },
+  {
+   "uf": "RO",
+   "status": "OK",
+   "n": 4698,
+   "swingMediano_pp": 4.211,
+   "swingMedio_pp": 4.48,
+   "ic95Mediano_pp": [
+    4.128,
+    4.292
+   ],
+   "sig_FDR5pct": 17,
+   "sig_FDR1pct": 9,
+   "pctSobreviveFDR5": 0.36
+  },
+  {
+   "uf": "RR",
+   "status": "OK",
+   "n": 1519,
+   "swingMediano_pp": 4.628,
+   "swingMedio_pp": 4.705,
+   "ic95Mediano_pp": [
+    4.487,
+    4.777
+   ],
+   "sig_FDR5pct": 13,
+   "sig_FDR1pct": 5,
+   "pctSobreviveFDR5": 0.86
+  },
+  {
+   "uf": "SP",
+   "status": "OK",
+   "n": 103656,
+   "swingMediano_pp": 7.757,
+   "swingMedio_pp": 7.789,
+   "ic95Mediano_pp": [
+    7.74,
+    7.777
+   ],
+   "sig_FDR5pct": 25,
+   "sig_FDR1pct": 17,
+   "pctSobreviveFDR5": 0.02
+  },
+  {
+   "uf": "SE",
+   "status": "OK",
+   "n": 5923,
+   "swingMediano_pp": 6.592,
+   "swingMedio_pp": 6.676,
+   "ic95Mediano_pp": [
+    6.511,
+    6.676
+   ],
+   "sig_FDR5pct": 0,
+   "sig_FDR1pct": 0,
+   "pctSobreviveFDR5": 0.0
+  },
+  {
+   "uf": "TO",
+   "status": "OK",
+   "n": 4384,
+   "swingMediano_pp": 5.178,
+   "swingMedio_pp": 5.2,
+   "ic95Mediano_pp": [
+    5.08,
+    5.276
+   ],
+   "sig_FDR5pct": 6,
+   "sig_FDR1pct": 3,
+   "pctSobreviveFDR5": 0.14
+  },
+  {
+   "uf": "ZZ",
+   "status": "OK",
+   "n": 1305,
+   "swingMediano_pp": 6.072,
+   "swingMedio_pp": 6.182,
+   "ic95Mediano_pp": [
+    5.855,
+    6.291
+   ],
+   "sig_FDR5pct": 19,
+   "sig_FDR1pct": 12,
+   "pctSobreviveFDR5": 1.46
+  }
+ ]
+}

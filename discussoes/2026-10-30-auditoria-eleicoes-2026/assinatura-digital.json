@@ -1,0 +1,12 @@
+{
+ "geradoDe": "Verificacao de assinatura digital dos arquivos de urna (arqurnatot), piloto RR 1T",
+ "uf": "RR", "turno": "1t",
+ "urnas": 1519,
+ "assinaturasVsc": 1519,
+ "logsJez": 1519,
+ "arquivosDat": 4557,
+ "coberturaAssinatura": "100% (1 .vsc por urna/secao)",
+ "estruturaAssinatura": "ASN.1 DER SEQUENCE (envelope VSCMR do TSE)",
+ "seccoesCEFT_RR": 1519,
+ "limitacao": "Validacao criptografica completa da cadeia exige parser VSCMR e certificados oficiais do TSE (blocker de ferramenta). Constatados: presenca por urna, integridade estrutural ASN.1 e cobertura total."
+}

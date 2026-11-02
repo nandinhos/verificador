@@ -1,0 +1,150 @@
+{
+  "repository": {
+    "url": "https://github.com/Jakeschincariol/replica-skill.git",
+    "name": "replica-skill",
+    "commit": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
+    "author": {
+      "name": "Jake Schincariol",
+      "url": "https://opusjake.ai"
+    },
+    "license": "MIT",
+    "version": "1.0.0"
+  },
+  "runtime_and_stack": {
+    "primary_language": "Python 3.8+",
+    "external_dependencies": [],
+    "standard_library_modules": [
+      "argparse", "csv", "datetime", "json", "math",
+      "os", "re", "struct", "sys", "unittest", "zlib"
+    ],
+    "platform_integrations": [
+      "Claude Code (.claude-plugin/plugin.json)",
+      "Claude Desktop / Antigravity / Agentic Frameworks (SKILL.md format)",
+      "Playwright (TypeScript test templates)"
+    ]
+  },
+  "metrics": {
+    "total_skills": 11,
+    "cli_tools": 6,
+    "test_suite": {
+      "framework": "unittest",
+      "total_tests": 57,
+      "passed": 57,
+      "failed": 0,
+      "execution_time_seconds": 0.456,
+      "exit_code": 0
+    },
+    "ast_graph": {
+      "nodes": 187,
+      "edges": 278,
+      "communities": 15,
+      "extraction_status": "100% EXTRACTED"
+    }
+  },
+  "skills": [
+    {
+      "id": "replica-recon",
+      "command": "/replica-recon",
+      "purpose": "Engenharia reversa clean-room: mapeamento de telas, fluxos de usuário, inventário de componentes e modelo de dados.",
+      "artifacts": ["replica/recon.md", "replica/features.csv", "replica/screens/"]
+    },
+    {
+      "id": "replica-architect",
+      "command": "/replica-architect",
+      "purpose": "Planejamento de stack técnica, schema relacional SQL com constraints e contratos de endpoints de API.",
+      "artifacts": ["replica/architecture.md"]
+    },
+    {
+      "id": "replica-design",
+      "command": "/replica-design",
+      "purpose": "Extração de design tokens, escala tipográfica, espaçamento e validação de acessibilidade WCAG via contrast.py.",
+      "artifacts": ["replica/tokens.json", "contrast.py"]
+    },
+    {
+      "id": "replica-build",
+      "command": "/replica-build",
+      "purpose": "Construção tela a tela do clone baseada no recon map e prioridades do features.csv.",
+      "artifacts": ["código da aplicação clone"]
+    },
+    {
+      "id": "replica-backend",
+      "command": "/replica-backend",
+      "purpose": "Infraestrutura de autenticação, banco de dados, webhooks e pagamentos (Stripe).",
+      "artifacts": ["serviços de backend e integrações"]
+    },
+    {
+      "id": "replica-test",
+      "command": "/replica-test",
+      "purpose": "Testes end-to-end com Playwright, matriz de fluxos críticos e triagem de bugs por severidade (S1 a S4).",
+      "artifacts": ["replica/test-plan.md", "replica/bug-report.md", "e2e.example.spec.ts"]
+    },
+    {
+      "id": "replica-diff",
+      "command": "/replica-diff",
+      "purpose": "Auditoria de paridade: cálculo ponderado de features e comparação visual de layout agnóstica de cor (imgdiff.py + parity.py).",
+      "artifacts": ["imgdiff.py", "parity.py", "replica/parity.md"]
+    },
+    {
+      "id": "replica-entrepreneur",
+      "command": "/replica-entrepreneur",
+      "purpose": "Análise competitiva de reviews reais de concorrentes, agrupamento de temas de dor e identificação de ângulo de mercado.",
+      "artifacts": ["reviews.py", "themes.json", "replica/feedback.md"]
+    },
+    {
+      "id": "replica-brand",
+      "command": "/replica-brand",
+      "purpose": "Criação de identidade autônoma e sanitização estrita de marcas, domínios e hexadecimais do original (sweep.py).",
+      "artifacts": ["sweep.py", "replica/brand.json"]
+    },
+    {
+      "id": "replica-launch",
+      "command": "/replica-launch",
+      "purpose": "Copywriting de lançamento, definição de modelo de preços e validação de regras de listagem de lojas de apps (listing.py).",
+      "artifacts": ["listing.py", "listing.example.json", "replica/listing.json"]
+    },
+    {
+      "id": "replica-deploy",
+      "command": "/replica-deploy",
+      "purpose": "Checklist preflight bloqueante, configuração de produção, registros DNS (SPF, DKIM, DMARC) e go-live seguro.",
+      "artifacts": ["preflight.md"]
+    }
+  ],
+  "cli_tools": [
+    {
+      "name": "imgdiff.py",
+      "path": "replica-diff/imgdiff.py",
+      "lines": 457,
+      "purpose": "Diff estrutural de screenshots via parser nativo de PNG (struct/zlib) e detector de bordas de gradiente, ignorando variações de cores de rebrand."
+    },
+    {
+      "name": "parity.py",
+      "path": "replica-diff/parity.py",
+      "lines": 229,
+      "purpose": "Pontuação ponderada de paridade funcional (Must=3, Should=2, Could=1) com suporte a mesclagem de 20% do score de layout do imgdiff.py."
+    },
+    {
+      "name": "sweep.py",
+      "path": "replica-brand/sweep.py",
+      "lines": 178,
+      "purpose": "Varredura regex de segurança jurídica e de marca (nomes, domínios, hex colors) no código fonte, atuando como gate de deploy."
+    },
+    {
+      "name": "contrast.py",
+      "path": "replica-design/contrast.py",
+      "lines": 158,
+      "purpose": "Auditor matemático de contraste WCAG 2.1 (AA 4.5:1, AAA 7:1) calculando luminância relativa em tokens de design JSON."
+    },
+    {
+      "name": "reviews.py",
+      "path": "replica-entrepreneur/reviews.py",
+      "lines": 312,
+      "purpose": "Mineração e agrupamento de reviews de clientes com decay temporal de relevância e links estritos de auditoria para cada citação."
+    },
+    {
+      "name": "listing.py",
+      "path": "replica-launch/listing.py",
+      "lines": 243,
+      "purpose": "Linter de listing de App Store / Google Play, checagem de tamanho de títulos, contagem grapheme de emojis e bloqueio de nomes de concorrentes."
+    }
+  ]
+}
