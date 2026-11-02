@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verificador Determinístico — Motor Epistêmico & Auditoria de IA</title>
+  <meta name="description" content="Motor de análise determinística de alto nível, classificação rigorosa de evidências e auditoria para ecossistemas de agentes de IA com JARVIS e Dev-Memory.">
+  <meta name="theme-color" content="#07090e">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="./assets/style.css?v=20261102">
+  <script src="./assets/app.js?v=20261102" defer></script>
+</head>
+<body>
+
+  <div class="bg-glow"></div>
+  <div class="bg-grid"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrap">
+        <a href="#topo" class="brand">
+          <span class="brand-badge">VD</span>
+          <span>Verificador Determinístico</span>
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#arquitetura">Arquitetura em Camadas</a></li>
+            <li><a href="#epistemico">Padrão Epistêmico</a></li>
+            <li><a href="#roadmap">Roadmap & Futura GUI</a></li>
+            <li><a href="#casos">Auditorias</a></li>
+          </ul>
+        </nav>
+        <a href="https://github.com/nandinhos/verificador" target="_blank" rel="noopener noreferrer" class="btn-github">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="topo">
+    <div class="container">
+      <div class="badge-tag">
+        <span class="pulse-dot"></span>
+        <span>Terminal MVP · Futura Interface Gráfica</span>
+      </div>
+
+      <h1 class="hero-title">
+        Motor Epistêmico de <br><span class="text-gradient">Verificação Determinística</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        A camada de alta fidelidade para auditoria empírica de sistemas autônomos. Eliminamos o achismo e a alucinação de agentes através de classificação formal de evidências, validação comportamental e tolerância zero a afirmações sem respaldo.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#arquitetura" class="btn-primary">Conhecer a Arquitetura em Camadas</a>
+        <a href="#roadmap" class="btn-secondary">Visão de Futuro & GUI</a>
+      </div>
+
+      <!-- Terminal Mockup -->
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <span class="terminal-title">verificador-cli · bash ~ session</span>
+          <span class="terminal-title" id="live-status">[ONLINE] Engine Operacional</span>
+        </div>
+        <div class="terminal-body">
+          <p class="cmd-line">$ verificador audit --target claims.json --strict-protocol</p>
+          <p class="log-dim">> Carregando diretrizes do PROTOCOLO.md...</p>
+          <p class="log-obs">[OBSERVED] Evidência física confirmada: 147 fontes rastreadas e conferidas.</p>
+          <p class="log-inf">[INFERRED] Projeção de invariante relacional derivada dos testes de estresse.</p>
+          <p class="log-unk">[UNKNOWN] Fonte não comprovada no contexto externo — afirmação descartada.</p>
+          <p class="cmd-line" style="margin-top: 14px;">$ verificador gate --status</p>
+          <p style="color: #38bdf8;">✓ Veredito: Zero Alucinações | Tolerância de Erro: 0.00% | Prova Auditável Gravada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture Triad -->
+  <section class="architecture" id="arquitetura">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">Ecossistema Inteligente</div>
+        <h2 class="section-title">A Arquitetura em 3 Camadas</h2>
+        <p class="section-desc">
+          Um modelo robusto que desacopla a orquestração do agente pessoal, a retenção de aprendizados contínuos e o motor crítico de auditoria analítica.
+        </p>
+      </div>
+
+      <div class="triad-grid">
+        <!-- Layer 1: JARVIS -->
+        <article class="triad-card">
+          <span class="card-layer-tag layer-1">Camada 1 · Orquestração</span>
+          <h3>JARVIS</h3>
+          <p>
+            O agente pessoal e interface executiva. Conduz a interação conversacional com o desenvolvedor, interpreta intenções de alto nível e aciona ferramentas e agentes especializados no ecossistema.
+          </p>
+          <ul class="triad-features">
+            <li>Agente pessoal orientado a intenções</li>
+            <li>Roteamento adaptativo de provedores de IA</li>
+            <li>Barramento de ferramentas e automação</li>
+          </ul>
+          <a href="https://github.com/barraroot/jarvis" target="_blank" rel="noopener noreferrer" class="card-link">
+            Explorar barraroot/jarvis →
+          </a>
+        </article>
+
+        <!-- Layer 2: Dev-Memory -->
+        <article class="triad-card">
+          <span class="card-layer-tag layer-2">Camada 2 · Memória Contínua</span>
+          <h3>Dev-Memory</h3>
+          <p>
+            O hub de memória persistente entre sessões e harnesses. Captura aprendizados, erros superados, premissas de projeto e decisões técnicas para que nenhum agente sofra de amnésia contextual.
+          </p>
+          <ul class="triad-features">
+            <li>Governança de memórias técnicas validadas</li>
+            <li>Integração universal via protocolo MCP</li>
+            <li>Briefings contextuais com zero alucinação</li>
+          </ul>
+          <a href="https://github.com/nandinhos/dev-memory" target="_blank" rel="noopener noreferrer" class="card-link">
+            Explorar nandinhos/dev-memory →
+          </a>
+        </article>
+
+        <!-- Layer 3: Verificador -->
+        <article class="triad-card" style="border-color: rgba(56, 189, 248, 0.4);">
+          <span class="card-layer-tag layer-3">Camada 3 · Rigor Epistêmico</span>
+          <h3>Verificador Determinístico</h3>
+          <p>
+            O motor de auditoria e validação de alto nível. Confronta todas as premissas e saídas de agentes contra código real, logs e testes determinísticos antes de qualquer decisão crítica.
+          </p>
+          <ul class="triad-features">
+            <li>Classificação OBSERVED / INFERRED / UNKNOWN</li>
+            <li>Validação comportamental e ausência de achismos</li>
+            <li>Auditoria cruzada e conciliação de dados</li>
+          </ul>
+          <a href="https://github.com/nandinhos/verificador" target="_blank" rel="noopener noreferrer" class="card-link">
+            Explorar nandinhos/verificador →
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Epistemic Standard -->
+  <section class="epistemic" id="epistemico">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">Fundação Teórica</div>
+        <h2 class="section-title">O Padrão Epistêmico do Verificador</h2>
+        <p class="section-desc">
+          Definido no <code>PROTOCOLO.md</code>, este método formal estabelece as fronteiras do que é verdade verificada versus o que é mera suposição.
+        </p>
+      </div>
+
+      <div class="epistemic-cards">
+        <div class="epi-card obs">
+          <div class="epi-header">
+            <span class="epi-title">OBSERVED</span>
+            <span class="epi-rule">Comprovado</span>
+          </div>
+          <p>
+            Fato atestado diretamente por arquivo lido, teste executado com saída bruta e exit code gravado, schema inspecionado ou comando físico rodado. A única base aceita como verdade factual.
+          </p>
+        </div>
+
+        <div class="epi-card inf">
+          <div class="epi-header">
+            <span class="epi-title">INFERRED</span>
+            <span class="epi-rule">Deduzido</span>
+          </div>
+          <p>
+            Conclusão lógica razoável derivada de dados previamente observados, mas ainda não comprovada em execução real. Deve ser explicitamente rotulada como hipótese em teste.
+          </p>
+        </div>
+
+        <div class="epi-card unk">
+          <div class="epi-header">
+            <span class="epi-title">UNKNOWN</span>
+            <span class="epi-rule">Bloqueado</span>
+          </div>
+          <p>
+            Informação ausente no contexto ou não verificável no repositório. Sob o protocolo, é proibido converter silenciosamente UNKNOWN em OBSERVED ou inventar fontes/dados ausentes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap Section -->
+  <section class="roadmap" id="roadmap">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">Evolução do Produto</div>
+        <h2 class="section-title">Do Terminal à Interface Gráfica</h2>
+        <p class="section-desc">
+          Hoje o Verificador opera como uma poderosa ferramenta de linha de comando no terminal. O roadmap projeta a evolução para um cockpit visual completo.
+        </p>
+      </div>
+
+      <div class="roadmap-timeline">
+        <!-- Fase 1 -->
+        <div class="roadmap-card active">
+          <div class="phase-number">Fase 1 · Atual (MVP)</div>
+          <h4>CLI & Terminal Harness</h4>
+          <p>
+            Operação direta no terminal e harnesses de engenharia (Antigravity, Claude, Kiro). Execução de scripts determinísticos, Language Server (LSP) em Node.js, IPC handlers e scaffolds de discussões investigativas.
+          </p>
+          <div class="gui-preview-box">
+            <strong>Estado Atual:</strong> Em produção ativa no repositório <code>nandinhos/verificador</code>.
+          </div>
+        </div>
+
+        <!-- Fase 2 -->
+        <div class="roadmap-card">
+          <div class="phase-number">Fase 2 · Próxima Etapa</div>
+          <h4>Barramento Integrado JARVIS</h4>
+          <p>
+            Conexão fluida entre JARVIS, Dev-Memory e Verificador Determinístico via protocolos MCP e APIs de eventos. O JARVIS consulta o Verificador para validar planos de código antes de aplicá-los.
+          </p>
+          <div class="gui-preview-box">
+            <strong>Foco:</strong> Sincronização de memórias de trabalho e mediação de ações de alto risco.
+          </div>
+        </div>
+
+        <!-- Fase 3 -->
+        <div class="roadmap-card">
+          <div class="phase-number">Fase 3 · Futuro</div>
+          <h4>Interface Gráfica Dedicada (GUI)</h4>
+          <p>
+            Dashboard visual completo para visualização gráfica de evidências em tempo real, grafos de dependência, matrizes de conciliação de dados, status de auditorias e cockpit interativo para o desenvolvedor.
+          </p>
+          <div class="gui-preview-box">
+            <strong>Visão:</strong> Dashboard desktop & web com renderização visual de árvores de decisão e claims.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Audited Cases -->
+  <section class="cases" id="casos">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">Comprovação Empírica</div>
+        <h2 class="section-title">Auditorias Reais Concluídas</h2>
+        <p class="section-desc">
+          Exemplos de investigações rigorosas conduzidas e documentadas sob a metodologia do Verificador Determinístico.
+        </p>
+      </div>
+
+      <div class="cases-grid">
+        <div class="case-card">
+          <div class="case-date">2026-11-02</div>
+          <h5>mcp.ai sob Auditoria</h5>
+          <p>
+            Análise independente do agregador MCP: riscos de segurança, concentração de conectores, simulação de tráfego e conformidade de headers.
+          </p>
+        </div>
+
+        <div class="case-card">
+          <div class="case-date">2026-10-31</div>
+          <h5>Curadoria de Memórias v2</h5>
+          <p>
+            Deliberação plenária com conselho multi-agente e especificação técnica para o hub Dev-Memory com mitigação de amnésia técnica.
+          </p>
+        </div>
+
+        <div class="case-card">
+          <div class="case-date">2026-10-30</div>
+          <h5>Auditoria Eleições 2026</h5>
+          <p>
+            Conciliação de Boletins de Urna com dados oficiais, testes estatísticos avançados de dígitos, integridade e comparação de turnos.
+          </p>
+        </div>
+
+        <div class="case-card">
+          <div class="case-date">2026-10-24</div>
+          <h5>Testes de Abstenção em Harnesses</h5>
+          <p>
+            Avaliação comparativa de robustez epistêmica e resistência a alucinações entre Claude, Codex, Gemini, Kiro e OpenCode.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="https://github.com/nandinhos/verificador" target="_blank" rel="noopener noreferrer">Verificador Determinístico</a></li>
+        <li><a href="https://github.com/nandinhos/dev-memory" target="_blank" rel="noopener noreferrer">Dev-Memory Hub</a></li>
+        <li><a href="https://github.com/barraroot/jarvis" target="_blank" rel="noopener noreferrer">JARVIS Agent</a></li>
+        <li><a href="https://check.fssdev.com.br" target="_blank" rel="noopener noreferrer">check.fssdev.com.br (Raiz)</a></li>
+      </ul>
+      <p>
+        © 2026 FSSDEV · Engenharia de Software Orientada por Evidências. Rigor, determinismo e confiabilidade.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
